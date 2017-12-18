@@ -30,7 +30,7 @@ public class World {
 
     public void step() {
         for (Snake snake : snakes) {
-//            snake.move();
+            snake.moveHead();
         }
     }
 

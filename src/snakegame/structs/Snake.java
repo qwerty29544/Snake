@@ -36,7 +36,7 @@ public class Snake {
         }
         return false;
     }
-    private void moveHead(){
+    public void moveHead(){
         Point newHead;
         Point oldHead = points.getFirst();
         switch (direction){
