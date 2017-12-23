@@ -3,8 +3,12 @@ package snakegame.structs;
 import java.awt.*;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.UUID;
 
 public class Snake {
+    UUID uuid;
+
+
     public List<Point> getPoints() {
         return points;
     }
@@ -16,11 +20,13 @@ public class Snake {
     public Snake(LinkedList<Point> points, Direction direction) {
         this.points = points;
         this.direction = direction;
+        this.uuid = UUID.randomUUID();
     }
 
     public Snake(Snake snake) {
         this.direction = snake.direction;
         this.points = new LinkedList<Point>(snake.points);
+        this.uuid = snake.uuid;
     }
 
     public Snake predictMove() {

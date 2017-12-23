@@ -3,10 +3,18 @@ package snakegame.structs;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
+import java.util.UUID;
+import java.util.function.Predicate;
 
 public class World {
+    SnakeFactory snakeFactory = new SnakeFactory();
     List<Apple> apples;
+    //TO DO HashMap
     List<Snake> snakes;
+
+
+    //snakes.add(snakeFactory.generateSnake());
 
     public World(List<Apple> apples, List<Snake> snakes) {
         this.apples = apples;
@@ -29,12 +37,27 @@ public class World {
     }
 
     public void step() {
+        ArrayList<Snake> predictions = new ArrayList<Snake>();
         for (Snake snake : snakes) {
-            snake.moveHead();
+            predictions.add(snake.predictMove());
+        }
+        for (Snake prediction: predictions){
+            for(Snake otherPrediction:predictions){
+                if (prediction.uuid != otherPrediction.uuid && otherPrediction.contains(prediction.getHead())){
+                    snakes.removeIf(new Predicate<Snake>() {
+                        @Override
+                        public boolean test(Snake snake) {
+                            return snake.uuid == otherPrediction.uuid;
+                        }
+                    });
+                }
+            }
         }
     }
 
 
+
 //  Добавить логику поедания змейками змеек
-        //        Добавить логику поедания яблоr
+
+        //        Добавить логику поедания яблок
 }
