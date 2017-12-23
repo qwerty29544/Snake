@@ -18,6 +18,17 @@ public class Snake {
         this.direction = direction;
     }
 
+    public Snake(Snake snake) {
+        this.direction = snake.direction;
+        this.points = new LinkedList<Point>(snake.points);
+    }
+
+    public Snake predictMove() {
+        Snake prediction = new Snake(this);
+        prediction.step();
+        return prediction;
+    }
+
     public Direction getDirection() {
         return direction;
     }
@@ -25,9 +36,11 @@ public class Snake {
     private void setDirection(Direction direction) {
         this.direction = direction;
     }
+
     public Point getHead(){
         return points.get(0);
     }
+
     public boolean contains(Point anotherPoint){
         for (Point point:points){
             if (point.equals(anotherPoint)){
@@ -36,6 +49,12 @@ public class Snake {
         }
         return false;
     }
+
+    void step() {
+        moveHead();
+        dropTail();
+    }
+
     public void moveHead(){
         Point newHead;
         Point oldHead = points.getFirst();
@@ -54,9 +73,11 @@ public class Snake {
                 points.addFirst(newHead);
         }
     }
+
     private void dropTail(){
         points.removeLast();
     }
+
     public void draw(Graphics2D g){
         for (Point point : points){
             point.draw(g);
