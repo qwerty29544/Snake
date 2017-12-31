@@ -10,9 +10,12 @@ public enum Direction {
     down,
     left;
 
+    public Direction newDirection(KeyEvent event) {
+        return newDirection(event.getKeyCode());
+    }
 
-    public Direction newDirection(KeyEvent event){
-        switch (event.getKeyCode()) {
+    public Direction newDirection(int keyCode){
+        switch (keyCode) {
             case KeyEvent.VK_RIGHT:
                 if (this != Direction.left) {
                     return Direction.right;
