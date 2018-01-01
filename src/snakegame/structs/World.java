@@ -44,13 +44,24 @@ public class World {
         for (Snake prediction: predictions){
             for(Snake otherPrediction:predictions){
                 if (prediction.uuid != otherPrediction.uuid && otherPrediction.contains(prediction.getHead())){
-                    snakes.removeIf(new Predicate<Snake>() {
-                        @Override
-                        public boolean test(Snake snake) {
-                            return snake.uuid == otherPrediction.uuid;
-                        }
-                    });
+                    snakes.removeIf(snake -> snake.uuid == otherPrediction.uuid);
                 }
+            }
+        }
+        predictions.removeIf(prediction -> {
+            for(Snake snake: snakes) {
+                if (snake.uuid == prediction.uuid)
+                    return false;
+            }
+            return true;
+        });
+        for(Snake prediction: predictions) {
+            for(Snake snake: snakes) {
+                if (snake.uuid == prediction.uuid)
+                    if (apples.removeIf(apple -> prediction.contains(apple.getPoint())))
+                        snake.moveHead();
+                    else
+                        snake.step();
             }
         }
     }
