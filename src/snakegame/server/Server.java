@@ -8,6 +8,7 @@ import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.net.InetSocketAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Map;
@@ -19,22 +20,28 @@ import java.util.concurrent.LinkedBlockingQueue;
 public class Server {
     private World world;
     private int port;
+    private String host;
 
     static int DEFAULT_PORT = 1337;
+    static String DEFAULT_HOST = "127.0.0.1";
     private Queue<Message> events;
 
     Map<UUID, Snake> clients;
 
-    public Server(int port) {
+    public Server(int port, String host) {
         this.port = port;
+        this.host = host;
         this.world = new World();
         this.events = new LinkedBlockingQueue<Message>();
         this.clients = new ConcurrentHashMap<UUID, Snake>();
     }
 
     public Server() {
-        this(DEFAULT_PORT);
+        this(DEFAULT_PORT, DEFAULT_HOST);
     }
+
+    public Server(int port) { this(port, DEFAULT_HOST); };
+    public Server(String host) { this(DEFAULT_PORT, host); };
 
     public void run() {
         try {
