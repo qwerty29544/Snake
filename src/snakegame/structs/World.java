@@ -36,6 +36,10 @@ public class World {
         }
     }
 
+//    public static World parse(String message) {
+//
+//    }
+
     public void step() {
         ArrayList<Snake> predictions = new ArrayList<Snake>();
         for (Snake snake : snakes) {
@@ -66,9 +70,36 @@ public class World {
         }
     }
 
+    @Override
+    public String toString() {
+        StringBuilder stringBuilder = new StringBuilder();
+        for(Apple apple: apples) {
+            stringBuilder.append(apple.toString());
+            stringBuilder.append(';');
+        }
+        for(Snake snake: snakes) {
+            stringBuilder.append(snake.toString());
+            stringBuilder.append(';');
+        }
+        return stringBuilder.toString();
+    }
 
+    public static World parse(String string) throws IllegalArgumentException{
+        List<Snake> snakes = new ArrayList<Snake>();
+        List<Apple> apples = new ArrayList<Apple>();
+        String[] objects = string.split(";");
+        for(String obj: objects) {
+            if(obj.startsWith("S")) {
+                snakes.add(Snake.parse(obj));
+            } else if(obj.startsWith("A")) {
+                apples.add(Apple.parse(obj));
+            }
+            else throw new IllegalArgumentException("Cannot parse obj: " + obj);
+        }
+        return new World(apples, snakes);
+    }
 
-//  Добавить логику поедания змейками змеек
+    //  Добавить логику поедания змейками змеек
 
         //        Добавить логику поедания яблок
 }

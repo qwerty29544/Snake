@@ -31,6 +31,6 @@ public class Message {
 
     @Override
     public String toString() {
-        return uuid + " " + keyCode;
+        return uuid.toString() + " " + keyCode;
     }
 }

@@ -46,4 +46,9 @@ public abstract class Point {
         result = 31 * result + y.hashCode();
         return result;
     }
+
+    @Override
+    public String toString() {
+        return x.toString() + "," + y;
+    }
 }

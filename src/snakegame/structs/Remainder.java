@@ -33,4 +33,8 @@ public class Remainder implements Cloneable {
     public Remainder copyAdd(int addition) {
         return new Remainder(this.limit, (this.value + addition) % this.limit);
     }
+
+    public String toString(){
+        return "" + value;
+    }
 }

@@ -1,9 +1,8 @@
 package snakegame.structs;
 
 import java.awt.*;
-import java.util.LinkedList;
+import java.util.*;
 import java.util.List;
-import java.util.UUID;
 
 public class Snake {
     UUID uuid;
@@ -21,6 +20,12 @@ public class Snake {
         this.points = points;
         this.direction = direction;
         this.uuid = UUID.randomUUID();
+    }
+
+    public Snake(UUID uuid, LinkedList<Point> points, Direction direction) {
+        this.uuid = uuid;
+        this.points = points;
+        this.direction = direction;
     }
 
     public Snake(Snake snake) {
@@ -67,17 +72,40 @@ public class Snake {
         switch (direction){
             case up:
                 newHead = new SnakePoint(oldHead.getX(), oldHead.getY().copyAdd(1));
-                points.addFirst(newHead);
+                break;
             case down:
                 newHead = new SnakePoint(oldHead.getX(), oldHead.getY().copyAdd(1));
-                points.addFirst(newHead);
+                break;
             case right:
                 newHead = new SnakePoint(oldHead.getX(), oldHead.getY().copyAdd(1));
-                points.addFirst(newHead);
+                break;
             case left:
                 newHead = new SnakePoint(oldHead.getX(), oldHead.getY().copyAdd(1));
-                points.addFirst(newHead);
+                break;
+            default:
+                newHead = oldHead;
         }
+        points.addFirst(newHead);
+    }
+
+    public static Snake parse(String string) throws IllegalArgumentException {
+        String[] tokens = string.split(",");
+        Direction direction;
+        LinkedList<Point> points = new LinkedList<Point>();
+        if (Objects.equals(tokens[0], "S")) {
+            UUID uuid = UUID.fromString(tokens[1]);
+            int length = Integer.parseInt(tokens[2]);
+            int j = 3;
+            for (int i = 0; i < length; i++) {
+                SnakePoint point = new SnakePoint(new Remainder(Integer.parseInt(tokens[j])),
+                                                  new Remainder(Integer.parseInt(tokens[j+1])));
+                points.add(point);
+                j += 2;
+            }
+            direction = Direction.valueOf(tokens[j]);
+            return new Snake(uuid, points, direction);
+        }
+        else throw new IllegalArgumentException("huynya snake message");
     }
 
     private void dropTail(){
@@ -90,7 +118,34 @@ public class Snake {
         }
     }
 
+    @Override
+    public String toString() {
+        StringBuilder builder = new StringBuilder();
+        builder.append("S,");
+        builder.append(uuid.toString());
+        builder.append(',');
+        builder.append(points.size());
+        builder.append(',');
+        for(Point point : points) {
+            builder.append(point.toString());
+            builder.append(',');
+        }
+        builder.append(direction.toString());
+        return builder.toString();
+    }
+
     private LinkedList<Point> points;
     private Direction direction;
 
+    public static void main(String[] args) {
+        List<Apple> apples = new ArrayList<Apple>();
+        List<Snake> snakes = new ArrayList<Snake>();
+        Apple apple = new Apple(new ApplePoint(new Remainder(22), new Remainder(33)));
+        Snake snake = new SnakeFactory().generateSnake();
+        apples.add(apple);
+        snakes.add(snake);
+        World world = new World(apples, snakes);
+        System.out.println(world.toString());
+        System.out.println(World.parse(world.toString()));
+    }
 }

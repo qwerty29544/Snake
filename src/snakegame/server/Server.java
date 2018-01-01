@@ -51,13 +51,15 @@ public class Server {
             DataOutputStream out = new DataOutputStream(sout);
 
             String line = null;
+
             while(true) {
                 line = in.readUTF();
-                // ожидаем пока клиент пришлет строку текста.
-                System.out.println("Message: " + line);
-                out.writeUTF(line); // отсылаем клиенту обратно ту самую строку текста.
-                out.flush(); // заставляем поток закончить передачу данных.
-                System.out.println();
+                Message message = Message.parse(line);
+                events.add(message);
+                synchronized (this.world) {
+                    out.writeUTF(this.world.toString());
+                    out.flush();
+                }
             }
         } catch(Exception x) { x.printStackTrace(); }
     }
