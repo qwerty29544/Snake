@@ -26,6 +26,8 @@ public class Client {
         this.host = host;
     }
 
+
+
     public Client() {
         this(DEFAULT_PORT, DEFAULT_HOST);
     }
