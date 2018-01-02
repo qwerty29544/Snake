@@ -40,6 +40,12 @@ public class World {
 //
 //    }
 
+    public UUID generateSnake() {
+        Snake snake = snakeFactory.generateSnake();
+        snakes.add(snake);
+        return snake.getUuid();
+    }
+
     public void step() {
         ArrayList<Snake> predictions = new ArrayList<Snake>();
         for (Snake snake : snakes) {

@@ -4,10 +4,7 @@ import snakegame.structs.Snake;
 import snakegame.structs.World;
 
 import java.awt.event.KeyEvent;
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.InputStream;
-import java.io.OutputStream;
+import java.io.*;
 import java.net.InetSocketAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -26,14 +23,14 @@ public class Server {
     static String DEFAULT_HOST = "127.0.0.1";
     private Queue<Message> events;
 
-    Map<UUID, Snake> clients;
+//    Map<UUID, Snake> clients;
 
     public Server(int port, String host) {
         this.port = port;
         this.host = host;
         this.world = new World();
         this.events = new LinkedBlockingQueue<Message>();
-        this.clients = new ConcurrentHashMap<UUID, Snake>();
+//        this.clients = new ConcurrentHashMap<UUID, Snake>();
     }
 
     public Server() {
@@ -49,25 +46,53 @@ public class Server {
 
             Socket socket = ss.accept();
 
-            // Берем входной и выходной потоки сокета, теперь можем получать и отсылать данные клиенту.
-            InputStream sin = socket.getInputStream();
-            OutputStream sout = socket.getOutputStream();
+            new Thread(new ClientHandler(socket)).run();
+        } catch(Exception x) { System.out.println("¯\\_(ツ)_/¯"); }
+    }
 
-            // Конвертируем потоки в другой тип, чтоб легче обрабатывать текстовые сообщения.
-            DataInputStream in = new DataInputStream(sin);
-            DataOutputStream out = new DataOutputStream(sout);
+    public static void main(String[] args) {
+        new Server().run();
+    }
 
+    public class ClientHandler implements Runnable {
+        private DataInputStream in;
+        private DataOutputStream out;
+
+        public ClientHandler(Socket socket) {
+            try {
+                this.in = new DataInputStream(socket.getInputStream());
+                this.out = new DataOutputStream(socket.getOutputStream());
+            } catch (IOException e) {
+                System.out.println("¯\\_(ツ)_/¯");
+            }
+        }
+
+        @Override
+        public void run() {
             String line = null;
-
-            while(true) {
-                line = in.readUTF();
-                Message message = Message.parse(line);
-                events.add(message);
-                synchronized (this.world) {
-                    out.writeUTF(this.world.toString());
+            synchronized (world){
+                UUID uuid = world.generateSnake();
+                try {
+                    out.writeUTF(uuid.toString());
                     out.flush();
+                } catch (IOException e) {
+                    System.out.println("¯\\_(ツ)_/¯");;
                 }
             }
-        } catch(Exception x) { x.printStackTrace(); }
+            try {
+                while (true) {
+                    line = in.readUTF();
+                    Message message = Message.parse(line);
+                    events.add(message);
+                    synchronized (world) {
+                        out.writeUTF(world.toString());
+                        out.flush();
+                    }
+                }
+            }
+            catch(IOException e) {
+                System.out.println("¯\\_(ツ)_/¯");
+            }
+        }
     }
 }
