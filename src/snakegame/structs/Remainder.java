@@ -19,7 +19,7 @@ public class Remainder implements Cloneable {
     }
 
     public void setValue(int value) {
-        this.value = value % limit;
+        this.value = Math.floorMod(value, limit);
     }
 
     public Remainder copy() {
@@ -27,11 +27,29 @@ public class Remainder implements Cloneable {
     }
 
     public Remainder copy(int value) {
-        return new Remainder(this.limit, value % this.limit);
+        return new Remainder(this.limit, Math.floorMod(value, this.limit));
     }
 
     public Remainder copyAdd(int addition) {
-        return new Remainder(this.limit, (this.value + addition) % this.limit);
+        return new Remainder(this.limit, Math.floorMod(this.value + addition, this.limit));
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Remainder remainder = (Remainder) o;
+
+        if (limit != remainder.limit) return false;
+        return value == remainder.value;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = limit;
+        result = 31 * result + value;
+        return result;
     }
 
     public String toString(){

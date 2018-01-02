@@ -48,7 +48,7 @@ public class Snake {
         return direction;
     }
 
-    private void setDirection(Direction direction) {
+    public void setDirection(Direction direction) {
         this.direction = direction;
     }
 
@@ -75,16 +75,16 @@ public class Snake {
         Point oldHead = points.getFirst();
         switch (direction){
             case up:
-                newHead = new SnakePoint(oldHead.getX(), oldHead.getY().copyAdd(1));
+                newHead = new SnakePoint(oldHead.getX(), oldHead.getY().copyAdd(-1));
                 break;
             case down:
                 newHead = new SnakePoint(oldHead.getX(), oldHead.getY().copyAdd(1));
                 break;
             case right:
-                newHead = new SnakePoint(oldHead.getX(), oldHead.getY().copyAdd(1));
+                newHead = new SnakePoint(oldHead.getX().copyAdd(1), oldHead.getY());
                 break;
             case left:
-                newHead = new SnakePoint(oldHead.getX(), oldHead.getY().copyAdd(1));
+                newHead = new SnakePoint(oldHead.getX().copyAdd(-1), oldHead.getY());
                 break;
             default:
                 newHead = oldHead;

@@ -13,8 +13,8 @@ public class ApplePoint extends Point {
     @Override
     public void draw(Graphics2D g) {
         g.setColor(Color.red);
-        g.fillArc(x.getValue(), y.getValue(), step_size, step_size, 0, 360);
+        g.fillArc(x.getValue() * step_size, y.getValue() * step_size, step_size, step_size, 0, 360);
         g.setColor(Color.red);
-        g.drawArc(x.getValue(), y.getValue(), step_size,step_size, 0, 360);
+        g.drawArc(x.getValue() * step_size, y.getValue() * step_size, step_size, step_size, 0, 360);
     }
 }

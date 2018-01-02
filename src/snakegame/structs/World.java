@@ -1,14 +1,16 @@
 package snakegame.structs;
 
+import snakegame.server.Message;
+
 import java.awt.*;
-import java.util.ArrayList;
+import java.util.*;
 import java.util.List;
-import java.util.Random;
-import java.util.UUID;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Predicate;
 
 public class World {
     SnakeFactory snakeFactory = new SnakeFactory();
+    AppleFactory appleFactory = new AppleFactory();
     List<Apple> apples;
     //TO DO HashMap
     List<Snake> snakes;
@@ -19,6 +21,14 @@ public class World {
     public World(List<Apple> apples, List<Snake> snakes) {
         this.apples = apples;
         this.snakes = snakes;
+    }
+
+    public void processMessage(Message message) {
+        for(Snake snake: snakes) {
+            if(snake.uuid.equals(message.getUuid())) {
+                snake.setDirection(snake.getDirection().newDirection(message.getKeyCode()));
+            }
+        }
     }
 
     public World() {
@@ -40,6 +50,10 @@ public class World {
 //
 //    }
 
+    public void generateApple() {
+        apples.add(appleFactory.generateApple());
+    }
+
     public UUID generateSnake() {
         Snake snake = snakeFactory.generateSnake();
         snakes.add(snake);
@@ -54,22 +68,24 @@ public class World {
         for (Snake prediction: predictions){
             for(Snake otherPrediction:predictions){
                 if (prediction.uuid != otherPrediction.uuid && otherPrediction.contains(prediction.getHead())){
-                    snakes.removeIf(snake -> snake.uuid == otherPrediction.uuid);
+                    snakes.removeIf(snake -> snake.uuid.equals(otherPrediction.uuid));
                 }
             }
         }
         predictions.removeIf(prediction -> {
             for(Snake snake: snakes) {
-                if (snake.uuid == prediction.uuid)
+                if (snake.uuid.equals(prediction.uuid))
                     return false;
             }
             return true;
         });
         for(Snake prediction: predictions) {
             for(Snake snake: snakes) {
-                if (snake.uuid == prediction.uuid)
-                    if (apples.removeIf(apple -> prediction.contains(apple.getPoint())))
+                if (snake.uuid.equals(prediction.uuid))
+                    if (apples.removeIf(apple -> prediction.contains(apple.getPoint()))) {
                         snake.moveHead();
+                        generateApple();
+                    }
                     else
                         snake.step();
             }

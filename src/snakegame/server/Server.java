@@ -8,9 +8,8 @@ import java.io.*;
 import java.net.InetSocketAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.Map;
-import java.util.Queue;
-import java.util.UUID;
+import java.net.SocketException;
+import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.LinkedBlockingQueue;
 
@@ -22,6 +21,7 @@ public class Server {
     static int DEFAULT_PORT = 1337;
     static String DEFAULT_HOST = "127.0.0.1";
     private Queue<Message> events;
+    private Set<ClientUpdater> updaters;
 
 //    Map<UUID, Snake> clients;
 
@@ -29,7 +29,12 @@ public class Server {
         this.port = port;
         this.host = host;
         this.world = new World();
+        for(int i = 0; i < 5; i++) {
+            world.generateApple();
+        }
+        world.generateApple();
         this.events = new LinkedBlockingQueue<Message>();
+        this.updaters = new HashSet<ClientUpdater>();
 //        this.clients = new ConcurrentHashMap<UUID, Snake>();
     }
 
@@ -37,17 +42,32 @@ public class Server {
         this(DEFAULT_PORT, DEFAULT_HOST);
     }
 
-    public Server(int port) { this(port, DEFAULT_HOST); };
-    public Server(String host) { this(DEFAULT_PORT, host); };
+    public Server(int port) {
+        this(port, DEFAULT_HOST);
+    }
+
+    ;
+
+    public Server(String host) {
+        this(DEFAULT_PORT, host);
+    }
+
+    ;
 
     public void run() {
         try {
             ServerSocket ss = new ServerSocket(this.port);
-
-            Socket socket = ss.accept();
-
-            new Thread(new ClientHandler(socket)).run();
-        } catch(Exception x) { System.out.println("¯\\_(ツ)_/¯"); }
+            new Thread(new WorldUpdater()).start();
+            while(true) {
+                Socket socket = ss.accept();
+                new Thread(new ClientHandler(socket)).start();
+                synchronized (updaters){
+                    updaters.add(new ClientUpdater(socket));
+                }
+            }
+        } catch (Exception x) {
+            x.printStackTrace();
+        }
     }
 
     public static void main(String[] args) {
@@ -63,36 +83,89 @@ public class Server {
                 this.in = new DataInputStream(socket.getInputStream());
                 this.out = new DataOutputStream(socket.getOutputStream());
             } catch (IOException e) {
-                System.out.println("¯\\_(ツ)_/¯");
+                e.printStackTrace();
             }
         }
 
         @Override
         public void run() {
             String line = null;
-            synchronized (world){
+            synchronized (world) {
                 UUID uuid = world.generateSnake();
                 try {
                     out.writeUTF(uuid.toString());
                     out.flush();
                 } catch (IOException e) {
-                    System.out.println("¯\\_(ツ)_/¯");;
+                    e.printStackTrace();
                 }
             }
             try {
                 while (true) {
                     line = in.readUTF();
                     Message message = Message.parse(line);
-                    events.add(message);
-                    synchronized (world) {
-                        out.writeUTF(world.toString());
-                        out.flush();
+                    synchronized (events) {
+                        events.add(message);
                     }
                 }
-            }
-            catch(IOException e) {
-                System.out.println("¯\\_(ツ)_/¯");
+            } catch (IOException e) {
+                e.printStackTrace();
             }
         }
     }
+
+    public class ClientUpdater {
+        private DataOutputStream out;
+
+        public ClientUpdater(Socket socket) {
+            try {
+                this.out = new DataOutputStream(socket.getOutputStream());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+        public void publish() throws IOException {
+            try {
+                out.writeUTF(world.toString());
+                out.flush();
+            } catch (SocketException e) {
+                updaters.remove(this);
+            }
+        }
+    }
+
+    public class WorldUpdater implements Runnable {
+        @Override
+        public void run() {
+//            TODO: magic number
+            while (true) {
+                try {
+                    Thread.sleep(200);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                synchronized (world) {
+                    processMessages();
+                    world.step();
+                    for(ClientUpdater updater : updaters) {
+                        try {
+                            updater.publish();
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+            }
+        }
+
+        public void processMessages() {
+            synchronized (events) {
+                Message message = events.poll();
+                while (message != null) {
+                    world.processMessage(message);
+                    message = events.poll();
+                }
+            }
+        }
+    };
 }

@@ -24,7 +24,7 @@ public class Message {
     public static Message parse(String string) throws IllegalArgumentException {
         String[] tokens = string.split(" ");
         if (tokens.length == 2)
-            return new Message(Integer.parseInt(tokens[0]), UUID.fromString(tokens[1]));
+            return new Message(Integer.parseInt(tokens[1]), UUID.fromString(tokens[0]));
         else
             throw new IllegalReceiveException("poshel nahuy so svoim futbolom");
     }

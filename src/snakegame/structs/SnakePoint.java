@@ -13,8 +13,8 @@ public class SnakePoint extends Point {
     @Override
     public void draw(Graphics2D g) {
         g.setColor(color);
-        g.fillArc(x.getValue(), y.getValue(), step_size, step_size, 0, 360);
+        g.fillArc(x.getValue() * step_size, y.getValue() * step_size, step_size, step_size, 0, 360);
         g.setColor(color);
-        g.drawArc(x.getValue(), y.getValue(), step_size, step_size, 0, 360);
+        g.drawArc(x.getValue() * step_size, y.getValue() * step_size, step_size, step_size, 0, 360);
     }
 }
