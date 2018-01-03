@@ -71,6 +71,9 @@ public class World {
                     snakes.removeIf(snake -> snake.uuid.equals(otherPrediction.uuid));
                 }
             }
+            if (prediction.ateSelf()) {
+                snakes.removeIf(snake -> snake.uuid.equals(prediction.uuid));
+            }
         }
         predictions.removeIf(prediction -> {
             for(Snake snake: snakes) {

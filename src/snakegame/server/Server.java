@@ -20,7 +20,7 @@ public class Server {
 
     static int DEFAULT_PORT = 1337;
     static String DEFAULT_HOST = "127.0.0.1";
-    private Queue<Message> events;
+    private Map<UUID, Message> events;
     private Set<ClientUpdater> updaters;
 
 //    Map<UUID, Snake> clients;
@@ -33,7 +33,7 @@ public class Server {
             world.generateApple();
         }
         world.generateApple();
-        this.events = new LinkedBlockingQueue<Message>();
+        this.events = new ConcurrentHashMap<UUID, Message>();
         this.updaters = new HashSet<ClientUpdater>();
 //        this.clients = new ConcurrentHashMap<UUID, Snake>();
     }
@@ -101,10 +101,11 @@ public class Server {
             }
             try {
                 while (true) {
+//                    TODO catch eof exception and remove snakes
                     line = in.readUTF();
                     Message message = Message.parse(line);
                     synchronized (events) {
-                        events.add(message);
+                        events.put(message.getUuid(), message);
                     }
                 }
             } catch (IOException e) {
@@ -160,11 +161,9 @@ public class Server {
 
         public void processMessages() {
             synchronized (events) {
-                Message message = events.poll();
-                while (message != null) {
+                for (Message message: events.values())
                     world.processMessage(message);
-                    message = events.poll();
-                }
+                events.clear();
             }
         }
     };

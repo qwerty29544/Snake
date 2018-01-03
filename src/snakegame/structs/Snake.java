@@ -65,6 +65,18 @@ public class Snake {
         return false;
     }
 
+    public boolean ateSelf() {
+        if (points.isEmpty())
+            return false;
+        Iterator<Point> pointIterator = points.iterator();
+        Point head = pointIterator.next();
+        while(pointIterator.hasNext()) {
+            if (head.equals(pointIterator.next()))
+                return true;
+        }
+        return false;
+    }
+
     void step() {
         moveHead();
         dropTail();
