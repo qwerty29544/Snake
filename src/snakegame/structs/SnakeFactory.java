@@ -6,7 +6,6 @@ import java.util.List;
 import java.util.Random;
 
 public class SnakeFactory{
-
     List<Point> points;
     int maxX;
     int maxY;

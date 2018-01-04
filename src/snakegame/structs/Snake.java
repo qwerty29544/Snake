@@ -152,16 +152,4 @@ public class Snake {
 
     private LinkedList<Point> points;
     private Direction direction;
-
-    public static void main(String[] args) {
-        List<Apple> apples = new ArrayList<Apple>();
-        List<Snake> snakes = new ArrayList<Snake>();
-        Apple apple = new Apple(new ApplePoint(new Remainder(22), new Remainder(33)));
-        Snake snake = new SnakeFactory().generateSnake();
-        apples.add(apple);
-        snakes.add(snake);
-        World world = new World(apples, snakes);
-        System.out.println(world.toString());
-        System.out.println(World.parse(world.toString()));
-    }
 }

@@ -20,16 +20,18 @@ public class Server {
 
     static int DEFAULT_PORT = 1337;
     static String DEFAULT_HOST = "127.0.0.1";
+    static int UPDATE_INTERVAL = 200;
+    static int NUM_APPLES = 5;
     private Map<UUID, Message> events;
     private Set<ClientUpdater> updaters;
-
+    private Set<Socket> sockets;
 //    Map<UUID, Snake> clients;
 
     public Server(int port, String host) {
         this.port = port;
         this.host = host;
         this.world = new World();
-        for(int i = 0; i < 5; i++) {
+        for(int i = 0; i < NUM_APPLES; i++) {
             world.generateApple();
         }
         world.generateApple();
@@ -77,9 +79,11 @@ public class Server {
     public class ClientHandler implements Runnable {
         private DataInputStream in;
         private DataOutputStream out;
+        private Socket socket;
 
         public ClientHandler(Socket socket) {
             try {
+                this.socket = socket;
                 this.in = new DataInputStream(socket.getInputStream());
                 this.out = new DataOutputStream(socket.getOutputStream());
             } catch (IOException e) {
@@ -111,6 +115,16 @@ public class Server {
             } catch (IOException e) {
                 e.printStackTrace();
             }
+            finally {
+                try {
+                    in.close();
+                    out.close();
+                    socket.close();
+                }
+                catch (IOException e) {
+//                    e.printStackTrace();
+                }
+            }
         }
     }
 
@@ -141,7 +155,7 @@ public class Server {
 //            TODO: magic number
             while (true) {
                 try {
-                    Thread.sleep(200);
+                    Thread.sleep(UPDATE_INTERVAL);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
