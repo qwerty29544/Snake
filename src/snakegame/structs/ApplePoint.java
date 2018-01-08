@@ -9,7 +9,6 @@ public class ApplePoint extends Point {
         super(x, y);
     }
 
-
     @Override
     public void draw(Graphics2D g) {
         g.setColor(Color.red);

@@ -31,7 +31,6 @@ public class AppleFactory {
     }
 
     public Apple generateApple(){
-//        ApplePoint point = points.get(random.nextInt(points.size()));
         ApplePoint point = new ApplePoint(new Remainder(random.nextInt(maxX)),new Remainder(random.nextInt(maxY)));
         return new Apple(point);
     }

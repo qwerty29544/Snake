@@ -12,11 +12,7 @@ public class World {
     SnakeFactory snakeFactory = new SnakeFactory();
     AppleFactory appleFactory = new AppleFactory();
     List<Apple> apples;
-    //TO DO HashMap
     List<Snake> snakes;
-
-
-    //snakes.add(snakeFactory.generateSnake());
 
     public World(List<Apple> apples, List<Snake> snakes) {
         this.apples = apples;
@@ -45,10 +41,6 @@ public class World {
             apple.draw(g);
         }
     }
-
-//    public static World parse(String message) {
-//
-//    }
 
     public void generateApple() {
         apples.add(appleFactory.generateApple());
@@ -123,8 +115,4 @@ public class World {
         }
         return new World(apples, snakes);
     }
-
-    //  Добавить логику поедания змейками змеек
-
-        //        Добавить логику поедания яблок
 }

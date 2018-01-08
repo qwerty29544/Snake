@@ -36,5 +36,4 @@ public class Apple {
         }
         throw new IllegalArgumentException("Illegal format for Apple");
     }
-
 }

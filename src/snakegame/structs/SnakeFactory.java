@@ -32,7 +32,6 @@ public class SnakeFactory{
     public Snake generateSnake(){
         Direction direction = Direction.right;
         LinkedList<Point> snakePoints = new LinkedList<Point>();
-//        snakePoints.add(points.get(random.nextInt(points.size())));
         snakePoints.add(new SnakePoint(new Remainder(random.nextInt(maxX)),new Remainder(random.nextInt(maxY))));
         Snake snake = new Snake(snakePoints,direction);
         snake.moveHead();

@@ -121,7 +121,7 @@ public class Snake {
             direction = Direction.valueOf(tokens[j]);
             return new Snake(uuid, points, direction);
         }
-        else throw new IllegalArgumentException("huynya snake message");
+        else throw new IllegalArgumentException("IllegalArgumentException Snake parse");
     }
 
     private void dropTail(){

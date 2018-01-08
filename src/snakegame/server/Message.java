@@ -26,7 +26,7 @@ public class Message {
         if (tokens.length == 2)
             return new Message(Integer.parseInt(tokens[1]), UUID.fromString(tokens[0]));
         else
-            throw new IllegalReceiveException("poshel nahuy so svoim futbolom");
+            throw new IllegalReceiveException("IllegalReceiveException Message parse");
     }
 
     @Override

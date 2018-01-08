@@ -19,47 +19,50 @@ import java.util.concurrent.LinkedBlockingQueue;
 import static snakegame.Constants.BORDER_LENGHT;
 import static snakegame.Constants.BORDER_WIDTH;
 
-//public class Client {
+//Класс клиента, который настраивает соединение с сервером с помощью Socket
+//В классе реализуется отрисовка мира, считывание клавиш, отправка сигнала на сервер и принятие ответного сигнала
 public class Client extends JFrame {
-    private int port;
-    private String host;
-    private UUID uuid;
-    private World world = new World();
+    private int port;//Переменная, отведённая для порта
+    private String host;//Переменная, отведённая для хоста
+    private UUID uuid;//Перменная, отведённая для уникального номера пользователя
+    private World world = new World();//Объявление переменной класса мир
 
     static int DEFAULT_PORT = 1337;
     static String DEFAULT_HOST = "127.0.0.1";
     static String TITLE = "SSSsssssnek";
 
+    //конструктор клиента
     public Client(int port, String host) {
-        super(TITLE);
+        super(TITLE);//Заголовок
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//Возможность выхода по кнопке выхода в верней части окна
         setSize(BORDER_WIDTH,BORDER_LENGHT);//Установка размеров окна
-//        setUndecorated(true);
-        setResizable(false);
-        this.port = port;
-        this.host = host;
+        setResizable(false);//Установка невозможности изменять размеры окна
+        this.port = port;//Присваивание переменной класса установленного порта
+        this.host = host;//Присваивание переменной класса установленного хоста
     }
 
+    //метод реализующий считывание данных с клавиатуры
     public static class ClientKeyListener implements KeyListener {
-        private UUID uuid;
-        private DataOutputStream dataOutputStream;
+        private UUID uuid;//Переменная уникального номера пользователя
+        private DataOutputStream dataOutputStream;//Поток вывода данных
 
+        //Конструктор класса считывания клавиш с клавиатуры
         public ClientKeyListener(UUID uuid, DataOutputStream dataOutputStream) {
             this.uuid = uuid;
             this.dataOutputStream = dataOutputStream;
         }
 
         @Override
-        public void keyTyped(KeyEvent e) { };//обработчик события нажатия символа юникод на клавиатуре (выход из программы с кодом 0)
+        public void keyTyped(KeyEvent e) { };
 
         @Override
         public void keyPressed(KeyEvent e) {
-            Message message = new Message(e.getKeyCode(), uuid);
+            Message message = new Message(e.getKeyCode(), uuid);//Создание сообщения клиента для отправки его на сервер
             try {
-                dataOutputStream.writeUTF(message.toString());
+                dataOutputStream.writeUTF(message.toString());//Отправка из класса данных, введённых с клавиатуры
             } catch (IOException e1) {
             }
-        }//обработчки нажатия любой клавиши на клавиатуре (отправляемся на обработчик события нажатия клавиши)
+        }
 
         @Override
         public void keyReleased(KeyEvent e) { };
@@ -67,36 +70,27 @@ public class Client extends JFrame {
 
     public Client() {
         this(DEFAULT_PORT, DEFAULT_HOST);
-    }
+    }//конструктор по умолчанию
 
-    public Client(int port) { this(port, DEFAULT_HOST); };
-    public Client(String host) { this(DEFAULT_PORT, host); };
+    public Client(int port) { this(port, DEFAULT_HOST); }//конструктор по умолчанию
+
+    public Client(String host) { this(DEFAULT_PORT, host); }//конструктор по умолчанию
 
     public void run() throws IOException {
         this.setVisible(true);
         Socket socket = new Socket(this.host, this.port);
-        // Берем входной и выходной потоки сокета, теперь можем получать и отсылать данные клиентом.
         InputStream sin = socket.getInputStream();
         OutputStream sout = socket.getOutputStream();
         DataInputStream in = new DataInputStream(sin);
         DataOutputStream out = new DataOutputStream(sout);
-
-
-        uuid = UUID.fromString(in.readUTF()); // ждем пока сервер отошлет строку текста.
+        uuid = UUID.fromString(in.readUTF());
         this.addKeyListener(new ClientKeyListener(uuid, out));
-
-
         String line = null;
-
         while (true) {
-//            Message message = new Message(this.uuid, keyCode);
-//            out.writeUTF(message.toString); // отсылаем введенную строку текста серверу.
-//            out.flush(); // заставляем поток закончить передачу данных.
             line = in.readUTF(); // ждем пока сервер отошлет строку текста.
             world = World.parse(line);
             repaint();
         }
-
     }
 
     public static void main(String[] args) {
@@ -110,7 +104,6 @@ public class Client extends JFrame {
     public void paint(Graphics g)//
     {
         Graphics2D g2 = (Graphics2D) g.create();//создание экземлара класса работы с графикой
-        //g.setsetRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);'
         g2.setColor(Color.white);//выбор белого цвета рисования
         g2.fillRect(0, 0, getWidth(), getHeight());//заполнение всего поля белым цветом
         world.draw(g2);

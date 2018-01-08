@@ -25,7 +25,7 @@ public class Server {
     private Map<UUID, Message> events;
     private Set<ClientUpdater> updaters;
     private Set<Socket> sockets;
-//    Map<UUID, Snake> clients;
+
 
     public Server(int port, String host) {
         this.port = port;
@@ -37,7 +37,7 @@ public class Server {
         world.generateApple();
         this.events = new ConcurrentHashMap<UUID, Message>();
         this.updaters = new HashSet<ClientUpdater>();
-//        this.clients = new ConcurrentHashMap<UUID, Snake>();
+
     }
 
     public Server() {
