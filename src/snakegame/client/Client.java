@@ -28,7 +28,7 @@ public class Client extends JFrame {
     private World world = new World();//Объявление переменной класса мир
 
     static int DEFAULT_PORT = 1337;
-    static String DEFAULT_HOST = "127.0.0.1";
+    static String DEFAULT_HOST = "127.0.0.1";//указать новый интересующий порт сервера, на котором запущена серверная часть игры
     static String TITLE = "SSSsssssnek";
 
     //конструктор клиента
@@ -46,10 +46,10 @@ public class Client extends JFrame {
         private UUID uuid;//Переменная уникального номера пользователя
         private DataOutputStream dataOutputStream;//Поток вывода данных
 
-        //Конструктор класса считывания клавиш с клавиатуры
+        //Конструктор класса считывания клавиш с клавиатуры, привязка к выводимым клиентом данных уникального номера
         public ClientKeyListener(UUID uuid, DataOutputStream dataOutputStream) {
-            this.uuid = uuid;
-            this.dataOutputStream = dataOutputStream;
+            this.uuid = uuid;//уникальный идентификатор пользователя
+            this.dataOutputStream = dataOutputStream;//выводимые пользователем данные
         }
 
         @Override
@@ -76,23 +76,25 @@ public class Client extends JFrame {
 
     public Client(String host) { this(DEFAULT_PORT, host); }//конструктор по умолчанию
 
+    //запуск клиентской части программы (окно со змейкой)
     public void run() throws IOException {
-        this.setVisible(true);
-        Socket socket = new Socket(this.host, this.port);
-        InputStream sin = socket.getInputStream();
-        OutputStream sout = socket.getOutputStream();
+        this.setVisible(true);//видимое окно игры
+        Socket socket = new Socket(this.host, this.port);//создание сокета клиента, отправка сообщения на хост о создании соединения
+        InputStream sin = socket.getInputStream();//переменная потока ввода данных
+        OutputStream sout = socket.getOutputStream();//переменная потока выводимых из клиента данных
         DataInputStream in = new DataInputStream(sin);
         DataOutputStream out = new DataOutputStream(sout);
-        uuid = UUID.fromString(in.readUTF());
-        this.addKeyListener(new ClientKeyListener(uuid, out));
-        String line = null;
+        uuid = UUID.fromString(in.readUTF());//установка, считывание идентификатора при открытии сокета
+        this.addKeyListener(new ClientKeyListener(uuid, out));//запуск функции считывания клавиш с клавиатуры
+        String line = null;//начально положение строки данных
         while (true) {
             line = in.readUTF(); // ждем пока сервер отошлет строку текста.
-            world = World.parse(line);
+            world = World.parse(line);//однозначное декодирование данных о состоянии мира из строки line и присваивание этих данных локальной переменной World, отвечающей за отрисовку поля
             repaint();
         }
     }
 
+    //запуск клиента
     public static void main(String[] args) {
         try {
             new Client().run();
@@ -101,11 +103,12 @@ public class Client extends JFrame {
         }
     }
 
+    //функция отрисовки клиентского окна
     public void paint(Graphics g)//
     {
         Graphics2D g2 = (Graphics2D) g.create();//создание экземлара класса работы с графикой
         g2.setColor(Color.white);//выбор белого цвета рисования
         g2.fillRect(0, 0, getWidth(), getHeight());//заполнение всего поля белым цветом
-        world.draw(g2);
+        world.draw(g2);//рисовка мира
     }
 }

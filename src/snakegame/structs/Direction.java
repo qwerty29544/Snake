@@ -10,12 +10,14 @@ public enum Direction {
     down,
     left;
 
+    //метод класса нового направления по KeyEvent
     public Direction newDirection(KeyEvent event) {
-        return newDirection(event.getKeyCode());
+        return newDirection(event.getKeyCode());//добавление нового направления по ключу клавиши
     }
 
+    //новое ноправление по ключу клавиши
     public Direction newDirection(int keyCode){
-        switch (keyCode) {
+        switch (keyCode) {//переключатель по коду клавиши
             case KeyEvent.VK_RIGHT:
                 if (this != Direction.left) {
                     return Direction.right;
