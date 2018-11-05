@@ -1,0 +1,277 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classsnakegame_1_1structs_1_1_world" kind="class" language="Java" prot="public">
+    <compoundname>snakegame::structs::World</compoundname>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classsnakegame_1_1structs_1_1_world_1a3fa59c6d53de8f94726b6e9ce906e9d0" prot="package" static="no" mutable="no">
+        <type><ref refid="classsnakegame_1_1structs_1_1_snake_factory" kindref="compound">SnakeFactory</ref></type>
+        <definition>SnakeFactory snakegame.structs.World.snakeFactory</definition>
+        <argsstring></argsstring>
+        <name>snakeFactory</name>
+        <initializer>= new <ref refid="classsnakegame_1_1structs_1_1_snake_factory" kindref="compound">SnakeFactory</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/World.java" line="12" column="1" bodyfile="src/snakegame/structs/World.java" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsnakegame_1_1structs_1_1_world_1a9f55cf60c7b2e70374d47f7b8f2aaa0b" prot="package" static="no" mutable="no">
+        <type><ref refid="classsnakegame_1_1structs_1_1_apple_factory" kindref="compound">AppleFactory</ref></type>
+        <definition>AppleFactory snakegame.structs.World.appleFactory</definition>
+        <argsstring></argsstring>
+        <name>appleFactory</name>
+        <initializer>= new <ref refid="classsnakegame_1_1structs_1_1_apple_factory" kindref="compound">AppleFactory</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/World.java" line="13" column="1" bodyfile="src/snakegame/structs/World.java" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsnakegame_1_1structs_1_1_world_1ac091e94b64fb6991846fd23f278de108" prot="package" static="no" mutable="no">
+        <type>List&lt; <ref refid="classsnakegame_1_1structs_1_1_apple" kindref="compound">Apple</ref> &gt;</type>
+        <definition>List&lt;Apple&gt; snakegame.structs.World.apples</definition>
+        <argsstring></argsstring>
+        <name>apples</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/World.java" line="14" column="1" bodyfile="src/snakegame/structs/World.java" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsnakegame_1_1structs_1_1_world_1a5b5deec72f99011e20574b74092fbdd2" prot="package" static="no" mutable="no">
+        <type>List&lt; <ref refid="classsnakegame_1_1structs_1_1_snake" kindref="compound">Snake</ref> &gt;</type>
+        <definition>List&lt;Snake&gt; snakegame.structs.World.snakes</definition>
+        <argsstring></argsstring>
+        <name>snakes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/World.java" line="15" column="1" bodyfile="src/snakegame/structs/World.java" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_world_1a5ae70562a085bef9fe1f6c718fae1385" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>snakegame.structs.World.World</definition>
+        <argsstring>(List&lt; Apple &gt; apples, List&lt; Snake &gt; snakes)</argsstring>
+        <name>World</name>
+        <param>
+          <type>List&lt; <ref refid="classsnakegame_1_1structs_1_1_apple" kindref="compound">Apple</ref> &gt;</type>
+          <declname>apples</declname>
+        </param>
+        <param>
+          <type>List&lt; <ref refid="classsnakegame_1_1structs_1_1_snake" kindref="compound">Snake</ref> &gt;</type>
+          <declname>snakes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/World.java" line="18" column="1" bodyfile="src/snakegame/structs/World.java" bodystart="18" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_world_1aa60efdc485c049d8011fb6c50feead00" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void snakegame.structs.World.processMessage</definition>
+        <argsstring>(Message message)</argsstring>
+        <name>processMessage</name>
+        <param>
+          <type><ref refid="classsnakegame_1_1server_1_1_message" kindref="compound">Message</ref></type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/World.java" line="24" column="1" bodyfile="src/snakegame/structs/World.java" bodystart="24" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_world_1ae2e3d1b007bf6a7dc55fb38443719abb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>snakegame.structs.World.World</definition>
+        <argsstring>()</argsstring>
+        <name>World</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/World.java" line="33" column="1" bodyfile="src/snakegame/structs/World.java" bodystart="33" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_world_1aca40cde5e48ac321fdf87d207c2b07bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void snakegame.structs.World.draw</definition>
+        <argsstring>(Graphics2D g)</argsstring>
+        <name>draw</name>
+        <param>
+          <type>Graphics2D</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/World.java" line="39" column="1" bodyfile="src/snakegame/structs/World.java" bodystart="39" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_world_1a0ade5918df8724d3af19bea782932a96" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void snakegame.structs.World.generateApple</definition>
+        <argsstring>()</argsstring>
+        <name>generateApple</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/World.java" line="50" column="1" bodyfile="src/snakegame/structs/World.java" bodystart="50" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_world_1a64c7e69961c14046814619a7365f8630" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>UUID</type>
+        <definition>UUID snakegame.structs.World.generateSnake</definition>
+        <argsstring>()</argsstring>
+        <name>generateSnake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/World.java" line="55" column="1" bodyfile="src/snakegame/structs/World.java" bodystart="55" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_world_1a3da1e90d5d7e475e900171540123c9e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void snakegame.structs.World.step</definition>
+        <argsstring>()</argsstring>
+        <name>step</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/World.java" line="62" column="1" bodyfile="src/snakegame/structs/World.java" bodystart="62" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_world_1a4b6e33ad84c2ab6d5156acb1d32cdcff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String snakegame.structs.World.toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/World.java" line="99" column="1" bodyfile="src/snakegame/structs/World.java" bodystart="99" bodyend="110"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_world_1ab8c00c8a748680c55739b31c51d50af5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsnakegame_1_1structs_1_1_world" kindref="compound">World</ref></type>
+        <definition>static World snakegame.structs.World.parse</definition>
+        <argsstring>(String string)</argsstring>
+        <name>parse</name>
+        <param>
+          <type>String</type>
+          <declname>string</declname>
+        </param>
+        <exceptions> throws IllegalArgumentException</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/World.java" line="113" column="1" bodyfile="src/snakegame/structs/World.java" bodystart="113" bodyend="126"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="77">
+        <label>List&lt; snakegame.structs.Snake &gt;</label>
+      </node>
+      <node id="76">
+        <label>snakegame.structs.World</label>
+        <link refid="classsnakegame_1_1structs_1_1_world"/>
+        <childnode refid="77" relation="usage">
+          <edgelabel>snakes</edgelabel>
+        </childnode>
+        <childnode refid="78" relation="usage">
+          <edgelabel>appleFactory</edgelabel>
+        </childnode>
+        <childnode refid="81" relation="usage">
+          <edgelabel>apples</edgelabel>
+        </childnode>
+        <childnode refid="82" relation="usage">
+          <edgelabel>snakeFactory</edgelabel>
+        </childnode>
+      </node>
+      <node id="83">
+        <label>List&lt; snakegame.structs.Point &gt;</label>
+      </node>
+      <node id="80">
+        <label>Random</label>
+      </node>
+      <node id="82">
+        <label>snakegame.structs.SnakeFactory</label>
+        <link refid="classsnakegame_1_1structs_1_1_snake_factory"/>
+        <childnode refid="83" relation="usage">
+          <edgelabel>points</edgelabel>
+        </childnode>
+        <childnode refid="80" relation="usage">
+          <edgelabel>random</edgelabel>
+        </childnode>
+      </node>
+      <node id="79">
+        <label>List&lt; snakegame.structs.ApplePoint &gt;</label>
+      </node>
+      <node id="81">
+        <label>List&lt; snakegame.structs.Apple &gt;</label>
+      </node>
+      <node id="78">
+        <label>snakegame.structs.AppleFactory</label>
+        <link refid="classsnakegame_1_1structs_1_1_apple_factory"/>
+        <childnode refid="79" relation="usage">
+          <edgelabel>points</edgelabel>
+        </childnode>
+        <childnode refid="80" relation="usage">
+          <edgelabel>random</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/snakegame/structs/World.java" line="11" column="1" bodyfile="src/snakegame/structs/World.java" bodystart="11" bodyend="127"/>
+    <listofallmembers>
+      <member refid="classsnakegame_1_1structs_1_1_world_1a9f55cf60c7b2e70374d47f7b8f2aaa0b" prot="package" virt="non-virtual"><scope>snakegame::structs::World</scope><name>appleFactory</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_world_1ac091e94b64fb6991846fd23f278de108" prot="package" virt="non-virtual"><scope>snakegame::structs::World</scope><name>apples</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_world_1aca40cde5e48ac321fdf87d207c2b07bc" prot="public" virt="non-virtual"><scope>snakegame::structs::World</scope><name>draw</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_world_1a0ade5918df8724d3af19bea782932a96" prot="public" virt="non-virtual"><scope>snakegame::structs::World</scope><name>generateApple</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_world_1a64c7e69961c14046814619a7365f8630" prot="public" virt="non-virtual"><scope>snakegame::structs::World</scope><name>generateSnake</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_world_1ab8c00c8a748680c55739b31c51d50af5" prot="public" virt="non-virtual"><scope>snakegame::structs::World</scope><name>parse</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_world_1aa60efdc485c049d8011fb6c50feead00" prot="public" virt="non-virtual"><scope>snakegame::structs::World</scope><name>processMessage</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_world_1a3fa59c6d53de8f94726b6e9ce906e9d0" prot="package" virt="non-virtual"><scope>snakegame::structs::World</scope><name>snakeFactory</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_world_1a5b5deec72f99011e20574b74092fbdd2" prot="package" virt="non-virtual"><scope>snakegame::structs::World</scope><name>snakes</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_world_1a3da1e90d5d7e475e900171540123c9e3" prot="public" virt="non-virtual"><scope>snakegame::structs::World</scope><name>step</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_world_1a4b6e33ad84c2ab6d5156acb1d32cdcff" prot="public" virt="non-virtual"><scope>snakegame::structs::World</scope><name>toString</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_world_1a5ae70562a085bef9fe1f6c718fae1385" prot="public" virt="non-virtual"><scope>snakegame::structs::World</scope><name>World</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_world_1ae2e3d1b007bf6a7dc55fb38443719abb" prot="public" virt="non-virtual"><scope>snakegame::structs::World</scope><name>World</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

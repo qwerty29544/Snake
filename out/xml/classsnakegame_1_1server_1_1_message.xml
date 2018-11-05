@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classsnakegame_1_1server_1_1_message" kind="class" language="Java" prot="public">
+    <compoundname>snakegame::server::Message</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsnakegame_1_1server_1_1_message_1ababb4242b329292ad15db7d16fd40b38" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int snakegame.server.Message.keyCode</definition>
+        <argsstring></argsstring>
+        <name>keyCode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/server/Message.java" line="16" column="1" bodyfile="src/snakegame/server/Message.java" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsnakegame_1_1server_1_1_message_1af2e2a5da2ba5dd9019390f6e7143499d" prot="private" static="no" mutable="no">
+        <type>UUID</type>
+        <definition>UUID snakegame.server.Message.uuid</definition>
+        <argsstring></argsstring>
+        <name>uuid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/server/Message.java" line="17" column="1" bodyfile="src/snakegame/server/Message.java" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsnakegame_1_1server_1_1_message_1ab530cae742ab3546af0531af6decfb4d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int snakegame.server.Message.getKeyCode</definition>
+        <argsstring>()</argsstring>
+        <name>getKeyCode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/server/Message.java" line="8" column="1" bodyfile="src/snakegame/server/Message.java" bodystart="8" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1server_1_1_message_1a1813db6854615d0d545e7e7a24f73fe4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>UUID</type>
+        <definition>UUID snakegame.server.Message.getUuid</definition>
+        <argsstring>()</argsstring>
+        <name>getUuid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/server/Message.java" line="12" column="1" bodyfile="src/snakegame/server/Message.java" bodystart="12" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1server_1_1_message_1a785c5537fe6e83fbc944dc86cc130db4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>snakegame.server.Message.Message</definition>
+        <argsstring>(int keyCode, UUID uuid)</argsstring>
+        <name>Message</name>
+        <param>
+          <type>int</type>
+          <declname>keyCode</declname>
+        </param>
+        <param>
+          <type>UUID</type>
+          <declname>uuid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/server/Message.java" line="20" column="1" bodyfile="src/snakegame/server/Message.java" bodystart="20" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1server_1_1_message_1a9e38b76d6815d73d7c14a28e8640b1c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String snakegame.server.Message.toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/server/Message.java" line="35" column="1" bodyfile="src/snakegame/server/Message.java" bodystart="35" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classsnakegame_1_1server_1_1_message_1a18e375c0d7b140c6b4d141b870542a4a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsnakegame_1_1server_1_1_message" kindref="compound">Message</ref></type>
+        <definition>static Message snakegame.server.Message.parse</definition>
+        <argsstring>(String string)</argsstring>
+        <name>parse</name>
+        <param>
+          <type>String</type>
+          <declname>string</declname>
+        </param>
+        <exceptions> throws IllegalArgumentException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/server/Message.java" line="26" column="1" bodyfile="src/snakegame/server/Message.java" bodystart="26" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/snakegame/server/Message.java" line="7" column="1" bodyfile="src/snakegame/server/Message.java" bodystart="7" bodyend="38"/>
+    <listofallmembers>
+      <member refid="classsnakegame_1_1server_1_1_message_1ab530cae742ab3546af0531af6decfb4d" prot="public" virt="non-virtual"><scope>snakegame::server::Message</scope><name>getKeyCode</name></member>
+      <member refid="classsnakegame_1_1server_1_1_message_1a1813db6854615d0d545e7e7a24f73fe4" prot="public" virt="non-virtual"><scope>snakegame::server::Message</scope><name>getUuid</name></member>
+      <member refid="classsnakegame_1_1server_1_1_message_1ababb4242b329292ad15db7d16fd40b38" prot="private" virt="non-virtual"><scope>snakegame::server::Message</scope><name>keyCode</name></member>
+      <member refid="classsnakegame_1_1server_1_1_message_1a785c5537fe6e83fbc944dc86cc130db4" prot="public" virt="non-virtual"><scope>snakegame::server::Message</scope><name>Message</name></member>
+      <member refid="classsnakegame_1_1server_1_1_message_1a18e375c0d7b140c6b4d141b870542a4a" prot="public" virt="non-virtual"><scope>snakegame::server::Message</scope><name>parse</name></member>
+      <member refid="classsnakegame_1_1server_1_1_message_1a9e38b76d6815d73d7c14a28e8640b1c3" prot="public" virt="non-virtual"><scope>snakegame::server::Message</scope><name>toString</name></member>
+      <member refid="classsnakegame_1_1server_1_1_message_1af2e2a5da2ba5dd9019390f6e7143499d" prot="private" virt="non-virtual"><scope>snakegame::server::Message</scope><name>uuid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

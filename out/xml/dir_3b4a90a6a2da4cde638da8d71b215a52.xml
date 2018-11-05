@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_3b4a90a6a2da4cde638da8d71b215a52" kind="dir">
+    <compoundname>src/snakegame</compoundname>
+    <innerdir refid="dir_b335ed0d1c40aee8bacc0f13520d421b">src/snakegame/client</innerdir>
+    <innerdir refid="dir_2c0aa1481771a70af08e302abef785ba">src/snakegame/server</innerdir>
+    <innerdir refid="dir_b146992f7754a0e236e1e66a48193090">src/snakegame/structs</innerdir>
+    <innerfile refid="apple_8java">apple.java</innerfile>
+    <innerfile refid="_constants_8java">Constants.java</innerfile>
+    <innerfile refid="_game_8java">Game.java</innerfile>
+    <innerfile refid="_main_window_8java">MainWindow.java</innerfile>
+    <innerfile refid="snake_8java">snake.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/snakegame/"/>
+  </compounddef>
+</doxygen>

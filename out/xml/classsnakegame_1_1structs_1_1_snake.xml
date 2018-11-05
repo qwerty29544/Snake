@@ -1,0 +1,376 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classsnakegame_1_1structs_1_1_snake" kind="class" language="Java" prot="public">
+    <compoundname>snakegame::structs::Snake</compoundname>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classsnakegame_1_1structs_1_1_snake_1a503a86da12d48c66ea74e59e515796be" prot="package" static="no" mutable="no">
+        <type>UUID</type>
+        <definition>UUID snakegame.structs.Snake.uuid</definition>
+        <argsstring></argsstring>
+        <name>uuid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/Snake.java" line="12" column="1" bodyfile="src/snakegame/structs/Snake.java" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsnakegame_1_1structs_1_1_snake_1abcda86569cd4086482cf0d887c7b9664" prot="private" static="no" mutable="no">
+        <type>LinkedList&lt; <ref refid="classsnakegame_1_1structs_1_1_point" kindref="compound">Point</ref> &gt;</type>
+        <definition>LinkedList&lt;Point&gt; snakegame.structs.Snake.points</definition>
+        <argsstring></argsstring>
+        <name>points</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/Snake.java" line="164" column="1" bodyfile="src/snakegame/structs/Snake.java" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsnakegame_1_1structs_1_1_snake_1a3527462244b0d2edd57ce56ce327ae4d" prot="private" static="no" mutable="no">
+        <type><ref refid="enumsnakegame_1_1structs_1_1_direction" kindref="compound">Direction</ref></type>
+        <definition>Direction snakegame.structs.Snake.direction</definition>
+        <argsstring></argsstring>
+        <name>direction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/Snake.java" line="165" column="1" bodyfile="src/snakegame/structs/Snake.java" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_snake_1ac17bff959740ffec977a37b6ed905a0c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>UUID</type>
+        <definition>UUID snakegame.structs.Snake.getUuid</definition>
+        <argsstring>()</argsstring>
+        <name>getUuid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/Snake.java" line="8" column="1" bodyfile="src/snakegame/structs/Snake.java" bodystart="8" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_snake_1a1201fceabdd51b2cbb3fdd69f151fec9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classsnakegame_1_1structs_1_1_point" kindref="compound">Point</ref> &gt;</type>
+        <definition>List&lt;Point&gt; snakegame.structs.Snake.getPoints</definition>
+        <argsstring>()</argsstring>
+        <name>getPoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/Snake.java" line="14" column="1" bodyfile="src/snakegame/structs/Snake.java" bodystart="14" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_snake_1ae76efb0ea42951d99b3f3e3134622120" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>snakegame.structs.Snake.Snake</definition>
+        <argsstring>(LinkedList&lt; Point &gt; points, Direction direction)</argsstring>
+        <name>Snake</name>
+        <param>
+          <type>LinkedList&lt; <ref refid="classsnakegame_1_1structs_1_1_point" kindref="compound">Point</ref> &gt;</type>
+          <declname>points</declname>
+        </param>
+        <param>
+          <type><ref refid="enumsnakegame_1_1structs_1_1_direction" kindref="compound">Direction</ref></type>
+          <declname>direction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/Snake.java" line="23" column="1" bodyfile="src/snakegame/structs/Snake.java" bodystart="23" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_snake_1afae60310456b2ff1474879d2c80d75b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>snakegame.structs.Snake.Snake</definition>
+        <argsstring>(UUID uuid, LinkedList&lt; Point &gt; points, Direction direction)</argsstring>
+        <name>Snake</name>
+        <param>
+          <type>UUID</type>
+          <declname>uuid</declname>
+        </param>
+        <param>
+          <type>LinkedList&lt; <ref refid="classsnakegame_1_1structs_1_1_point" kindref="compound">Point</ref> &gt;</type>
+          <declname>points</declname>
+        </param>
+        <param>
+          <type><ref refid="enumsnakegame_1_1structs_1_1_direction" kindref="compound">Direction</ref></type>
+          <declname>direction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/Snake.java" line="30" column="1" bodyfile="src/snakegame/structs/Snake.java" bodystart="30" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_snake_1a4d2bf8212dfe91b17aed31f44203f37f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>snakegame.structs.Snake.Snake</definition>
+        <argsstring>(Snake snake)</argsstring>
+        <name>Snake</name>
+        <param>
+          <type><ref refid="classsnakegame_1_1structs_1_1_snake" kindref="compound">Snake</ref></type>
+          <declname>snake</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/Snake.java" line="37" column="1" bodyfile="src/snakegame/structs/Snake.java" bodystart="37" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_snake_1a0e8e4b28dd22705782f7a985e17b364d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsnakegame_1_1structs_1_1_snake" kindref="compound">Snake</ref></type>
+        <definition>Snake snakegame.structs.Snake.predictMove</definition>
+        <argsstring>()</argsstring>
+        <name>predictMove</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/Snake.java" line="44" column="1" bodyfile="src/snakegame/structs/Snake.java" bodystart="44" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_snake_1a596ece3775ed531cef2fc023f339052e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="enumsnakegame_1_1structs_1_1_direction" kindref="compound">Direction</ref></type>
+        <definition>Direction snakegame.structs.Snake.getDirection</definition>
+        <argsstring>()</argsstring>
+        <name>getDirection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/Snake.java" line="51" column="1" bodyfile="src/snakegame/structs/Snake.java" bodystart="51" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_snake_1abcd015387736c76d4c6770cb7d33f59c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void snakegame.structs.Snake.setDirection</definition>
+        <argsstring>(Direction direction)</argsstring>
+        <name>setDirection</name>
+        <param>
+          <type><ref refid="enumsnakegame_1_1structs_1_1_direction" kindref="compound">Direction</ref></type>
+          <declname>direction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/Snake.java" line="56" column="1" bodyfile="src/snakegame/structs/Snake.java" bodystart="56" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_snake_1a75d7bc3f6202e0159e79b703fdd5232c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsnakegame_1_1structs_1_1_point" kindref="compound">Point</ref></type>
+        <definition>Point snakegame.structs.Snake.getHead</definition>
+        <argsstring>()</argsstring>
+        <name>getHead</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/Snake.java" line="61" column="1" bodyfile="src/snakegame/structs/Snake.java" bodystart="61" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_snake_1a3df7436c11ba7bda4154431739778b78" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean snakegame.structs.Snake.contains</definition>
+        <argsstring>(Point anotherPoint)</argsstring>
+        <name>contains</name>
+        <param>
+          <type><ref refid="classsnakegame_1_1structs_1_1_point" kindref="compound">Point</ref></type>
+          <declname>anotherPoint</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/Snake.java" line="66" column="1" bodyfile="src/snakegame/structs/Snake.java" bodystart="66" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_snake_1acefd74708c76a65a7e9f8e5182ae3af3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean snakegame.structs.Snake.ateSelf</definition>
+        <argsstring>()</argsstring>
+        <name>ateSelf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/Snake.java" line="76" column="1" bodyfile="src/snakegame/structs/Snake.java" bodystart="76" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_snake_1a4e147dbd9e7442dce1b4f066946f8959" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void snakegame.structs.Snake.moveHead</definition>
+        <argsstring>()</argsstring>
+        <name>moveHead</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/Snake.java" line="95" column="1" bodyfile="src/snakegame/structs/Snake.java" bodystart="95" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_snake_1aefdd30421bce904e5585dbcbec258a98" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void snakegame.structs.Snake.draw</definition>
+        <argsstring>(Graphics2D g)</argsstring>
+        <name>draw</name>
+        <param>
+          <type>Graphics2D</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/Snake.java" line="142" column="1" bodyfile="src/snakegame/structs/Snake.java" bodystart="142" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_snake_1a7ebadfc8fb3f4b24d0de3a6b3bde703e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String snakegame.structs.Snake.toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/Snake.java" line="149" column="1" bodyfile="src/snakegame/structs/Snake.java" bodystart="149" bodyend="162"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_snake_1ae030d22dcf36bf9de04a0d38f7347263" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void snakegame.structs.Snake.setPoints</definition>
+        <argsstring>(LinkedList&lt; Point &gt; points)</argsstring>
+        <name>setPoints</name>
+        <param>
+          <type>LinkedList&lt; <ref refid="classsnakegame_1_1structs_1_1_point" kindref="compound">Point</ref> &gt;</type>
+          <declname>points</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/Snake.java" line="18" column="1" bodyfile="src/snakegame/structs/Snake.java" bodystart="18" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_snake_1a1c179201cf4909ac9ea0ecc97edbd736" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void snakegame.structs.Snake.dropTail</definition>
+        <argsstring>()</argsstring>
+        <name>dropTail</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/Snake.java" line="138" column="1" bodyfile="src/snakegame/structs/Snake.java" bodystart="138" bodyend="140"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_snake_1a7923fe4a4f140360f89a64e5db3d20b3" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void snakegame.structs.Snake.step</definition>
+        <argsstring>()</argsstring>
+        <name>step</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/Snake.java" line="89" column="1" bodyfile="src/snakegame/structs/Snake.java" bodystart="89" bodyend="92"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_snake_1a5c7858e4b58db59e493b12c18462fb4b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsnakegame_1_1structs_1_1_snake" kindref="compound">Snake</ref></type>
+        <definition>static Snake snakegame.structs.Snake.parse</definition>
+        <argsstring>(String string)</argsstring>
+        <name>parse</name>
+        <param>
+          <type>String</type>
+          <declname>string</declname>
+        </param>
+        <exceptions> throws IllegalArgumentException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/Snake.java" line="118" column="1" bodyfile="src/snakegame/structs/Snake.java" bodystart="118" bodyend="136"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="59">
+        <label>snakegame.structs.Snake</label>
+        <link refid="classsnakegame_1_1structs_1_1_snake"/>
+        <childnode refid="60" relation="usage">
+          <edgelabel>uuid</edgelabel>
+        </childnode>
+      </node>
+      <node id="60">
+        <label>UUID</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/snakegame/structs/Snake.java" line="7" column="1" bodyfile="src/snakegame/structs/Snake.java" bodystart="7" bodyend="166"/>
+    <listofallmembers>
+      <member refid="classsnakegame_1_1structs_1_1_snake_1acefd74708c76a65a7e9f8e5182ae3af3" prot="public" virt="non-virtual"><scope>snakegame::structs::Snake</scope><name>ateSelf</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_snake_1a3df7436c11ba7bda4154431739778b78" prot="public" virt="non-virtual"><scope>snakegame::structs::Snake</scope><name>contains</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_snake_1a3527462244b0d2edd57ce56ce327ae4d" prot="private" virt="non-virtual"><scope>snakegame::structs::Snake</scope><name>direction</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_snake_1aefdd30421bce904e5585dbcbec258a98" prot="public" virt="non-virtual"><scope>snakegame::structs::Snake</scope><name>draw</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_snake_1a1c179201cf4909ac9ea0ecc97edbd736" prot="private" virt="non-virtual"><scope>snakegame::structs::Snake</scope><name>dropTail</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_snake_1a596ece3775ed531cef2fc023f339052e" prot="public" virt="non-virtual"><scope>snakegame::structs::Snake</scope><name>getDirection</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_snake_1a75d7bc3f6202e0159e79b703fdd5232c" prot="public" virt="non-virtual"><scope>snakegame::structs::Snake</scope><name>getHead</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_snake_1a1201fceabdd51b2cbb3fdd69f151fec9" prot="public" virt="non-virtual"><scope>snakegame::structs::Snake</scope><name>getPoints</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_snake_1ac17bff959740ffec977a37b6ed905a0c" prot="public" virt="non-virtual"><scope>snakegame::structs::Snake</scope><name>getUuid</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_snake_1a4e147dbd9e7442dce1b4f066946f8959" prot="public" virt="non-virtual"><scope>snakegame::structs::Snake</scope><name>moveHead</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_snake_1a5c7858e4b58db59e493b12c18462fb4b" prot="public" virt="non-virtual"><scope>snakegame::structs::Snake</scope><name>parse</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_snake_1abcda86569cd4086482cf0d887c7b9664" prot="private" virt="non-virtual"><scope>snakegame::structs::Snake</scope><name>points</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_snake_1a0e8e4b28dd22705782f7a985e17b364d" prot="public" virt="non-virtual"><scope>snakegame::structs::Snake</scope><name>predictMove</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_snake_1abcd015387736c76d4c6770cb7d33f59c" prot="public" virt="non-virtual"><scope>snakegame::structs::Snake</scope><name>setDirection</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_snake_1ae030d22dcf36bf9de04a0d38f7347263" prot="private" virt="non-virtual"><scope>snakegame::structs::Snake</scope><name>setPoints</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_snake_1ae76efb0ea42951d99b3f3e3134622120" prot="public" virt="non-virtual"><scope>snakegame::structs::Snake</scope><name>Snake</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_snake_1afae60310456b2ff1474879d2c80d75b1" prot="public" virt="non-virtual"><scope>snakegame::structs::Snake</scope><name>Snake</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_snake_1a4d2bf8212dfe91b17aed31f44203f37f" prot="public" virt="non-virtual"><scope>snakegame::structs::Snake</scope><name>Snake</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_snake_1a7923fe4a4f140360f89a64e5db3d20b3" prot="package" virt="non-virtual"><scope>snakegame::structs::Snake</scope><name>step</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_snake_1a7ebadfc8fb3f4b24d0de3a6b3bde703e" prot="public" virt="non-virtual"><scope>snakegame::structs::Snake</scope><name>toString</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_snake_1a503a86da12d48c66ea74e59e515796be" prot="package" virt="non-virtual"><scope>snakegame::structs::Snake</scope><name>uuid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

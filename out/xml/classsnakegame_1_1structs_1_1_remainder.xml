@@ -1,0 +1,236 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classsnakegame_1_1structs_1_1_remainder" kind="class" language="Java" prot="public">
+    <compoundname>snakegame::structs::Remainder</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Cloneable</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsnakegame_1_1structs_1_1_remainder_1a2aa8ec5aff6e7d2c15fe429046efce99" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int snakegame.structs.Remainder.limit</definition>
+        <argsstring></argsstring>
+        <name>limit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/Remainder.java" line="4" column="1" bodyfile="src/snakegame/structs/Remainder.java" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsnakegame_1_1structs_1_1_remainder_1ad66f64515ac08eb6f2c42b4d3e6db0e1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int snakegame.structs.Remainder.value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/Remainder.java" line="5" column="1" bodyfile="src/snakegame/structs/Remainder.java" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_remainder_1a5895859e2b9b2562a12a72495e316e9c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>snakegame.structs.Remainder.Remainder</definition>
+        <argsstring>(int limit, int value)</argsstring>
+        <name>Remainder</name>
+        <param>
+          <type>int</type>
+          <declname>limit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/Remainder.java" line="8" column="1" bodyfile="src/snakegame/structs/Remainder.java" bodystart="8" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_remainder_1ad01229fb264baa7f39848cb0c6db8afa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>snakegame.structs.Remainder.Remainder</definition>
+        <argsstring>(int value)</argsstring>
+        <name>Remainder</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/Remainder.java" line="14" column="1" bodyfile="src/snakegame/structs/Remainder.java" bodystart="14" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_remainder_1ad44771e1b21d1bd2ecb4b1f676395001" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int snakegame.structs.Remainder.getValue</definition>
+        <argsstring>()</argsstring>
+        <name>getValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/Remainder.java" line="20" column="1" bodyfile="src/snakegame/structs/Remainder.java" bodystart="20" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_remainder_1ac280dde02bcc57ea35c8c7617cb57767" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void snakegame.structs.Remainder.setValue</definition>
+        <argsstring>(int value)</argsstring>
+        <name>setValue</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/Remainder.java" line="25" column="1" bodyfile="src/snakegame/structs/Remainder.java" bodystart="25" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_remainder_1a3493d7ad668664ccd4089127794c4818" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsnakegame_1_1structs_1_1_remainder" kindref="compound">Remainder</ref></type>
+        <definition>Remainder snakegame.structs.Remainder.copy</definition>
+        <argsstring>()</argsstring>
+        <name>copy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/Remainder.java" line="30" column="1" bodyfile="src/snakegame/structs/Remainder.java" bodystart="30" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_remainder_1a63bde400c1715836940db745a1e15f7f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsnakegame_1_1structs_1_1_remainder" kindref="compound">Remainder</ref></type>
+        <definition>Remainder snakegame.structs.Remainder.copy</definition>
+        <argsstring>(int value)</argsstring>
+        <name>copy</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/Remainder.java" line="35" column="1" bodyfile="src/snakegame/structs/Remainder.java" bodystart="35" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_remainder_1a0f899c321de31015e66951a3ea2cbcc3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsnakegame_1_1structs_1_1_remainder" kindref="compound">Remainder</ref></type>
+        <definition>Remainder snakegame.structs.Remainder.copyAdd</definition>
+        <argsstring>(int addition)</argsstring>
+        <name>copyAdd</name>
+        <param>
+          <type>int</type>
+          <declname>addition</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/Remainder.java" line="40" column="1" bodyfile="src/snakegame/structs/Remainder.java" bodystart="40" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_remainder_1a5d11bc092dc689a2ddcff2947c27c679" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean snakegame.structs.Remainder.equals</definition>
+        <argsstring>(Object o)</argsstring>
+        <name>equals</name>
+        <param>
+          <type>Object</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/Remainder.java" line="46" column="1" bodyfile="src/snakegame/structs/Remainder.java" bodystart="46" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_remainder_1a65f6ae72c496323b19f05bbc93269127" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int snakegame.structs.Remainder.hashCode</definition>
+        <argsstring>()</argsstring>
+        <name>hashCode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/Remainder.java" line="58" column="1" bodyfile="src/snakegame/structs/Remainder.java" bodystart="58" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_remainder_1a6d69e20d1a02d3feac7ce7873ed4d172" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String snakegame.structs.Remainder.toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/Remainder.java" line="65" column="1" bodyfile="src/snakegame/structs/Remainder.java" bodystart="65" bodyend="67"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="52">
+        <label>snakegame.structs.Remainder</label>
+        <link refid="classsnakegame_1_1structs_1_1_remainder"/>
+        <childnode refid="53" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>Cloneable</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="54">
+        <label>snakegame.structs.Remainder</label>
+        <link refid="classsnakegame_1_1structs_1_1_remainder"/>
+        <childnode refid="55" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>Cloneable</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/snakegame/structs/Remainder.java" line="3" column="1" bodyfile="src/snakegame/structs/Remainder.java" bodystart="3" bodyend="68"/>
+    <listofallmembers>
+      <member refid="classsnakegame_1_1structs_1_1_remainder_1a3493d7ad668664ccd4089127794c4818" prot="public" virt="non-virtual"><scope>snakegame::structs::Remainder</scope><name>copy</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_remainder_1a63bde400c1715836940db745a1e15f7f" prot="public" virt="non-virtual"><scope>snakegame::structs::Remainder</scope><name>copy</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_remainder_1a0f899c321de31015e66951a3ea2cbcc3" prot="public" virt="non-virtual"><scope>snakegame::structs::Remainder</scope><name>copyAdd</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_remainder_1a5d11bc092dc689a2ddcff2947c27c679" prot="public" virt="non-virtual"><scope>snakegame::structs::Remainder</scope><name>equals</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_remainder_1ad44771e1b21d1bd2ecb4b1f676395001" prot="public" virt="non-virtual"><scope>snakegame::structs::Remainder</scope><name>getValue</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_remainder_1a65f6ae72c496323b19f05bbc93269127" prot="public" virt="non-virtual"><scope>snakegame::structs::Remainder</scope><name>hashCode</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_remainder_1a2aa8ec5aff6e7d2c15fe429046efce99" prot="private" virt="non-virtual"><scope>snakegame::structs::Remainder</scope><name>limit</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_remainder_1a5895859e2b9b2562a12a72495e316e9c" prot="public" virt="non-virtual"><scope>snakegame::structs::Remainder</scope><name>Remainder</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_remainder_1ad01229fb264baa7f39848cb0c6db8afa" prot="public" virt="non-virtual"><scope>snakegame::structs::Remainder</scope><name>Remainder</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_remainder_1ac280dde02bcc57ea35c8c7617cb57767" prot="public" virt="non-virtual"><scope>snakegame::structs::Remainder</scope><name>setValue</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_remainder_1a6d69e20d1a02d3feac7ce7873ed4d172" prot="public" virt="non-virtual"><scope>snakegame::structs::Remainder</scope><name>toString</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_remainder_1ad66f64515ac08eb6f2c42b4d3e6db0e1" prot="private" virt="non-virtual"><scope>snakegame::structs::Remainder</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

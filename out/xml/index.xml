@@ -1,0 +1,303 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.14">
+  <compound refid="classsnakegame_1_1apple" kind="class"><name>snakegame::apple</name>
+    <member refid="classsnakegame_1_1apple_1a84c75529fb9ba13e1709160401cfe913" kind="variable"><name>ap</name></member>
+    <member refid="classsnakegame_1_1apple_1a3761b2d99e631facd8170ba6d2dc88be" kind="variable"><name>rand</name></member>
+    <member refid="classsnakegame_1_1apple_1a7b5d4451329b06ce663dcb8a7177edc1" kind="variable"><name>step_size</name></member>
+    <member refid="classsnakegame_1_1apple_1a360f40e72f103cbb6de34c53d2f12fd9" kind="variable"><name>shift</name></member>
+    <member refid="classsnakegame_1_1apple_1a0c23d12964354726ac4240c13de3eb81" kind="function"><name>apple</name></member>
+    <member refid="classsnakegame_1_1apple_1a2a93c78385af6c64271ce163dd883712" kind="function"><name>apple1</name></member>
+    <member refid="classsnakegame_1_1apple_1af5cab740833aef8650ef374868585930" kind="function"><name>set</name></member>
+    <member refid="classsnakegame_1_1apple_1a4868669a889a955b0811141726005a23" kind="function"><name>set</name></member>
+    <member refid="classsnakegame_1_1apple_1aa14da591e5ca8e5ce41da4ace3dfd8af" kind="function"><name>set</name></member>
+    <member refid="classsnakegame_1_1apple_1a3a6294f277af9a64dea186eb41583b97" kind="function"><name>paint</name></member>
+  </compound>
+  <compound refid="classsnakegame_1_1structs_1_1_apple" kind="class"><name>snakegame::structs::Apple</name>
+    <member refid="classsnakegame_1_1structs_1_1_apple_1a253cc05d5e4d35f2af06cd6751ca5e8e" kind="variable"><name>point</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_apple_1a396350cfc8fdecede585381c93150a6d" kind="function"><name>Apple</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_apple_1a1c6cf6198f99833004b657097596fd64" kind="function"><name>getPoint</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_apple_1ae92b2f9ad12f097c9bfa5f408270f8f2" kind="function"><name>draw</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_apple_1abebdf6e508f4ce621f460cd95d498028" kind="function"><name>toString</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_apple_1aa7282ddcff4a6529e95e679a2a57ec5b" kind="function"><name>parse</name></member>
+  </compound>
+  <compound refid="classsnakegame_1_1structs_1_1_apple_factory" kind="class"><name>snakegame::structs::AppleFactory</name>
+    <member refid="classsnakegame_1_1structs_1_1_apple_factory_1a913bfc064d8708a671af87f192642f6f" kind="variable"><name>points</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_apple_factory_1aa07fa8785ab5b8dead56c811e99ba944" kind="variable"><name>maxX</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_apple_factory_1a78f5a1cc2ad3a9c14bc4717326788874" kind="variable"><name>maxY</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_apple_factory_1ad0b77c64a933c5d2ca3a7f0e0d4d5d82" kind="variable"><name>randomEncounters</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_apple_factory_1a7245a73ea53c8a96883ffe2e539965a3" kind="variable"><name>random</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_apple_factory_1ac58956184a77beb43d78d6f1a72b3254" kind="function"><name>AppleFactory</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_apple_factory_1acc49c3b4cda4250fd4a25181b39cb36e" kind="function"><name>AppleFactory</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_apple_factory_1a53efb1530e63916af192eb4daa0009f6" kind="function"><name>generateApple</name></member>
+  </compound>
+  <compound refid="classsnakegame_1_1structs_1_1_apple_point" kind="class"><name>snakegame::structs::ApplePoint</name>
+    <member refid="classsnakegame_1_1structs_1_1_apple_point_1ae3372c17b077db37fa0afffe4854bf44" kind="variable"><name>step_size</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_apple_point_1a79715c9820500a4639b373d39354fe4d" kind="variable"><name>color</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_apple_point_1a4d23b0796de73346c556ee8e10bcf080" kind="function"><name>ApplePoint</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_apple_point_1a0202e1a32a56ad9778cea65a604282c6" kind="function"><name>draw</name></member>
+  </compound>
+  <compound refid="classsnakegame_1_1client_1_1_client" kind="class"><name>snakegame::client::Client</name>
+    <member refid="classsnakegame_1_1client_1_1_client_1aac8f9e15b4dfddfb59aa01f246d8e42c" kind="variable"><name>port</name></member>
+    <member refid="classsnakegame_1_1client_1_1_client_1afc5ced95f7829c411f3540181e48962b" kind="variable"><name>host</name></member>
+    <member refid="classsnakegame_1_1client_1_1_client_1aa566396194dce0c33e02bc8ffa5ab6fc" kind="variable"><name>uuid</name></member>
+    <member refid="classsnakegame_1_1client_1_1_client_1acd7589f037500de3664ceeb0009eb604" kind="variable"><name>world</name></member>
+    <member refid="classsnakegame_1_1client_1_1_client_1a58a09cd15bddb8ac46f14127a9744030" kind="variable"><name>DEFAULT_PORT</name></member>
+    <member refid="classsnakegame_1_1client_1_1_client_1a9444949e5084f63b83adbc0ba6fc6e25" kind="variable"><name>DEFAULT_HOST</name></member>
+    <member refid="classsnakegame_1_1client_1_1_client_1a948c77ce57ae41b32d2a5c48a98686f0" kind="variable"><name>TITLE</name></member>
+    <member refid="classsnakegame_1_1client_1_1_client_1a1d9ca3c932bb8594efdfc6facb33d90c" kind="function"><name>Client</name></member>
+    <member refid="classsnakegame_1_1client_1_1_client_1a535018f1c145ab1ea9949f231b39bd42" kind="function"><name>Client</name></member>
+    <member refid="classsnakegame_1_1client_1_1_client_1a4165aaf5d9c01f9b4b9416ea5a60c84d" kind="function"><name>Client</name></member>
+    <member refid="classsnakegame_1_1client_1_1_client_1ac6777539a79418c36d55da33dc3451c5" kind="function"><name>Client</name></member>
+    <member refid="classsnakegame_1_1client_1_1_client_1a4c8965e3e5776858c2c44bfba1fc0554" kind="function"><name>run</name></member>
+    <member refid="classsnakegame_1_1client_1_1_client_1a1e984a95002244e56d80be35396bf80e" kind="function"><name>paint</name></member>
+    <member refid="classsnakegame_1_1client_1_1_client_1a0ff707341d32324b30dbb72b4ca90083" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="classsnakegame_1_1server_1_1_server_1_1_client_handler" kind="class"><name>snakegame::server::Server::ClientHandler</name>
+    <member refid="classsnakegame_1_1server_1_1_server_1_1_client_handler_1a9de963eea1b1f17bb12e9e3231a881a4" kind="variable"><name>in</name></member>
+    <member refid="classsnakegame_1_1server_1_1_server_1_1_client_handler_1ae6eca1894b5dd2147512a7662c6e52aa" kind="variable"><name>out</name></member>
+    <member refid="classsnakegame_1_1server_1_1_server_1_1_client_handler_1a5bd19be81039717a997a67926d43360f" kind="variable"><name>socket</name></member>
+    <member refid="classsnakegame_1_1server_1_1_server_1_1_client_handler_1ad00a7d1d8e8ee23d5495fbe27d734828" kind="function"><name>ClientHandler</name></member>
+    <member refid="classsnakegame_1_1server_1_1_server_1_1_client_handler_1a5cb1108121c65a4e73e8c55e0f6d97e8" kind="function"><name>run</name></member>
+  </compound>
+  <compound refid="classsnakegame_1_1client_1_1_client_1_1_client_key_listener" kind="class"><name>snakegame::client::Client::ClientKeyListener</name>
+    <member refid="classsnakegame_1_1client_1_1_client_1_1_client_key_listener_1ac3ad166d166fc31f4c6b31445da4181a" kind="variable"><name>uuid</name></member>
+    <member refid="classsnakegame_1_1client_1_1_client_1_1_client_key_listener_1a5a88d7ee0f0ecc89a0b5aeffa9b8a9ca" kind="variable"><name>dataOutputStream</name></member>
+    <member refid="classsnakegame_1_1client_1_1_client_1_1_client_key_listener_1a2db61928ecee23fe96d7aa05fdb3ab4f" kind="function"><name>ClientKeyListener</name></member>
+    <member refid="classsnakegame_1_1client_1_1_client_1_1_client_key_listener_1a45fa13719ad91104996cd757e8bc22c1" kind="function"><name>keyTyped</name></member>
+    <member refid="classsnakegame_1_1client_1_1_client_1_1_client_key_listener_1a80088f209da9a56383f2ef30609e8c29" kind="function"><name>keyPressed</name></member>
+    <member refid="classsnakegame_1_1client_1_1_client_1_1_client_key_listener_1a108d7c0c844a52e1ba6ad2999455369f" kind="function"><name>keyReleased</name></member>
+  </compound>
+  <compound refid="classsnakegame_1_1server_1_1_server_1_1_client_updater" kind="class"><name>snakegame::server::Server::ClientUpdater</name>
+    <member refid="classsnakegame_1_1server_1_1_server_1_1_client_updater_1a368e828f94f94ec0e3b240c5b7382451" kind="variable"><name>out</name></member>
+    <member refid="classsnakegame_1_1server_1_1_server_1_1_client_updater_1a7cb2b186e3342d82f6e9b587ae5d22a4" kind="function"><name>ClientUpdater</name></member>
+    <member refid="classsnakegame_1_1server_1_1_server_1_1_client_updater_1a6a2031e0b0fdd55cf7d5c0eeb0b1e267" kind="function"><name>publish</name></member>
+  </compound>
+  <compound refid="classsnakegame_1_1_constants" kind="class"><name>snakegame::Constants</name>
+    <member refid="classsnakegame_1_1_constants_1a253f00351ba8bbc4a7e7adf94ddd4a29" kind="variable"><name>BORDER_WIDTH</name></member>
+    <member refid="classsnakegame_1_1_constants_1a84c010eb1c979612c5b3627964f33385" kind="variable"><name>BORDER_LENGHT</name></member>
+    <member refid="classsnakegame_1_1_constants_1a47ff3bd3c0ecae5e9f2b878915a9dad2" kind="variable"><name>UP</name></member>
+    <member refid="classsnakegame_1_1_constants_1affe932cca510cf5d5f619af355a9e5e2" kind="variable"><name>RIGHT</name></member>
+    <member refid="classsnakegame_1_1_constants_1ac9166aad2f05da4e80661a252c82f9f6" kind="variable"><name>DOWN</name></member>
+    <member refid="classsnakegame_1_1_constants_1af2ce3ce8082b3922ef73a7cd291095d7" kind="variable"><name>LEFT</name></member>
+    <member refid="classsnakegame_1_1_constants_1a112d1c18a610f11804c7e27734db6a40" kind="variable"><name>shift</name></member>
+    <member refid="classsnakegame_1_1_constants_1a3c24c7aa6b732df3fd18eaf1394f9255" kind="variable"><name>step_size</name></member>
+  </compound>
+  <compound refid="classsnakegame_1_1server_1_1_contriols_queue" kind="class"><name>snakegame::server::ContriolsQueue</name>
+    <member refid="classsnakegame_1_1server_1_1_contriols_queue_1af5cd4e2cd848148239d0eff4016f04f1" kind="variable"><name>events</name></member>
+  </compound>
+  <compound refid="enumsnakegame_1_1structs_1_1_direction" kind="enum"><name>snakegame::structs::Direction</name>
+    <member refid="enumsnakegame_1_1structs_1_1_direction_1a6eac992f122ba5b02aad12a7cfcf65ce" kind="variable"><name>up</name></member>
+    <member refid="enumsnakegame_1_1structs_1_1_direction_1af5f078cc54af6fabd9325c39328c6d9c" kind="variable"><name>right</name></member>
+    <member refid="enumsnakegame_1_1structs_1_1_direction_1ac1c479971b6ea1b25efe9d3eb82d1e46" kind="variable"><name>down</name></member>
+    <member refid="enumsnakegame_1_1structs_1_1_direction_1a3f48c431df64ddc8d497746a14293fd7" kind="function"><name>newDirection</name></member>
+    <member refid="enumsnakegame_1_1structs_1_1_direction_1acca4af48b36042d85f1a9eab2becbf2a" kind="function"><name>newDirection</name></member>
+  </compound>
+  <compound refid="classsnakegame_1_1_game" kind="class"><name>snakegame::Game</name>
+    <member refid="classsnakegame_1_1_game_1a5da8884fe16160449cf02f7c594b2f79" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="classsnakegame_1_1_main_window" kind="class"><name>snakegame::MainWindow</name>
+    <member refid="classsnakegame_1_1_main_window_1aed7f2bf93186b84abcc52d8b0acab7a3" kind="variable"><name>rand</name></member>
+    <member refid="classsnakegame_1_1_main_window_1a1d6c01c5fc3aa251c27c5fbb67f14a5c" kind="variable"><name>lastKey</name></member>
+    <member refid="classsnakegame_1_1_main_window_1a3e4b4975255c70194c3b6932de307c23" kind="variable"><name>GameOver</name></member>
+    <member refid="classsnakegame_1_1_main_window_1ae5850c684de7f6206c80b1dbfcac49af" kind="variable"><name>snake1</name></member>
+    <member refid="classsnakegame_1_1_main_window_1afe98cd0408857daeda6b57eae0e73a66" kind="function"><name>MainWindow</name></member>
+    <member refid="classsnakegame_1_1_main_window_1ae412ac0550a3d9a165dc7ce7e5481ba3" kind="function"><name>Input</name></member>
+    <member refid="classsnakegame_1_1_main_window_1afe9dbd469853597ae9a61c56b85d2762" kind="function"><name>paint</name></member>
+  </compound>
+  <compound refid="classsnakegame_1_1server_1_1_message" kind="class"><name>snakegame::server::Message</name>
+    <member refid="classsnakegame_1_1server_1_1_message_1ababb4242b329292ad15db7d16fd40b38" kind="variable"><name>keyCode</name></member>
+    <member refid="classsnakegame_1_1server_1_1_message_1af2e2a5da2ba5dd9019390f6e7143499d" kind="variable"><name>uuid</name></member>
+    <member refid="classsnakegame_1_1server_1_1_message_1ab530cae742ab3546af0531af6decfb4d" kind="function"><name>getKeyCode</name></member>
+    <member refid="classsnakegame_1_1server_1_1_message_1a1813db6854615d0d545e7e7a24f73fe4" kind="function"><name>getUuid</name></member>
+    <member refid="classsnakegame_1_1server_1_1_message_1a785c5537fe6e83fbc944dc86cc130db4" kind="function"><name>Message</name></member>
+    <member refid="classsnakegame_1_1server_1_1_message_1a9e38b76d6815d73d7c14a28e8640b1c3" kind="function"><name>toString</name></member>
+    <member refid="classsnakegame_1_1server_1_1_message_1a18e375c0d7b140c6b4d141b870542a4a" kind="function"><name>parse</name></member>
+  </compound>
+  <compound refid="classsnakegame_1_1structs_1_1_point" kind="class"><name>snakegame::structs::Point</name>
+    <member refid="classsnakegame_1_1structs_1_1_point_1acf6c91ee7cda0e65a8054ff0dc07b79a" kind="variable"><name>x</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_point_1a2a9fe55d9cf57dbc120bbce39313d38d" kind="variable"><name>y</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_point_1a79325ac308e18b3dd2721fcfa44752bd" kind="function"><name>Point</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_point_1a6dd8ef89102d12ec0cf5db0c03a568eb" kind="function"><name>getX</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_point_1a9efa9a335cccdbf667d1304c123e7ca9" kind="function"><name>setX</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_point_1a920963cbc293b477335d7dc931ffb306" kind="function"><name>getY</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_point_1a9d42e4e18c765dcbfd14ef4baa102367" kind="function"><name>setY</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_point_1ab90de88df6692023c7e156d45f3e5417" kind="function"><name>draw</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_point_1a46a08a1ffaa9cf65bab5527e620c0127" kind="function"><name>equals</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_point_1a29332641bab79c8e403a6429d640e5f7" kind="function"><name>hashCode</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_point_1aec9ad3287697d952ab40687f5459241b" kind="function"><name>toString</name></member>
+  </compound>
+  <compound refid="classsnakegame_1_1structs_1_1_remainder" kind="class"><name>snakegame::structs::Remainder</name>
+    <member refid="classsnakegame_1_1structs_1_1_remainder_1a2aa8ec5aff6e7d2c15fe429046efce99" kind="variable"><name>limit</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_remainder_1ad66f64515ac08eb6f2c42b4d3e6db0e1" kind="variable"><name>value</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_remainder_1a5895859e2b9b2562a12a72495e316e9c" kind="function"><name>Remainder</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_remainder_1ad01229fb264baa7f39848cb0c6db8afa" kind="function"><name>Remainder</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_remainder_1ad44771e1b21d1bd2ecb4b1f676395001" kind="function"><name>getValue</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_remainder_1ac280dde02bcc57ea35c8c7617cb57767" kind="function"><name>setValue</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_remainder_1a3493d7ad668664ccd4089127794c4818" kind="function"><name>copy</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_remainder_1a63bde400c1715836940db745a1e15f7f" kind="function"><name>copy</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_remainder_1a0f899c321de31015e66951a3ea2cbcc3" kind="function"><name>copyAdd</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_remainder_1a5d11bc092dc689a2ddcff2947c27c679" kind="function"><name>equals</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_remainder_1a65f6ae72c496323b19f05bbc93269127" kind="function"><name>hashCode</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_remainder_1a6d69e20d1a02d3feac7ce7873ed4d172" kind="function"><name>toString</name></member>
+  </compound>
+  <compound refid="classsnakegame_1_1server_1_1_server" kind="class"><name>snakegame::server::Server</name>
+    <member refid="classsnakegame_1_1server_1_1_server_1abc56442140af9180298c007a9391b88d" kind="variable"><name>world</name></member>
+    <member refid="classsnakegame_1_1server_1_1_server_1a770f3a9c489c39764a8ef148729db236" kind="variable"><name>port</name></member>
+    <member refid="classsnakegame_1_1server_1_1_server_1a94f76e3dba337fa9502f4f1b7b149dfb" kind="variable"><name>host</name></member>
+    <member refid="classsnakegame_1_1server_1_1_server_1a8fdb9bb043ab93002fb168e52c68bdf6" kind="variable"><name>events</name></member>
+    <member refid="classsnakegame_1_1server_1_1_server_1aeffbf511bad68c5e9e99e35c00529792" kind="variable"><name>updaters</name></member>
+    <member refid="classsnakegame_1_1server_1_1_server_1a7bda4d35eb1cd523a4a38913c211f143" kind="variable"><name>sockets</name></member>
+    <member refid="classsnakegame_1_1server_1_1_server_1ac677dc2455769bfd57b976940217aafb" kind="variable"><name>DEFAULT_PORT</name></member>
+    <member refid="classsnakegame_1_1server_1_1_server_1a9ccb7a48bdbac859281be9120e5e106f" kind="variable"><name>DEFAULT_HOST</name></member>
+    <member refid="classsnakegame_1_1server_1_1_server_1a3ea460ad600a79fe10f6bf5c11bdccc9" kind="variable"><name>UPDATE_INTERVAL</name></member>
+    <member refid="classsnakegame_1_1server_1_1_server_1a87ec09c1d3e0c97c7c97941ea3ded581" kind="variable"><name>NUM_APPLES</name></member>
+    <member refid="classsnakegame_1_1server_1_1_server_1a483e80c850ea654902e0843f77eb783d" kind="function"><name>Server</name></member>
+    <member refid="classsnakegame_1_1server_1_1_server_1a22825670547a8a66d0f0e8e48577101b" kind="function"><name>Server</name></member>
+    <member refid="classsnakegame_1_1server_1_1_server_1a2b8dd5769b5f1d9214a89856ff8923fd" kind="function"><name>Server</name></member>
+    <member refid="classsnakegame_1_1server_1_1_server_1af023d23576ddca43c378f1ce18273126" kind="function"><name>Server</name></member>
+    <member refid="classsnakegame_1_1server_1_1_server_1af0101ad4e19f7ffc7ac541af737b5339" kind="function"><name>run</name></member>
+    <member refid="classsnakegame_1_1server_1_1_server_1ae7d47dbe33f4e0267a9a118c8541cd2d" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="classsnakegame_1_1structs_1_1_snake" kind="class"><name>snakegame::structs::Snake</name>
+    <member refid="classsnakegame_1_1structs_1_1_snake_1a503a86da12d48c66ea74e59e515796be" kind="variable"><name>uuid</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_snake_1abcda86569cd4086482cf0d887c7b9664" kind="variable"><name>points</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_snake_1a3527462244b0d2edd57ce56ce327ae4d" kind="variable"><name>direction</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_snake_1ac17bff959740ffec977a37b6ed905a0c" kind="function"><name>getUuid</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_snake_1a1201fceabdd51b2cbb3fdd69f151fec9" kind="function"><name>getPoints</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_snake_1ae76efb0ea42951d99b3f3e3134622120" kind="function"><name>Snake</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_snake_1afae60310456b2ff1474879d2c80d75b1" kind="function"><name>Snake</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_snake_1a4d2bf8212dfe91b17aed31f44203f37f" kind="function"><name>Snake</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_snake_1a0e8e4b28dd22705782f7a985e17b364d" kind="function"><name>predictMove</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_snake_1a596ece3775ed531cef2fc023f339052e" kind="function"><name>getDirection</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_snake_1abcd015387736c76d4c6770cb7d33f59c" kind="function"><name>setDirection</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_snake_1a75d7bc3f6202e0159e79b703fdd5232c" kind="function"><name>getHead</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_snake_1a3df7436c11ba7bda4154431739778b78" kind="function"><name>contains</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_snake_1acefd74708c76a65a7e9f8e5182ae3af3" kind="function"><name>ateSelf</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_snake_1a4e147dbd9e7442dce1b4f066946f8959" kind="function"><name>moveHead</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_snake_1aefdd30421bce904e5585dbcbec258a98" kind="function"><name>draw</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_snake_1a7ebadfc8fb3f4b24d0de3a6b3bde703e" kind="function"><name>toString</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_snake_1ae030d22dcf36bf9de04a0d38f7347263" kind="function"><name>setPoints</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_snake_1a1c179201cf4909ac9ea0ecc97edbd736" kind="function"><name>dropTail</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_snake_1a7923fe4a4f140360f89a64e5db3d20b3" kind="function"><name>step</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_snake_1a5c7858e4b58db59e493b12c18462fb4b" kind="function"><name>parse</name></member>
+  </compound>
+  <compound refid="classsnakegame_1_1snake" kind="class"><name>snakegame::snake</name>
+    <member refid="classsnakegame_1_1snake_1a06bd5bfb153a79b3321f8014cfe1f4b6" kind="variable"><name>snake_body</name></member>
+    <member refid="classsnakegame_1_1snake_1a2e5ab84403bf0e1fcede05305f7cf432" kind="variable"><name>Apple</name></member>
+    <member refid="classsnakegame_1_1snake_1ab185078810b0bc5a785e6e7f8e19e352" kind="variable"><name>lastApple</name></member>
+    <member refid="classsnakegame_1_1snake_1a273a8a4dbe24d584176aa3f2cbeb5519" kind="variable"><name>step_size</name></member>
+    <member refid="classsnakegame_1_1snake_1a0ad5393c7f24289c001eb619f3979d46" kind="variable"><name>snake_direction</name></member>
+    <member refid="classsnakegame_1_1snake_1af4bc697386bc5ff5c8806d517bbf7066" kind="variable"><name>rand</name></member>
+    <member refid="classsnakegame_1_1snake_1ab69cc245aa41b71c0f7cef8be7153d8f" kind="variable"><name>GameOver</name></member>
+    <member refid="classsnakegame_1_1snake_1a16fa0deaa66bc15b37689d33ca665275" kind="function"><name>snake</name></member>
+    <member refid="classsnakegame_1_1snake_1a488d8293668de46cd8daf048d26a2b55" kind="function"><name>getDirection</name></member>
+    <member refid="classsnakegame_1_1snake_1ad2d7f86bae0fc94adde6c4417b4e1b8a" kind="function"><name>setDirection</name></member>
+    <member refid="classsnakegame_1_1snake_1a1f9f29ffc498ba715fbb5419f35bc7fa" kind="function"><name>head</name></member>
+    <member refid="classsnakegame_1_1snake_1a63cca0235c21cd483d69bb52e17d48cf" kind="function"><name>body</name></member>
+    <member refid="classsnakegame_1_1snake_1a9372b56db6a2e802f5bb7e7fc1b244d5" kind="function"><name>logic</name></member>
+    <member refid="classsnakegame_1_1snake_1a0997b6e2c2b622c3f4b013868c0165b1" kind="function"><name>paint</name></member>
+  </compound>
+  <compound refid="classsnakegame_1_1structs_1_1_snake_factory" kind="class"><name>snakegame::structs::SnakeFactory</name>
+    <member refid="classsnakegame_1_1structs_1_1_snake_factory_1af7760a152b4ce248fc8785caf3ac4e2b" kind="variable"><name>points</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_snake_factory_1ab23112930d72802d4b1cb1c6637a2c38" kind="variable"><name>maxX</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_snake_factory_1a64a197c0de3f37b7f24b82f7b4e9b1bc" kind="variable"><name>maxY</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_snake_factory_1a7638d86b1b644801a02c2a55edf57cb9" kind="variable"><name>randomEncounters</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_snake_factory_1a0ff205385ea66ee4a6945168f4862e8f" kind="variable"><name>random</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_snake_factory_1a7554cd7f5aa717667f3babe46e896cda" kind="function"><name>SnakeFactory</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_snake_factory_1a057bbfab734e3434b03c8fe9b6ea7129" kind="function"><name>SnakeFactory</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_snake_factory_1aaa009e01befdc963fbe8b920dc1ef97e" kind="function"><name>generateSnake</name></member>
+  </compound>
+  <compound refid="classsnakegame_1_1structs_1_1_snake_point" kind="class"><name>snakegame::structs::SnakePoint</name>
+    <member refid="classsnakegame_1_1structs_1_1_snake_point_1a73230d37d4d45cb875a716a287f63b6d" kind="variable"><name>color</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_snake_point_1ae9e75da47afe313c2a55fd4ee92d57ae" kind="variable"><name>step_size</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_snake_point_1ae366301b429df98a08689c778a097d7c" kind="function"><name>SnakePoint</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_snake_point_1aa226b89f8a362d365d5f1d1b522aabaf" kind="function"><name>draw</name></member>
+  </compound>
+  <compound refid="classsnakegame_1_1structs_1_1_world" kind="class"><name>snakegame::structs::World</name>
+    <member refid="classsnakegame_1_1structs_1_1_world_1a3fa59c6d53de8f94726b6e9ce906e9d0" kind="variable"><name>snakeFactory</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_world_1a9f55cf60c7b2e70374d47f7b8f2aaa0b" kind="variable"><name>appleFactory</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_world_1ac091e94b64fb6991846fd23f278de108" kind="variable"><name>apples</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_world_1a5b5deec72f99011e20574b74092fbdd2" kind="variable"><name>snakes</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_world_1a5ae70562a085bef9fe1f6c718fae1385" kind="function"><name>World</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_world_1aa60efdc485c049d8011fb6c50feead00" kind="function"><name>processMessage</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_world_1ae2e3d1b007bf6a7dc55fb38443719abb" kind="function"><name>World</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_world_1aca40cde5e48ac321fdf87d207c2b07bc" kind="function"><name>draw</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_world_1a0ade5918df8724d3af19bea782932a96" kind="function"><name>generateApple</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_world_1a64c7e69961c14046814619a7365f8630" kind="function"><name>generateSnake</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_world_1a3da1e90d5d7e475e900171540123c9e3" kind="function"><name>step</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_world_1a4b6e33ad84c2ab6d5156acb1d32cdcff" kind="function"><name>toString</name></member>
+    <member refid="classsnakegame_1_1structs_1_1_world_1ab8c00c8a748680c55739b31c51d50af5" kind="function"><name>parse</name></member>
+  </compound>
+  <compound refid="classsnakegame_1_1server_1_1_server_1_1_world_updater" kind="class"><name>snakegame::server::Server::WorldUpdater</name>
+    <member refid="classsnakegame_1_1server_1_1_server_1_1_world_updater_1ab5b9d807315109ef40781908856852dd" kind="function"><name>run</name></member>
+    <member refid="classsnakegame_1_1server_1_1_server_1_1_world_updater_1ab7308f88031d3de36fe9625235b5cfc3" kind="function"><name>processMessages</name></member>
+  </compound>
+  <compound refid="namespacejava_1_1awt" kind="namespace"><name>java::awt</name>
+  </compound>
+  <compound refid="namespacejava_1_1awt_1_1event" kind="namespace"><name>java::awt::event</name>
+  </compound>
+  <compound refid="namespacejava_1_1io" kind="namespace"><name>java::io</name>
+  </compound>
+  <compound refid="namespacejava_1_1util" kind="namespace"><name>java::util</name>
+  </compound>
+  <compound refid="namespacejavax_1_1swing" kind="namespace"><name>javax::swing</name>
+  </compound>
+  <compound refid="namespacesnakegame" kind="namespace"><name>snakegame</name>
+  </compound>
+  <compound refid="namespacesnakegame_1_1client" kind="namespace"><name>snakegame::client</name>
+  </compound>
+  <compound refid="namespacesnakegame_1_1_constants" kind="namespace"><name>snakegame::Constants</name>
+  </compound>
+  <compound refid="namespacesnakegame_1_1server" kind="namespace"><name>snakegame::server</name>
+  </compound>
+  <compound refid="namespacesnakegame_1_1structs" kind="namespace"><name>snakegame::structs</name>
+  </compound>
+  <compound refid="apple_8java" kind="file"><name>apple.java</name>
+  </compound>
+  <compound refid="structs_2apple_8java" kind="file"><name>Apple.java</name>
+  </compound>
+  <compound refid="_client_8java" kind="file"><name>Client.java</name>
+  </compound>
+  <compound refid="_constants_8java" kind="file"><name>Constants.java</name>
+  </compound>
+  <compound refid="_game_8java" kind="file"><name>Game.java</name>
+  </compound>
+  <compound refid="_main_window_8java" kind="file"><name>MainWindow.java</name>
+  </compound>
+  <compound refid="_contriols_queue_8java" kind="file"><name>ContriolsQueue.java</name>
+  </compound>
+  <compound refid="_message_8java" kind="file"><name>Message.java</name>
+  </compound>
+  <compound refid="_server_8java" kind="file"><name>Server.java</name>
+  </compound>
+  <compound refid="snake_8java" kind="file"><name>snake.java</name>
+  </compound>
+  <compound refid="structs_2snake_8java" kind="file"><name>Snake.java</name>
+  </compound>
+  <compound refid="_apple_factory_8java" kind="file"><name>AppleFactory.java</name>
+  </compound>
+  <compound refid="_apple_point_8java" kind="file"><name>ApplePoint.java</name>
+  </compound>
+  <compound refid="_direction_8java" kind="file"><name>Direction.java</name>
+  </compound>
+  <compound refid="_point_8java" kind="file"><name>Point.java</name>
+  </compound>
+  <compound refid="_remainder_8java" kind="file"><name>Remainder.java</name>
+  </compound>
+  <compound refid="_snake_factory_8java" kind="file"><name>SnakeFactory.java</name>
+  </compound>
+  <compound refid="_snake_point_8java" kind="file"><name>SnakePoint.java</name>
+  </compound>
+  <compound refid="_world_8java" kind="file"><name>World.java</name>
+  </compound>
+  <compound refid="dir_b335ed0d1c40aee8bacc0f13520d421b" kind="dir"><name>src/snakegame/client</name>
+  </compound>
+  <compound refid="dir_2c0aa1481771a70af08e302abef785ba" kind="dir"><name>src/snakegame/server</name>
+  </compound>
+  <compound refid="dir_3b4a90a6a2da4cde638da8d71b215a52" kind="dir"><name>src/snakegame</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+  <compound refid="dir_b146992f7754a0e236e1e66a48193090" kind="dir"><name>src/snakegame/structs</name>
+  </compound>
+</doxygenindex>

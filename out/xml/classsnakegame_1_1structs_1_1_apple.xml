@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classsnakegame_1_1structs_1_1_apple" kind="class" language="Java" prot="public">
+    <compoundname>snakegame::structs::Apple</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsnakegame_1_1structs_1_1_apple_1a253cc05d5e4d35f2af06cd6751ca5e8e" prot="private" static="no" mutable="no">
+        <type><ref refid="classsnakegame_1_1structs_1_1_apple_point" kindref="compound">ApplePoint</ref></type>
+        <definition>ApplePoint snakegame.structs.Apple.point</definition>
+        <argsstring></argsstring>
+        <name>point</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/Apple.java" line="12" column="1" bodyfile="src/snakegame/structs/Apple.java" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_apple_1a396350cfc8fdecede585381c93150a6d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>snakegame.structs.Apple.Apple</definition>
+        <argsstring>(ApplePoint point)</argsstring>
+        <name>Apple</name>
+        <param>
+          <type><ref refid="classsnakegame_1_1structs_1_1_apple_point" kindref="compound">ApplePoint</ref></type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/Apple.java" line="8" column="1" bodyfile="src/snakegame/structs/Apple.java" bodystart="8" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_apple_1a1c6cf6198f99833004b657097596fd64" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsnakegame_1_1structs_1_1_apple_point" kindref="compound">ApplePoint</ref></type>
+        <definition>ApplePoint snakegame.structs.Apple.getPoint</definition>
+        <argsstring>()</argsstring>
+        <name>getPoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/Apple.java" line="14" column="1" bodyfile="src/snakegame/structs/Apple.java" bodystart="14" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_apple_1ae92b2f9ad12f097c9bfa5f408270f8f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void snakegame.structs.Apple.draw</definition>
+        <argsstring>(Graphics2D g)</argsstring>
+        <name>draw</name>
+        <param>
+          <type>Graphics2D</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/Apple.java" line="18" column="1" bodyfile="src/snakegame/structs/Apple.java" bodystart="18" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_apple_1abebdf6e508f4ce621f460cd95d498028" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String snakegame.structs.Apple.toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/Apple.java" line="23" column="1" bodyfile="src/snakegame/structs/Apple.java" bodystart="23" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_apple_1aa7282ddcff4a6529e95e679a2a57ec5b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsnakegame_1_1structs_1_1_apple" kindref="compound">Apple</ref></type>
+        <definition>static Apple snakegame.structs.Apple.parse</definition>
+        <argsstring>(String string)</argsstring>
+        <name>parse</name>
+        <param>
+          <type>String</type>
+          <declname>string</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/Apple.java" line="34" column="1" bodyfile="src/snakegame/structs/Apple.java" bodystart="34" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/snakegame/structs/Apple.java" line="6" column="1" bodyfile="src/snakegame/structs/Apple.java" bodystart="6" bodyend="42"/>
+    <listofallmembers>
+      <member refid="classsnakegame_1_1structs_1_1_apple_1a396350cfc8fdecede585381c93150a6d" prot="public" virt="non-virtual"><scope>snakegame::structs::Apple</scope><name>Apple</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_apple_1ae92b2f9ad12f097c9bfa5f408270f8f2" prot="public" virt="non-virtual"><scope>snakegame::structs::Apple</scope><name>draw</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_apple_1a1c6cf6198f99833004b657097596fd64" prot="public" virt="non-virtual"><scope>snakegame::structs::Apple</scope><name>getPoint</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_apple_1aa7282ddcff4a6529e95e679a2a57ec5b" prot="public" virt="non-virtual"><scope>snakegame::structs::Apple</scope><name>parse</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_apple_1a253cc05d5e4d35f2af06cd6751ca5e8e" prot="private" virt="non-virtual"><scope>snakegame::structs::Apple</scope><name>point</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_apple_1abebdf6e508f4ce621f460cd95d498028" prot="public" virt="non-virtual"><scope>snakegame::structs::Apple</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

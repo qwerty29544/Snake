@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classsnakegame_1_1_main_window" kind="class" language="Java" prot="public">
+    <compoundname>snakegame::MainWindow</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">JFrame</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsnakegame_1_1_main_window_1aed7f2bf93186b84abcc52d8b0acab7a3" prot="private" static="no" mutable="no">
+        <type>final Random</type>
+        <definition>final Random snakegame.MainWindow.rand</definition>
+        <argsstring></argsstring>
+        <name>rand</name>
+        <initializer>= new Random()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/MainWindow.java" line="13" column="1" bodyfile="src/snakegame/MainWindow.java" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsnakegame_1_1_main_window_1a1d6c01c5fc3aa251c27c5fbb67f14a5c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int snakegame.MainWindow.lastKey</definition>
+        <argsstring></argsstring>
+        <name>lastKey</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/MainWindow.java" line="14" column="1" bodyfile="src/snakegame/MainWindow.java" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsnakegame_1_1_main_window_1a3e4b4975255c70194c3b6932de307c23" prot="private" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>boolean snakegame.MainWindow.GameOver</definition>
+        <argsstring></argsstring>
+        <name>GameOver</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/MainWindow.java" line="15" column="1" bodyfile="src/snakegame/MainWindow.java" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsnakegame_1_1_main_window_1ae5850c684de7f6206c80b1dbfcac49af" prot="private" static="no" mutable="no">
+        <type><ref refid="classsnakegame_1_1snake" kindref="compound">snake</ref></type>
+        <definition>snake snakegame.MainWindow.snake1</definition>
+        <argsstring></argsstring>
+        <name>snake1</name>
+        <initializer>= new <ref refid="classsnakegame_1_1snake" kindref="compound">snake</ref>(rand.nextInt((BORDER_WIDTH/step_size)-1),rand.nextInt((BORDER_LENGHT/step_size)-1), step_size)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/MainWindow.java" line="16" column="1" bodyfile="src/snakegame/MainWindow.java" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="classsnakegame_1_1_main_window_1afe98cd0408857daeda6b57eae0e73a66" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>snakegame.MainWindow.MainWindow</definition>
+        <argsstring>(String title)</argsstring>
+        <name>MainWindow</name>
+        <param>
+          <type>String</type>
+          <declname>title</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/MainWindow.java" line="18" column="1" bodyfile="src/snakegame/MainWindow.java" bodystart="18" bodyend="59"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsnakegame_1_1_main_window_1ae412ac0550a3d9a165dc7ce7e5481ba3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void snakegame.MainWindow.Input</definition>
+        <argsstring>(KeyEvent event)</argsstring>
+        <name>Input</name>
+        <param>
+          <type>KeyEvent</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/MainWindow.java" line="61" column="1" bodyfile="src/snakegame/MainWindow.java" bodystart="61" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1_main_window_1afe9dbd469853597ae9a61c56b85d2762" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void snakegame.MainWindow.paint</definition>
+        <argsstring>(Graphics g)</argsstring>
+        <name>paint</name>
+        <param>
+          <type>Graphics</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/MainWindow.java" line="96" column="1" bodyfile="src/snakegame/MainWindow.java" bodystart="96" bodyend="103"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="41">
+        <label>JFrame</label>
+      </node>
+      <node id="40">
+        <label>snakegame.MainWindow</label>
+        <link refid="classsnakegame_1_1_main_window"/>
+        <childnode refid="41" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="43">
+        <label>JFrame</label>
+      </node>
+      <node id="42">
+        <label>snakegame.MainWindow</label>
+        <link refid="classsnakegame_1_1_main_window"/>
+        <childnode refid="43" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/snakegame/MainWindow.java" line="12" column="1" bodyfile="src/snakegame/MainWindow.java" bodystart="11" bodyend="104"/>
+    <listofallmembers>
+      <member refid="classsnakegame_1_1_main_window_1a3e4b4975255c70194c3b6932de307c23" prot="private" virt="non-virtual"><scope>snakegame::MainWindow</scope><name>GameOver</name></member>
+      <member refid="classsnakegame_1_1_main_window_1ae412ac0550a3d9a165dc7ce7e5481ba3" prot="public" virt="non-virtual"><scope>snakegame::MainWindow</scope><name>Input</name></member>
+      <member refid="classsnakegame_1_1_main_window_1a1d6c01c5fc3aa251c27c5fbb67f14a5c" prot="private" virt="non-virtual"><scope>snakegame::MainWindow</scope><name>lastKey</name></member>
+      <member refid="classsnakegame_1_1_main_window_1afe98cd0408857daeda6b57eae0e73a66" prot="package" virt="non-virtual"><scope>snakegame::MainWindow</scope><name>MainWindow</name></member>
+      <member refid="classsnakegame_1_1_main_window_1afe9dbd469853597ae9a61c56b85d2762" prot="public" virt="non-virtual"><scope>snakegame::MainWindow</scope><name>paint</name></member>
+      <member refid="classsnakegame_1_1_main_window_1aed7f2bf93186b84abcc52d8b0acab7a3" prot="private" virt="non-virtual"><scope>snakegame::MainWindow</scope><name>rand</name></member>
+      <member refid="classsnakegame_1_1_main_window_1ae5850c684de7f6206c80b1dbfcac49af" prot="private" virt="non-virtual"><scope>snakegame::MainWindow</scope><name>snake1</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

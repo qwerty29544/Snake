@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classsnakegame_1_1_constants" kind="class" language="Java" prot="public">
+    <compoundname>snakegame::Constants</compoundname>
+    <derivedcompoundref refid="classsnakegame_1_1apple" prot="public" virt="non-virtual">snakegame.apple</derivedcompoundref>
+    <derivedcompoundref refid="classsnakegame_1_1snake" prot="public" virt="non-virtual">snakegame.snake</derivedcompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classsnakegame_1_1_constants_1a253f00351ba8bbc4a7e7adf94ddd4a29" prot="public" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int snakegame.Constants.BORDER_WIDTH</definition>
+        <argsstring></argsstring>
+        <name>BORDER_WIDTH</name>
+        <initializer>= 900</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/Constants.java" line="4" column="1" bodyfile="src/snakegame/Constants.java" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsnakegame_1_1_constants_1a84c010eb1c979612c5b3627964f33385" prot="public" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int snakegame.Constants.BORDER_LENGHT</definition>
+        <argsstring></argsstring>
+        <name>BORDER_LENGHT</name>
+        <initializer>= 900</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/Constants.java" line="5" column="1" bodyfile="src/snakegame/Constants.java" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsnakegame_1_1_constants_1a47ff3bd3c0ecae5e9f2b878915a9dad2" prot="public" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int snakegame.Constants.UP</definition>
+        <argsstring></argsstring>
+        <name>UP</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/Constants.java" line="6" column="1" bodyfile="src/snakegame/Constants.java" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsnakegame_1_1_constants_1affe932cca510cf5d5f619af355a9e5e2" prot="public" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int snakegame.Constants.RIGHT</definition>
+        <argsstring></argsstring>
+        <name>RIGHT</name>
+        <initializer>= 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/Constants.java" line="7" column="1" bodyfile="src/snakegame/Constants.java" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsnakegame_1_1_constants_1ac9166aad2f05da4e80661a252c82f9f6" prot="public" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int snakegame.Constants.DOWN</definition>
+        <argsstring></argsstring>
+        <name>DOWN</name>
+        <initializer>= 3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/Constants.java" line="8" column="1" bodyfile="src/snakegame/Constants.java" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsnakegame_1_1_constants_1af2ce3ce8082b3922ef73a7cd291095d7" prot="public" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int snakegame.Constants.LEFT</definition>
+        <argsstring></argsstring>
+        <name>LEFT</name>
+        <initializer>= 4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/Constants.java" line="9" column="1" bodyfile="src/snakegame/Constants.java" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsnakegame_1_1_constants_1a112d1c18a610f11804c7e27734db6a40" prot="public" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int snakegame.Constants.shift</definition>
+        <argsstring></argsstring>
+        <name>shift</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/Constants.java" line="10" column="1" bodyfile="src/snakegame/Constants.java" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsnakegame_1_1_constants_1a3c24c7aa6b732df3fd18eaf1394f9255" prot="public" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int snakegame.Constants.step_size</definition>
+        <argsstring></argsstring>
+        <name>step_size</name>
+        <initializer>= 20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/Constants.java" line="11" column="1" bodyfile="src/snakegame/Constants.java" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="31">
+        <label>snakegame.apple</label>
+        <link refid="classsnakegame_1_1apple"/>
+        <childnode refid="30" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>snakegame.snake</label>
+        <link refid="classsnakegame_1_1snake"/>
+        <childnode refid="30" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>snakegame.Constants</label>
+        <link refid="classsnakegame_1_1_constants"/>
+      </node>
+    </inheritancegraph>
+    <location file="src/snakegame/Constants.java" line="3" column="1" bodyfile="src/snakegame/Constants.java" bodystart="3" bodyend="12"/>
+    <listofallmembers>
+      <member refid="classsnakegame_1_1_constants_1a84c010eb1c979612c5b3627964f33385" prot="public" virt="non-virtual"><scope>snakegame::Constants</scope><name>BORDER_LENGHT</name></member>
+      <member refid="classsnakegame_1_1_constants_1a253f00351ba8bbc4a7e7adf94ddd4a29" prot="public" virt="non-virtual"><scope>snakegame::Constants</scope><name>BORDER_WIDTH</name></member>
+      <member refid="classsnakegame_1_1_constants_1ac9166aad2f05da4e80661a252c82f9f6" prot="public" virt="non-virtual"><scope>snakegame::Constants</scope><name>DOWN</name></member>
+      <member refid="classsnakegame_1_1_constants_1af2ce3ce8082b3922ef73a7cd291095d7" prot="public" virt="non-virtual"><scope>snakegame::Constants</scope><name>LEFT</name></member>
+      <member refid="classsnakegame_1_1_constants_1affe932cca510cf5d5f619af355a9e5e2" prot="public" virt="non-virtual"><scope>snakegame::Constants</scope><name>RIGHT</name></member>
+      <member refid="classsnakegame_1_1_constants_1a112d1c18a610f11804c7e27734db6a40" prot="public" virt="non-virtual"><scope>snakegame::Constants</scope><name>shift</name></member>
+      <member refid="classsnakegame_1_1_constants_1a3c24c7aa6b732df3fd18eaf1394f9255" prot="public" virt="non-virtual"><scope>snakegame::Constants</scope><name>step_size</name></member>
+      <member refid="classsnakegame_1_1_constants_1a47ff3bd3c0ecae5e9f2b878915a9dad2" prot="public" virt="non-virtual"><scope>snakegame::Constants</scope><name>UP</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacesnakegame_1_1server" kind="namespace" language="Java">
+    <compoundname>snakegame::server</compoundname>
+    <innerclass refid="classsnakegame_1_1server_1_1_contriols_queue" prot="public">snakegame::server::ContriolsQueue</innerclass>
+    <innerclass refid="classsnakegame_1_1server_1_1_message" prot="public">snakegame::server::Message</innerclass>
+    <innerclass refid="classsnakegame_1_1server_1_1_server" prot="public">snakegame::server::Server</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/snakegame/server/ContriolsQueue.java" line="1" column="1"/>
+  </compounddef>
+</doxygen>

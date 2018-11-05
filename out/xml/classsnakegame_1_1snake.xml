@@ -1,0 +1,273 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classsnakegame_1_1snake" kind="class" language="Java" prot="public">
+    <compoundname>snakegame::snake</compoundname>
+    <basecompoundref refid="classsnakegame_1_1_constants" prot="public" virt="non-virtual">snakegame.Constants</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsnakegame_1_1snake_1a06bd5bfb153a79b3321f8014cfe1f4b6" prot="private" static="no" mutable="no">
+        <type>ArrayList&lt; Point &gt;</type>
+        <definition>ArrayList&lt;Point&gt; snakegame.snake.snake_body</definition>
+        <argsstring></argsstring>
+        <name>snake_body</name>
+        <initializer>= new ArrayList&lt;Point&gt;(5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/snake.java" line="11" column="1" bodyfile="src/snakegame/snake.java" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsnakegame_1_1snake_1a2e5ab84403bf0e1fcede05305f7cf432" prot="private" static="no" mutable="no">
+        <type>Point</type>
+        <definition>Point snakegame.snake.Apple</definition>
+        <argsstring></argsstring>
+        <name>Apple</name>
+        <initializer>= new Point()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/snake.java" line="12" column="1" bodyfile="src/snakegame/snake.java" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsnakegame_1_1snake_1ab185078810b0bc5a785e6e7f8e19e352" prot="private" static="no" mutable="no">
+        <type>Point</type>
+        <definition>Point snakegame.snake.lastApple</definition>
+        <argsstring></argsstring>
+        <name>lastApple</name>
+        <initializer>= new Point()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/snake.java" line="13" column="1" bodyfile="src/snakegame/snake.java" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsnakegame_1_1snake_1a273a8a4dbe24d584176aa3f2cbeb5519" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int snakegame.snake.step_size</definition>
+        <argsstring></argsstring>
+        <name>step_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/snake.java" line="14" column="1" bodyfile="src/snakegame/snake.java" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsnakegame_1_1snake_1a0ad5393c7f24289c001eb619f3979d46" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int snakegame.snake.snake_direction</definition>
+        <argsstring></argsstring>
+        <name>snake_direction</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/snake.java" line="15" column="1" bodyfile="src/snakegame/snake.java" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsnakegame_1_1snake_1af4bc697386bc5ff5c8806d517bbf7066" prot="private" static="no" mutable="no">
+        <type>final Random</type>
+        <definition>final Random snakegame.snake.rand</definition>
+        <argsstring></argsstring>
+        <name>rand</name>
+        <initializer>= new Random()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/snake.java" line="16" column="1" bodyfile="src/snakegame/snake.java" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsnakegame_1_1snake_1ab69cc245aa41b71c0f7cef8be7153d8f" prot="private" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>boolean snakegame.snake.GameOver</definition>
+        <argsstring></argsstring>
+        <name>GameOver</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/snake.java" line="17" column="1" bodyfile="src/snakegame/snake.java" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="classsnakegame_1_1snake_1a16fa0deaa66bc15b37689d33ca665275" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>snakegame.snake.snake</definition>
+        <argsstring>(int x0, int y0, int step)</argsstring>
+        <name>snake</name>
+        <param>
+          <type>int</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y0</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>step</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/snake.java" line="20" column="1" bodyfile="src/snakegame/snake.java" bodystart="20" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsnakegame_1_1snake_1a488d8293668de46cd8daf048d26a2b55" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int snakegame.snake.getDirection</definition>
+        <argsstring>()</argsstring>
+        <name>getDirection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/snake.java" line="33" column="1" bodyfile="src/snakegame/snake.java" bodystart="33" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1snake_1ad2d7f86bae0fc94adde6c4417b4e1b8a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void snakegame.snake.setDirection</definition>
+        <argsstring>(int direction)</argsstring>
+        <name>setDirection</name>
+        <param>
+          <type>int</type>
+          <declname>direction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/snake.java" line="37" column="1" bodyfile="src/snakegame/snake.java" bodystart="37" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1snake_1a1f9f29ffc498ba715fbb5419f35bc7fa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Point</type>
+        <definition>Point snakegame.snake.head</definition>
+        <argsstring>()</argsstring>
+        <name>head</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/snake.java" line="41" column="1" bodyfile="src/snakegame/snake.java" bodystart="41" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1snake_1a63cca0235c21cd483d69bb52e17d48cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ArrayList&lt; Point &gt;</type>
+        <definition>ArrayList&lt;Point&gt; snakegame.snake.body</definition>
+        <argsstring>()</argsstring>
+        <name>body</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/snake.java" line="44" column="1" bodyfile="src/snakegame/snake.java" bodystart="44" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1snake_1a9372b56db6a2e802f5bb7e7fc1b244d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void snakegame.snake.logic</definition>
+        <argsstring>()</argsstring>
+        <name>logic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/snake.java" line="48" column="1" bodyfile="src/snakegame/snake.java" bodystart="48" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1snake_1a0997b6e2c2b622c3f4b013868c0165b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void snakegame.snake.paint</definition>
+        <argsstring>(Graphics2D g2)</argsstring>
+        <name>paint</name>
+        <param>
+          <type>Graphics2D</type>
+          <declname>g2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/snake.java" line="118" column="1" bodyfile="src/snakegame/snake.java" bodystart="118" bodyend="136"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="61">
+        <label>snakegame.snake</label>
+        <link refid="classsnakegame_1_1snake"/>
+        <childnode refid="62" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>snakegame.Constants</label>
+        <link refid="classsnakegame_1_1_constants"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="63">
+        <label>snakegame.snake</label>
+        <link refid="classsnakegame_1_1snake"/>
+        <childnode refid="64" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>snakegame.Constants</label>
+        <link refid="classsnakegame_1_1_constants"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/snakegame/snake.java" line="9" column="1" bodyfile="src/snakegame/snake.java" bodystart="9" bodyend="138"/>
+    <listofallmembers>
+      <member refid="classsnakegame_1_1snake_1a2e5ab84403bf0e1fcede05305f7cf432" prot="private" virt="non-virtual"><scope>snakegame::snake</scope><name>Apple</name></member>
+      <member refid="classsnakegame_1_1snake_1a63cca0235c21cd483d69bb52e17d48cf" prot="public" virt="non-virtual"><scope>snakegame::snake</scope><name>body</name></member>
+      <member refid="classsnakegame_1_1_constants_1a84c010eb1c979612c5b3627964f33385" prot="public" virt="non-virtual"><scope>snakegame::snake</scope><name>BORDER_LENGHT</name></member>
+      <member refid="classsnakegame_1_1_constants_1a253f00351ba8bbc4a7e7adf94ddd4a29" prot="public" virt="non-virtual"><scope>snakegame::snake</scope><name>BORDER_WIDTH</name></member>
+      <member refid="classsnakegame_1_1_constants_1ac9166aad2f05da4e80661a252c82f9f6" prot="public" virt="non-virtual"><scope>snakegame::snake</scope><name>DOWN</name></member>
+      <member refid="classsnakegame_1_1snake_1ab69cc245aa41b71c0f7cef8be7153d8f" prot="private" virt="non-virtual"><scope>snakegame::snake</scope><name>GameOver</name></member>
+      <member refid="classsnakegame_1_1snake_1a488d8293668de46cd8daf048d26a2b55" prot="public" virt="non-virtual"><scope>snakegame::snake</scope><name>getDirection</name></member>
+      <member refid="classsnakegame_1_1snake_1a1f9f29ffc498ba715fbb5419f35bc7fa" prot="public" virt="non-virtual"><scope>snakegame::snake</scope><name>head</name></member>
+      <member refid="classsnakegame_1_1snake_1ab185078810b0bc5a785e6e7f8e19e352" prot="private" virt="non-virtual"><scope>snakegame::snake</scope><name>lastApple</name></member>
+      <member refid="classsnakegame_1_1_constants_1af2ce3ce8082b3922ef73a7cd291095d7" prot="public" virt="non-virtual"><scope>snakegame::snake</scope><name>LEFT</name></member>
+      <member refid="classsnakegame_1_1snake_1a9372b56db6a2e802f5bb7e7fc1b244d5" prot="public" virt="non-virtual"><scope>snakegame::snake</scope><name>logic</name></member>
+      <member refid="classsnakegame_1_1snake_1a0997b6e2c2b622c3f4b013868c0165b1" prot="public" virt="non-virtual"><scope>snakegame::snake</scope><name>paint</name></member>
+      <member refid="classsnakegame_1_1snake_1af4bc697386bc5ff5c8806d517bbf7066" prot="private" virt="non-virtual"><scope>snakegame::snake</scope><name>rand</name></member>
+      <member refid="classsnakegame_1_1_constants_1affe932cca510cf5d5f619af355a9e5e2" prot="public" virt="non-virtual"><scope>snakegame::snake</scope><name>RIGHT</name></member>
+      <member refid="classsnakegame_1_1snake_1ad2d7f86bae0fc94adde6c4417b4e1b8a" prot="public" virt="non-virtual"><scope>snakegame::snake</scope><name>setDirection</name></member>
+      <member refid="classsnakegame_1_1_constants_1a112d1c18a610f11804c7e27734db6a40" prot="public" virt="non-virtual"><scope>snakegame::snake</scope><name>shift</name></member>
+      <member refid="classsnakegame_1_1snake_1a16fa0deaa66bc15b37689d33ca665275" prot="package" virt="non-virtual"><scope>snakegame::snake</scope><name>snake</name></member>
+      <member refid="classsnakegame_1_1snake_1a06bd5bfb153a79b3321f8014cfe1f4b6" prot="private" virt="non-virtual"><scope>snakegame::snake</scope><name>snake_body</name></member>
+      <member refid="classsnakegame_1_1snake_1a0ad5393c7f24289c001eb619f3979d46" prot="private" virt="non-virtual"><scope>snakegame::snake</scope><name>snake_direction</name></member>
+      <member refid="classsnakegame_1_1snake_1a273a8a4dbe24d584176aa3f2cbeb5519" prot="private" virt="non-virtual"><scope>snakegame::snake</scope><name>step_size</name></member>
+      <member refid="classsnakegame_1_1_constants_1a47ff3bd3c0ecae5e9f2b878915a9dad2" prot="public" virt="non-virtual"><scope>snakegame::snake</scope><name>UP</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

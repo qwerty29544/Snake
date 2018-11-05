@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_snake_factory_8java" kind="file" language="Java">
+    <compoundname>SnakeFactory.java</compoundname>
+    <innerclass refid="classsnakegame_1_1structs_1_1_snake_factory" prot="public">snakegame::structs::SnakeFactory</innerclass>
+    <innernamespace refid="namespacesnakegame_1_1structs">snakegame::structs</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">package<sp/></highlight><highlight class="normal">snakegame.structs;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.ArrayList;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.LinkedList;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.List;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.Random;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="classsnakegame_1_1structs_1_1_snake_factory" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsnakegame_1_1structs_1_1_snake_factory" kindref="compound">SnakeFactory</ref>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>List&lt;Point&gt;<sp/>points;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>maxX;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>maxY;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>randomEncounters;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>Random<sp/>random<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Random();</highlight></codeline>
+<codeline lineno="15" refid="classsnakegame_1_1structs_1_1_snake_factory_1a7554cd7f5aa717667f3babe46e896cda" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classsnakegame_1_1structs_1_1_snake_factory_1a7554cd7f5aa717667f3babe46e896cda" kindref="member">SnakeFactory</ref>(List&lt;Point&gt;<sp/>points){</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.maxX<sp/>=<sp/>100;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.maxY<sp/>=<sp/>100;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.randomEncounters<sp/>=<sp/>5;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.points<sp/>=<sp/>points;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="classsnakegame_1_1structs_1_1_snake_factory_1a057bbfab734e3434b03c8fe9b6ea7129" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classsnakegame_1_1structs_1_1_snake_factory_1a057bbfab734e3434b03c8fe9b6ea7129" kindref="member">SnakeFactory</ref>(){</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.maxX<sp/>=<sp/>100;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.maxY<sp/>=<sp/>100;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.randomEncounters<sp/>=<sp/>5;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.points<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>ArrayList&lt;Point&gt;();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;randomEncounters<sp/>;<sp/>i++){</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>points.add(0,<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classsnakegame_1_1structs_1_1_snake_point" kindref="compound">SnakePoint</ref>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classsnakegame_1_1structs_1_1_remainder" kindref="compound">Remainder</ref>(random.nextInt(maxX)),</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classsnakegame_1_1structs_1_1_remainder" kindref="compound">Remainder</ref>(random.nextInt(maxY))));</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="classsnakegame_1_1structs_1_1_snake_factory_1aaa009e01befdc963fbe8b920dc1ef97e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classsnakegame_1_1structs_1_1_snake" kindref="compound">Snake</ref><sp/><ref refid="classsnakegame_1_1structs_1_1_snake_factory_1aaa009e01befdc963fbe8b920dc1ef97e" kindref="member">generateSnake</ref>(){</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="enumsnakegame_1_1structs_1_1_direction" kindref="compound">Direction</ref><sp/>direction<sp/>=<sp/><ref refid="enumsnakegame_1_1structs_1_1_direction" kindref="compound">Direction</ref>.<ref refid="enumsnakegame_1_1structs_1_1_direction_1af5f078cc54af6fabd9325c39328c6d9c" kindref="member">right</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LinkedList&lt;Point&gt;<sp/>snakePoints<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>LinkedList&lt;Point&gt;();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>snakePoints.add(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classsnakegame_1_1structs_1_1_snake_point" kindref="compound">SnakePoint</ref>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classsnakegame_1_1structs_1_1_remainder" kindref="compound">Remainder</ref>(random.nextInt(maxX)),</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classsnakegame_1_1structs_1_1_remainder" kindref="compound">Remainder</ref>(random.nextInt(maxY))));</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsnakegame_1_1structs_1_1_snake" kindref="compound">Snake</ref><sp/><ref refid="classsnakegame_1_1snake" kindref="compound">snake</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classsnakegame_1_1structs_1_1_snake" kindref="compound">Snake</ref>(snakePoints,direction);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsnakegame_1_1snake" kindref="compound">snake</ref>.moveHead();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classsnakegame_1_1snake" kindref="compound">snake</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/snakegame/structs/SnakeFactory.java"/>
+  </compounddef>
+</doxygen>

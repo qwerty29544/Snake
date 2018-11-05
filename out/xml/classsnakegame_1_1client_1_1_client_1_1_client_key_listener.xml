@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classsnakegame_1_1client_1_1_client_1_1_client_key_listener" kind="class" language="Java" prot="public">
+    <compoundname>snakegame::client::Client::ClientKeyListener</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">KeyListener</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsnakegame_1_1client_1_1_client_1_1_client_key_listener_1ac3ad166d166fc31f4c6b31445da4181a" prot="private" static="no" mutable="no">
+        <type>UUID</type>
+        <definition>UUID snakegame.client.Client.ClientKeyListener.uuid</definition>
+        <argsstring></argsstring>
+        <name>uuid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/client/Client.java" line="46" column="1" bodyfile="src/snakegame/client/Client.java" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsnakegame_1_1client_1_1_client_1_1_client_key_listener_1a5a88d7ee0f0ecc89a0b5aeffa9b8a9ca" prot="private" static="no" mutable="no">
+        <type>DataOutputStream</type>
+        <definition>DataOutputStream snakegame.client.Client.ClientKeyListener.dataOutputStream</definition>
+        <argsstring></argsstring>
+        <name>dataOutputStream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/client/Client.java" line="47" column="1" bodyfile="src/snakegame/client/Client.java" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsnakegame_1_1client_1_1_client_1_1_client_key_listener_1a2db61928ecee23fe96d7aa05fdb3ab4f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>snakegame.client.Client.ClientKeyListener.ClientKeyListener</definition>
+        <argsstring>(UUID uuid, DataOutputStream dataOutputStream)</argsstring>
+        <name>ClientKeyListener</name>
+        <param>
+          <type>UUID</type>
+          <declname>uuid</declname>
+        </param>
+        <param>
+          <type>DataOutputStream</type>
+          <declname>dataOutputStream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/client/Client.java" line="50" column="1" bodyfile="src/snakegame/client/Client.java" bodystart="50" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1client_1_1_client_1_1_client_key_listener_1a45fa13719ad91104996cd757e8bc22c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void snakegame.client.Client.ClientKeyListener.keyTyped</definition>
+        <argsstring>(KeyEvent e)</argsstring>
+        <name>keyTyped</name>
+        <param>
+          <type>KeyEvent</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/client/Client.java" line="56" column="1" bodyfile="src/snakegame/client/Client.java" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1client_1_1_client_1_1_client_key_listener_1a80088f209da9a56383f2ef30609e8c29" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void snakegame.client.Client.ClientKeyListener.keyPressed</definition>
+        <argsstring>(KeyEvent e)</argsstring>
+        <name>keyPressed</name>
+        <param>
+          <type>KeyEvent</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/client/Client.java" line="59" column="1" bodyfile="src/snakegame/client/Client.java" bodystart="59" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1client_1_1_client_1_1_client_key_listener_1a108d7c0c844a52e1ba6ad2999455369f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void snakegame.client.Client.ClientKeyListener.keyReleased</definition>
+        <argsstring>(KeyEvent e)</argsstring>
+        <name>keyReleased</name>
+        <param>
+          <type>KeyEvent</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/client/Client.java" line="68" column="1" bodyfile="src/snakegame/client/Client.java" bodystart="68" bodyend="68"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="25">
+        <label>KeyListener</label>
+      </node>
+      <node id="24">
+        <label>snakegame.client.Client.ClientKeyListener</label>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="27">
+        <label>KeyListener</label>
+      </node>
+      <node id="26">
+        <label>snakegame.client.Client.ClientKeyListener</label>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/snakegame/client/Client.java" line="45" column="1" bodyfile="src/snakegame/client/Client.java" bodystart="45" bodyend="69"/>
+    <listofallmembers>
+      <member refid="classsnakegame_1_1client_1_1_client_1_1_client_key_listener_1a2db61928ecee23fe96d7aa05fdb3ab4f" prot="public" virt="non-virtual"><scope>snakegame::client::Client::ClientKeyListener</scope><name>ClientKeyListener</name></member>
+      <member refid="classsnakegame_1_1client_1_1_client_1_1_client_key_listener_1a5a88d7ee0f0ecc89a0b5aeffa9b8a9ca" prot="private" virt="non-virtual"><scope>snakegame::client::Client::ClientKeyListener</scope><name>dataOutputStream</name></member>
+      <member refid="classsnakegame_1_1client_1_1_client_1_1_client_key_listener_1a80088f209da9a56383f2ef30609e8c29" prot="public" virt="non-virtual"><scope>snakegame::client::Client::ClientKeyListener</scope><name>keyPressed</name></member>
+      <member refid="classsnakegame_1_1client_1_1_client_1_1_client_key_listener_1a108d7c0c844a52e1ba6ad2999455369f" prot="public" virt="non-virtual"><scope>snakegame::client::Client::ClientKeyListener</scope><name>keyReleased</name></member>
+      <member refid="classsnakegame_1_1client_1_1_client_1_1_client_key_listener_1a45fa13719ad91104996cd757e8bc22c1" prot="public" virt="non-virtual"><scope>snakegame::client::Client::ClientKeyListener</scope><name>keyTyped</name></member>
+      <member refid="classsnakegame_1_1client_1_1_client_1_1_client_key_listener_1ac3ad166d166fc31f4c6b31445da4181a" prot="private" virt="non-virtual"><scope>snakegame::client::Client::ClientKeyListener</scope><name>uuid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

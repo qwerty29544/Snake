@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classsnakegame_1_1structs_1_1_snake_point" kind="class" language="Java" prot="public">
+    <compoundname>snakegame::structs::SnakePoint</compoundname>
+    <basecompoundref refid="classsnakegame_1_1structs_1_1_point" prot="public" virt="non-virtual">snakegame.structs.Point</basecompoundref>
+      <sectiondef kind="package-static-attrib">
+      <memberdef kind="variable" id="classsnakegame_1_1structs_1_1_snake_point_1a73230d37d4d45cb875a716a287f63b6d" prot="package" static="yes" mutable="no">
+        <type>Color</type>
+        <definition>Color snakegame.structs.SnakePoint.color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <initializer>= Color.BLACK</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/SnakePoint.java" line="6" column="1" bodyfile="src/snakegame/structs/SnakePoint.java" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsnakegame_1_1structs_1_1_snake_point_1ae9e75da47afe313c2a55fd4ee92d57ae" prot="package" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int snakegame.structs.SnakePoint.step_size</definition>
+        <argsstring></argsstring>
+        <name>step_size</name>
+        <initializer>= 9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/SnakePoint.java" line="7" column="1" bodyfile="src/snakegame/structs/SnakePoint.java" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_snake_point_1ae366301b429df98a08689c778a097d7c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>snakegame.structs.SnakePoint.SnakePoint</definition>
+        <argsstring>(Remainder x, Remainder y)</argsstring>
+        <name>SnakePoint</name>
+        <param>
+          <type><ref refid="classsnakegame_1_1structs_1_1_remainder" kindref="compound">Remainder</ref></type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classsnakegame_1_1structs_1_1_remainder" kindref="compound">Remainder</ref></type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/SnakePoint.java" line="9" column="1" bodyfile="src/snakegame/structs/SnakePoint.java" bodystart="9" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_snake_point_1aa226b89f8a362d365d5f1d1b522aabaf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void snakegame.structs.SnakePoint.draw</definition>
+        <argsstring>(Graphics2D g)</argsstring>
+        <name>draw</name>
+        <param>
+          <type>Graphics2D</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/SnakePoint.java" line="14" column="1" bodyfile="src/snakegame/structs/SnakePoint.java" bodystart="14" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="69">
+        <label>snakegame.structs.SnakePoint</label>
+        <link refid="classsnakegame_1_1structs_1_1_snake_point"/>
+        <childnode refid="70" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>snakegame.structs.Point</label>
+        <link refid="classsnakegame_1_1structs_1_1_point"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="73">
+        <label>snakegame.structs.Remainder</label>
+        <link refid="classsnakegame_1_1structs_1_1_remainder"/>
+        <childnode refid="74" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>snakegame.structs.SnakePoint</label>
+        <link refid="classsnakegame_1_1structs_1_1_snake_point"/>
+        <childnode refid="72" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>snakegame.structs.Point</label>
+        <link refid="classsnakegame_1_1structs_1_1_point"/>
+        <childnode refid="73" relation="usage">
+          <edgelabel>x</edgelabel>
+          <edgelabel>y</edgelabel>
+        </childnode>
+      </node>
+      <node id="74">
+        <label>Cloneable</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/snakegame/structs/SnakePoint.java" line="5" column="1" bodyfile="src/snakegame/structs/SnakePoint.java" bodystart="5" bodyend="20"/>
+    <listofallmembers>
+      <member refid="classsnakegame_1_1structs_1_1_snake_point_1a73230d37d4d45cb875a716a287f63b6d" prot="package" virt="non-virtual"><scope>snakegame::structs::SnakePoint</scope><name>color</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_snake_point_1aa226b89f8a362d365d5f1d1b522aabaf" prot="public" virt="non-virtual"><scope>snakegame::structs::SnakePoint</scope><name>draw</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_point_1a46a08a1ffaa9cf65bab5527e620c0127" prot="public" virt="non-virtual"><scope>snakegame::structs::SnakePoint</scope><name>equals</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_point_1a6dd8ef89102d12ec0cf5db0c03a568eb" prot="public" virt="non-virtual"><scope>snakegame::structs::SnakePoint</scope><name>getX</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_point_1a920963cbc293b477335d7dc931ffb306" prot="public" virt="non-virtual"><scope>snakegame::structs::SnakePoint</scope><name>getY</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_point_1a29332641bab79c8e403a6429d640e5f7" prot="public" virt="non-virtual"><scope>snakegame::structs::SnakePoint</scope><name>hashCode</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_point_1a79325ac308e18b3dd2721fcfa44752bd" prot="public" virt="non-virtual"><scope>snakegame::structs::SnakePoint</scope><name>Point</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_point_1a9efa9a335cccdbf667d1304c123e7ca9" prot="public" virt="non-virtual"><scope>snakegame::structs::SnakePoint</scope><name>setX</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_point_1a9d42e4e18c765dcbfd14ef4baa102367" prot="public" virt="non-virtual"><scope>snakegame::structs::SnakePoint</scope><name>setY</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_snake_point_1ae366301b429df98a08689c778a097d7c" prot="public" virt="non-virtual"><scope>snakegame::structs::SnakePoint</scope><name>SnakePoint</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_snake_point_1ae9e75da47afe313c2a55fd4ee92d57ae" prot="package" virt="non-virtual"><scope>snakegame::structs::SnakePoint</scope><name>step_size</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_point_1aec9ad3287697d952ab40687f5459241b" prot="public" virt="non-virtual"><scope>snakegame::structs::SnakePoint</scope><name>toString</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_point_1acf6c91ee7cda0e65a8054ff0dc07b79a" prot="protected" virt="non-virtual"><scope>snakegame::structs::SnakePoint</scope><name>x</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_point_1a2a9fe55d9cf57dbc120bbce39313d38d" prot="protected" virt="non-virtual"><scope>snakegame::structs::SnakePoint</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

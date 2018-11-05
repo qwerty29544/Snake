@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classsnakegame_1_1server_1_1_server" kind="class" language="Java" prot="public">
+    <compoundname>snakegame::server::Server</compoundname>
+    <innerclass refid="classsnakegame_1_1server_1_1_server_1_1_client_handler" prot="public">snakegame::server::Server::ClientHandler</innerclass>
+    <innerclass refid="classsnakegame_1_1server_1_1_server_1_1_client_updater" prot="public">snakegame::server::Server::ClientUpdater</innerclass>
+    <innerclass refid="classsnakegame_1_1server_1_1_server_1_1_world_updater" prot="public">snakegame::server::Server::WorldUpdater</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsnakegame_1_1server_1_1_server_1abc56442140af9180298c007a9391b88d" prot="private" static="no" mutable="no">
+        <type><ref refid="classsnakegame_1_1structs_1_1_world" kindref="compound">World</ref></type>
+        <definition>World snakegame.server.Server.world</definition>
+        <argsstring></argsstring>
+        <name>world</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/server/Server.java" line="17" column="1" bodyfile="src/snakegame/server/Server.java" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsnakegame_1_1server_1_1_server_1a770f3a9c489c39764a8ef148729db236" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int snakegame.server.Server.port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/server/Server.java" line="18" column="1" bodyfile="src/snakegame/server/Server.java" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsnakegame_1_1server_1_1_server_1a94f76e3dba337fa9502f4f1b7b149dfb" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String snakegame.server.Server.host</definition>
+        <argsstring></argsstring>
+        <name>host</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/server/Server.java" line="19" column="1" bodyfile="src/snakegame/server/Server.java" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsnakegame_1_1server_1_1_server_1a8fdb9bb043ab93002fb168e52c68bdf6" prot="private" static="no" mutable="no">
+        <type>Map&lt; UUID, <ref refid="classsnakegame_1_1server_1_1_message" kindref="compound">Message</ref> &gt;</type>
+        <definition>Map&lt;UUID, Message&gt; snakegame.server.Server.events</definition>
+        <argsstring></argsstring>
+        <name>events</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/server/Server.java" line="25" column="1" bodyfile="src/snakegame/server/Server.java" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsnakegame_1_1server_1_1_server_1aeffbf511bad68c5e9e99e35c00529792" prot="private" static="no" mutable="no">
+        <type>Set&lt; <ref refid="classsnakegame_1_1server_1_1_server_1_1_client_updater" kindref="compound">ClientUpdater</ref> &gt;</type>
+        <definition>Set&lt;ClientUpdater&gt; snakegame.server.Server.updaters</definition>
+        <argsstring></argsstring>
+        <name>updaters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/server/Server.java" line="26" column="1" bodyfile="src/snakegame/server/Server.java" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsnakegame_1_1server_1_1_server_1a7bda4d35eb1cd523a4a38913c211f143" prot="private" static="no" mutable="no">
+        <type>Set&lt; Socket &gt;</type>
+        <definition>Set&lt;Socket&gt; snakegame.server.Server.sockets</definition>
+        <argsstring></argsstring>
+        <name>sockets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/server/Server.java" line="27" column="1" bodyfile="src/snakegame/server/Server.java" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-static-attrib">
+      <memberdef kind="variable" id="classsnakegame_1_1server_1_1_server_1ac677dc2455769bfd57b976940217aafb" prot="package" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int snakegame.server.Server.DEFAULT_PORT</definition>
+        <argsstring></argsstring>
+        <name>DEFAULT_PORT</name>
+        <initializer>= 1337</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/server/Server.java" line="21" column="1" bodyfile="src/snakegame/server/Server.java" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsnakegame_1_1server_1_1_server_1a9ccb7a48bdbac859281be9120e5e106f" prot="package" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String snakegame.server.Server.DEFAULT_HOST</definition>
+        <argsstring></argsstring>
+        <name>DEFAULT_HOST</name>
+        <initializer>= &quot;127.0.0.1&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/server/Server.java" line="22" column="1" bodyfile="src/snakegame/server/Server.java" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsnakegame_1_1server_1_1_server_1a3ea460ad600a79fe10f6bf5c11bdccc9" prot="package" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int snakegame.server.Server.UPDATE_INTERVAL</definition>
+        <argsstring></argsstring>
+        <name>UPDATE_INTERVAL</name>
+        <initializer>= 200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/server/Server.java" line="23" column="1" bodyfile="src/snakegame/server/Server.java" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsnakegame_1_1server_1_1_server_1a87ec09c1d3e0c97c7c97941ea3ded581" prot="package" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int snakegame.server.Server.NUM_APPLES</definition>
+        <argsstring></argsstring>
+        <name>NUM_APPLES</name>
+        <initializer>= 5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/server/Server.java" line="24" column="1" bodyfile="src/snakegame/server/Server.java" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsnakegame_1_1server_1_1_server_1a483e80c850ea654902e0843f77eb783d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>snakegame.server.Server.Server</definition>
+        <argsstring>(int port, String host)</argsstring>
+        <name>Server</name>
+        <param>
+          <type>int</type>
+          <declname>port</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/server/Server.java" line="30" column="1" bodyfile="src/snakegame/server/Server.java" bodystart="30" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1server_1_1_server_1a22825670547a8a66d0f0e8e48577101b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>snakegame.server.Server.Server</definition>
+        <argsstring>()</argsstring>
+        <name>Server</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/server/Server.java" line="44" column="1" bodyfile="src/snakegame/server/Server.java" bodystart="44" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1server_1_1_server_1a2b8dd5769b5f1d9214a89856ff8923fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>snakegame.server.Server.Server</definition>
+        <argsstring>(int port)</argsstring>
+        <name>Server</name>
+        <param>
+          <type>int</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/server/Server.java" line="49" column="1" bodyfile="src/snakegame/server/Server.java" bodystart="49" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1server_1_1_server_1af023d23576ddca43c378f1ce18273126" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>snakegame.server.Server.Server</definition>
+        <argsstring>(String host)</argsstring>
+        <name>Server</name>
+        <param>
+          <type>String</type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/server/Server.java" line="55" column="1" bodyfile="src/snakegame/server/Server.java" bodystart="55" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1server_1_1_server_1af0101ad4e19f7ffc7ac541af737b5339" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void snakegame.server.Server.run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/server/Server.java" line="60" column="1" bodyfile="src/snakegame/server/Server.java" bodystart="60" bodyend="74"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classsnakegame_1_1server_1_1_server_1ae7d47dbe33f4e0267a9a118c8541cd2d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void snakegame.server.Server.main</definition>
+        <argsstring>(String[] args)</argsstring>
+        <name>main</name>
+        <param>
+          <type>String []</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/server/Server.java" line="77" column="1" bodyfile="src/snakegame/server/Server.java" bodystart="77" bodyend="79"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/snakegame/server/Server.java" line="16" column="1" bodyfile="src/snakegame/server/Server.java" bodystart="16" bodyend="193"/>
+    <listofallmembers>
+      <member refid="classsnakegame_1_1server_1_1_server_1a9ccb7a48bdbac859281be9120e5e106f" prot="package" virt="non-virtual"><scope>snakegame::server::Server</scope><name>DEFAULT_HOST</name></member>
+      <member refid="classsnakegame_1_1server_1_1_server_1ac677dc2455769bfd57b976940217aafb" prot="package" virt="non-virtual"><scope>snakegame::server::Server</scope><name>DEFAULT_PORT</name></member>
+      <member refid="classsnakegame_1_1server_1_1_server_1a8fdb9bb043ab93002fb168e52c68bdf6" prot="private" virt="non-virtual"><scope>snakegame::server::Server</scope><name>events</name></member>
+      <member refid="classsnakegame_1_1server_1_1_server_1a94f76e3dba337fa9502f4f1b7b149dfb" prot="private" virt="non-virtual"><scope>snakegame::server::Server</scope><name>host</name></member>
+      <member refid="classsnakegame_1_1server_1_1_server_1ae7d47dbe33f4e0267a9a118c8541cd2d" prot="public" virt="non-virtual"><scope>snakegame::server::Server</scope><name>main</name></member>
+      <member refid="classsnakegame_1_1server_1_1_server_1a87ec09c1d3e0c97c7c97941ea3ded581" prot="package" virt="non-virtual"><scope>snakegame::server::Server</scope><name>NUM_APPLES</name></member>
+      <member refid="classsnakegame_1_1server_1_1_server_1a770f3a9c489c39764a8ef148729db236" prot="private" virt="non-virtual"><scope>snakegame::server::Server</scope><name>port</name></member>
+      <member refid="classsnakegame_1_1server_1_1_server_1af0101ad4e19f7ffc7ac541af737b5339" prot="public" virt="non-virtual"><scope>snakegame::server::Server</scope><name>run</name></member>
+      <member refid="classsnakegame_1_1server_1_1_server_1a483e80c850ea654902e0843f77eb783d" prot="public" virt="non-virtual"><scope>snakegame::server::Server</scope><name>Server</name></member>
+      <member refid="classsnakegame_1_1server_1_1_server_1a22825670547a8a66d0f0e8e48577101b" prot="public" virt="non-virtual"><scope>snakegame::server::Server</scope><name>Server</name></member>
+      <member refid="classsnakegame_1_1server_1_1_server_1a2b8dd5769b5f1d9214a89856ff8923fd" prot="public" virt="non-virtual"><scope>snakegame::server::Server</scope><name>Server</name></member>
+      <member refid="classsnakegame_1_1server_1_1_server_1af023d23576ddca43c378f1ce18273126" prot="public" virt="non-virtual"><scope>snakegame::server::Server</scope><name>Server</name></member>
+      <member refid="classsnakegame_1_1server_1_1_server_1a7bda4d35eb1cd523a4a38913c211f143" prot="private" virt="non-virtual"><scope>snakegame::server::Server</scope><name>sockets</name></member>
+      <member refid="classsnakegame_1_1server_1_1_server_1a3ea460ad600a79fe10f6bf5c11bdccc9" prot="package" virt="non-virtual"><scope>snakegame::server::Server</scope><name>UPDATE_INTERVAL</name></member>
+      <member refid="classsnakegame_1_1server_1_1_server_1aeffbf511bad68c5e9e99e35c00529792" prot="private" virt="non-virtual"><scope>snakegame::server::Server</scope><name>updaters</name></member>
+      <member refid="classsnakegame_1_1server_1_1_server_1abc56442140af9180298c007a9391b88d" prot="private" virt="non-virtual"><scope>snakegame::server::Server</scope><name>world</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

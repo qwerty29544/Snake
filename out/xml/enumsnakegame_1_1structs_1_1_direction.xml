@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="enumsnakegame_1_1structs_1_1_direction" kind="enum" language="Java" prot="public">
+    <compoundname>snakegame::structs::Direction</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="enumsnakegame_1_1structs_1_1_direction_1a6eac992f122ba5b02aad12a7cfcf65ce" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>snakegame.structs.Direction.up</definition>
+        <argsstring></argsstring>
+        <name>up</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/Direction.java" line="8" column="1" bodyfile="src/snakegame/structs/Direction.java" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="enumsnakegame_1_1structs_1_1_direction_1af5f078cc54af6fabd9325c39328c6d9c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>snakegame.structs.Direction.right</definition>
+        <argsstring></argsstring>
+        <name>right</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/Direction.java" line="9" column="1" bodyfile="src/snakegame/structs/Direction.java" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="enumsnakegame_1_1structs_1_1_direction_1ac1c479971b6ea1b25efe9d3eb82d1e46" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>snakegame.structs.Direction.down</definition>
+        <argsstring></argsstring>
+        <name>down</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/Direction.java" line="10" column="1" bodyfile="src/snakegame/structs/Direction.java" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="enumsnakegame_1_1structs_1_1_direction_1a3f48c431df64ddc8d497746a14293fd7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="enumsnakegame_1_1structs_1_1_direction" kindref="compound">Direction</ref></type>
+        <definition>Direction snakegame.structs.Direction.newDirection</definition>
+        <argsstring>(KeyEvent event)</argsstring>
+        <name>newDirection</name>
+        <param>
+          <type>KeyEvent</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/Direction.java" line="14" column="1" bodyfile="src/snakegame/structs/Direction.java" bodystart="14" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="enumsnakegame_1_1structs_1_1_direction_1acca4af48b36042d85f1a9eab2becbf2a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="enumsnakegame_1_1structs_1_1_direction" kindref="compound">Direction</ref></type>
+        <definition>Direction snakegame.structs.Direction.newDirection</definition>
+        <argsstring>(int keyCode)</argsstring>
+        <name>newDirection</name>
+        <param>
+          <type>int</type>
+          <declname>keyCode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/Direction.java" line="19" column="1" bodyfile="src/snakegame/structs/Direction.java" bodystart="19" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/snakegame/structs/Direction.java" line="7" column="1" bodyfile="src/snakegame/structs/Direction.java" bodystart="7" bodyend="46"/>
+    <listofallmembers>
+      <member refid="enumsnakegame_1_1structs_1_1_direction_1ac1c479971b6ea1b25efe9d3eb82d1e46" prot="public" virt="non-virtual"><scope>snakegame::structs::Direction</scope><name>down</name></member>
+      <member refid="enumsnakegame_1_1structs_1_1_direction_1a0aaf9e3d0ea5af67cb0328c014da23a3" prot="public" virt="non-virtual"><scope>snakegame::structs::Direction</scope><name>left</name></member>
+      <member refid="enumsnakegame_1_1structs_1_1_direction_1a3f48c431df64ddc8d497746a14293fd7" prot="public" virt="non-virtual"><scope>snakegame::structs::Direction</scope><name>newDirection</name></member>
+      <member refid="enumsnakegame_1_1structs_1_1_direction_1acca4af48b36042d85f1a9eab2becbf2a" prot="public" virt="non-virtual"><scope>snakegame::structs::Direction</scope><name>newDirection</name></member>
+      <member refid="enumsnakegame_1_1structs_1_1_direction_1af5f078cc54af6fabd9325c39328c6d9c" prot="public" virt="non-virtual"><scope>snakegame::structs::Direction</scope><name>right</name></member>
+      <member refid="enumsnakegame_1_1structs_1_1_direction_1a6eac992f122ba5b02aad12a7cfcf65ce" prot="public" virt="non-virtual"><scope>snakegame::structs::Direction</scope><name>up</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

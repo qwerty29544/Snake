@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_b335ed0d1c40aee8bacc0f13520d421b" kind="dir">
+    <compoundname>src/snakegame/client</compoundname>
+    <innerfile refid="_client_8java">Client.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/snakegame/client/"/>
+  </compounddef>
+</doxygen>

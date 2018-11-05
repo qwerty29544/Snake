@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classsnakegame_1_1structs_1_1_snake_factory" kind="class" language="Java" prot="public">
+    <compoundname>snakegame::structs::SnakeFactory</compoundname>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classsnakegame_1_1structs_1_1_snake_factory_1af7760a152b4ce248fc8785caf3ac4e2b" prot="package" static="no" mutable="no">
+        <type>List&lt; <ref refid="classsnakegame_1_1structs_1_1_point" kindref="compound">Point</ref> &gt;</type>
+        <definition>List&lt;Point&gt; snakegame.structs.SnakeFactory.points</definition>
+        <argsstring></argsstring>
+        <name>points</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/SnakeFactory.java" line="9" column="1" bodyfile="src/snakegame/structs/SnakeFactory.java" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsnakegame_1_1structs_1_1_snake_factory_1ab23112930d72802d4b1cb1c6637a2c38" prot="package" static="no" mutable="no">
+        <type>int</type>
+        <definition>int snakegame.structs.SnakeFactory.maxX</definition>
+        <argsstring></argsstring>
+        <name>maxX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/SnakeFactory.java" line="10" column="1" bodyfile="src/snakegame/structs/SnakeFactory.java" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsnakegame_1_1structs_1_1_snake_factory_1a64a197c0de3f37b7f24b82f7b4e9b1bc" prot="package" static="no" mutable="no">
+        <type>int</type>
+        <definition>int snakegame.structs.SnakeFactory.maxY</definition>
+        <argsstring></argsstring>
+        <name>maxY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/SnakeFactory.java" line="11" column="1" bodyfile="src/snakegame/structs/SnakeFactory.java" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsnakegame_1_1structs_1_1_snake_factory_1a7638d86b1b644801a02c2a55edf57cb9" prot="package" static="no" mutable="no">
+        <type>int</type>
+        <definition>int snakegame.structs.SnakeFactory.randomEncounters</definition>
+        <argsstring></argsstring>
+        <name>randomEncounters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/SnakeFactory.java" line="12" column="1" bodyfile="src/snakegame/structs/SnakeFactory.java" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-static-attrib">
+      <memberdef kind="variable" id="classsnakegame_1_1structs_1_1_snake_factory_1a0ff205385ea66ee4a6945168f4862e8f" prot="package" static="yes" mutable="no">
+        <type>Random</type>
+        <definition>Random snakegame.structs.SnakeFactory.random</definition>
+        <argsstring></argsstring>
+        <name>random</name>
+        <initializer>= new Random()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/SnakeFactory.java" line="14" column="1" bodyfile="src/snakegame/structs/SnakeFactory.java" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_snake_factory_1a7554cd7f5aa717667f3babe46e896cda" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>snakegame.structs.SnakeFactory.SnakeFactory</definition>
+        <argsstring>(List&lt; Point &gt; points)</argsstring>
+        <name>SnakeFactory</name>
+        <param>
+          <type>List&lt; <ref refid="classsnakegame_1_1structs_1_1_point" kindref="compound">Point</ref> &gt;</type>
+          <declname>points</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/SnakeFactory.java" line="15" column="1" bodyfile="src/snakegame/structs/SnakeFactory.java" bodystart="15" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_snake_factory_1a057bbfab734e3434b03c8fe9b6ea7129" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>snakegame.structs.SnakeFactory.SnakeFactory</definition>
+        <argsstring>()</argsstring>
+        <name>SnakeFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/SnakeFactory.java" line="22" column="1" bodyfile="src/snakegame/structs/SnakeFactory.java" bodystart="22" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_snake_factory_1aaa009e01befdc963fbe8b920dc1ef97e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsnakegame_1_1structs_1_1_snake" kindref="compound">Snake</ref></type>
+        <definition>Snake snakegame.structs.SnakeFactory.generateSnake</definition>
+        <argsstring>()</argsstring>
+        <name>generateSnake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/SnakeFactory.java" line="32" column="1" bodyfile="src/snakegame/structs/SnakeFactory.java" bodystart="32" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="67">
+        <label>List&lt; snakegame.structs.Point &gt;</label>
+      </node>
+      <node id="68">
+        <label>Random</label>
+      </node>
+      <node id="66">
+        <label>snakegame.structs.SnakeFactory</label>
+        <link refid="classsnakegame_1_1structs_1_1_snake_factory"/>
+        <childnode refid="67" relation="usage">
+          <edgelabel>points</edgelabel>
+        </childnode>
+        <childnode refid="68" relation="usage">
+          <edgelabel>random</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/snakegame/structs/SnakeFactory.java" line="8" column="1" bodyfile="src/snakegame/structs/SnakeFactory.java" bodystart="8" bodyend="41"/>
+    <listofallmembers>
+      <member refid="classsnakegame_1_1structs_1_1_snake_factory_1aaa009e01befdc963fbe8b920dc1ef97e" prot="public" virt="non-virtual"><scope>snakegame::structs::SnakeFactory</scope><name>generateSnake</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_snake_factory_1ab23112930d72802d4b1cb1c6637a2c38" prot="package" virt="non-virtual"><scope>snakegame::structs::SnakeFactory</scope><name>maxX</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_snake_factory_1a64a197c0de3f37b7f24b82f7b4e9b1bc" prot="package" virt="non-virtual"><scope>snakegame::structs::SnakeFactory</scope><name>maxY</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_snake_factory_1af7760a152b4ce248fc8785caf3ac4e2b" prot="package" virt="non-virtual"><scope>snakegame::structs::SnakeFactory</scope><name>points</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_snake_factory_1a0ff205385ea66ee4a6945168f4862e8f" prot="package" virt="non-virtual"><scope>snakegame::structs::SnakeFactory</scope><name>random</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_snake_factory_1a7638d86b1b644801a02c2a55edf57cb9" prot="package" virt="non-virtual"><scope>snakegame::structs::SnakeFactory</scope><name>randomEncounters</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_snake_factory_1a7554cd7f5aa717667f3babe46e896cda" prot="public" virt="non-virtual"><scope>snakegame::structs::SnakeFactory</scope><name>SnakeFactory</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_snake_factory_1a057bbfab734e3434b03c8fe9b6ea7129" prot="public" virt="non-virtual"><scope>snakegame::structs::SnakeFactory</scope><name>SnakeFactory</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

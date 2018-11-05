@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_message_8java" kind="file" language="Java">
+    <compoundname>Message.java</compoundname>
+    <innerclass refid="classsnakegame_1_1server_1_1_message" prot="public">snakegame::server::Message</innerclass>
+    <innernamespace refid="namespacesnakegame_1_1server">snakegame::server</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">package<sp/></highlight><highlight class="normal">snakegame.server;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>com.sun.nio.sctp.IllegalReceiveException;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.UUID;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="classsnakegame_1_1server_1_1_message" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsnakegame_1_1server_1_1_message" kindref="compound">Message</ref><sp/>{</highlight></codeline>
+<codeline lineno="8" refid="classsnakegame_1_1server_1_1_message_1ab530cae742ab3546af0531af6decfb4d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classsnakegame_1_1server_1_1_message_1ab530cae742ab3546af0531af6decfb4d" kindref="member">getKeyCode</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>keyCode;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="comment">//(геттер)<sp/>поле<sp/>с<sp/>кодом<sp/>ключа,<sp/>введенного<sp/>пользователем</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="classsnakegame_1_1server_1_1_message_1a1813db6854615d0d545e7e7a24f73fe4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>UUID<sp/><ref refid="classsnakegame_1_1server_1_1_message_1a1813db6854615d0d545e7e7a24f73fe4" kindref="member">getUuid</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>uuid;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="comment">//(геттер)<sp/>поле<sp/>с<sp/>уникальным<sp/>идентификатором<sp/>пользователя</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>keyCode;</highlight><highlight class="comment">//поле<sp/>с<sp/>кодом<sp/>клавиши<sp/>клиента</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>UUID<sp/>uuid;</highlight><highlight class="comment">//поле<sp/>с<sp/>уникальным<sp/>идентификатором<sp/>пользователя</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//конструктор<sp/>класса<sp/>сообщения<sp/>данных</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classsnakegame_1_1server_1_1_message_1a785c5537fe6e83fbc944dc86cc130db4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classsnakegame_1_1server_1_1_message_1a785c5537fe6e83fbc944dc86cc130db4" kindref="member">Message</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>keyCode,<sp/>UUID<sp/>uuid)<sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.keyCode<sp/>=<sp/>keyCode;</highlight><highlight class="comment">//установка<sp/>значения</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.uuid<sp/>=<sp/>uuid;</highlight><highlight class="comment">//установка<sp/>значения</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//интерпретация<sp/>сообщения<sp/>в<sp/>текстовом<sp/>мире<sp/>в<sp/>вид<sp/>класса<sp/>сообщения</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="classsnakegame_1_1server_1_1_message_1a18e375c0d7b140c6b4d141b870542a4a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classsnakegame_1_1server_1_1_message" kindref="compound">Message</ref><sp/><ref refid="classsnakegame_1_1server_1_1_message_1a18e375c0d7b140c6b4d141b870542a4a" kindref="member">parse</ref>(String<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">throws</highlight><highlight class="normal"><sp/>IllegalArgumentException<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String[]<sp/>tokens<sp/>=<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">.split(</highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">);</highlight><highlight class="comment">//установка<sp/>разделителей</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tokens.length<sp/>==<sp/>2)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classsnakegame_1_1server_1_1_message_1a785c5537fe6e83fbc944dc86cc130db4" kindref="member">Message</ref>(Integer.parseInt(tokens[1]),<sp/>UUID.fromString(tokens[0]));</highlight><highlight class="comment">//получение<sp/>из<sp/>строки<sp/>новой<sp/>переменной<sp/>класса<sp/>сообщения<sp/>клиента<sp/>о<sp/>номере<sp/>нажатой<sp/>клавиши</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>IllegalReceiveException(</highlight><highlight class="stringliteral">&quot;IllegalReceiveException<sp/>Message<sp/>parse&quot;</highlight><highlight class="normal">);</highlight><highlight class="comment">//ошибка<sp/>введенного<sp/>значения</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>@Override</highlight></codeline>
+<codeline lineno="35" refid="classsnakegame_1_1server_1_1_message_1a9e38b76d6815d73d7c14a28e8640b1c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>String<sp/><ref refid="classsnakegame_1_1server_1_1_message_1a9e38b76d6815d73d7c14a28e8640b1c3" kindref="member">toString</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>uuid.toString()<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>keyCode;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="comment">//интерпертация<sp/>сообщения<sp/>в<sp/>текстовый<sp/>вид</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/snakegame/server/Message.java"/>
+  </compounddef>
+</doxygen>

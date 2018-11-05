@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacesnakegame" kind="namespace" language="Java">
+    <compoundname>snakegame</compoundname>
+    <innerclass refid="classsnakegame_1_1apple" prot="public">snakegame::apple</innerclass>
+    <innerclass refid="classsnakegame_1_1_constants" prot="public">snakegame::Constants</innerclass>
+    <innerclass refid="classsnakegame_1_1_game" prot="public">snakegame::Game</innerclass>
+    <innerclass refid="classsnakegame_1_1_main_window" prot="public">snakegame::MainWindow</innerclass>
+    <innerclass refid="classsnakegame_1_1snake" prot="public">snakegame::snake</innerclass>
+    <innernamespace refid="namespacesnakegame_1_1client">snakegame::client</innernamespace>
+    <innernamespace refid="namespacesnakegame_1_1server">snakegame::server</innernamespace>
+    <innernamespace refid="namespacesnakegame_1_1structs">snakegame::structs</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/snakegame/apple.java" line="1" column="1"/>
+  </compounddef>
+</doxygen>

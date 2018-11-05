@@ -40,7 +40,7 @@ public enum Direction {
                 break;
             default:
                 return this;
-        };
+        }
         return this;
     }
 }

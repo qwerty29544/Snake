@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classsnakegame_1_1apple" kind="class" language="Java" prot="public">
+    <compoundname>snakegame::apple</compoundname>
+    <basecompoundref refid="classsnakegame_1_1_constants" prot="public" virt="non-virtual">snakegame.Constants</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsnakegame_1_1apple_1a84c75529fb9ba13e1709160401cfe913" prot="private" static="no" mutable="no">
+        <type>Point</type>
+        <definition>Point snakegame.apple.ap</definition>
+        <argsstring></argsstring>
+        <name>ap</name>
+        <initializer>= new Point()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/apple.java" line="8" column="1" bodyfile="src/snakegame/apple.java" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsnakegame_1_1apple_1a3761b2d99e631facd8170ba6d2dc88be" prot="private" static="no" mutable="no">
+        <type>final Random</type>
+        <definition>final Random snakegame.apple.rand</definition>
+        <argsstring></argsstring>
+        <name>rand</name>
+        <initializer>= new Random()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/apple.java" line="9" column="1" bodyfile="src/snakegame/apple.java" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsnakegame_1_1apple_1a7b5d4451329b06ce663dcb8a7177edc1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int snakegame.apple.step_size</definition>
+        <argsstring></argsstring>
+        <name>step_size</name>
+        <initializer>=20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/apple.java" line="10" column="1" bodyfile="src/snakegame/apple.java" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsnakegame_1_1apple_1a360f40e72f103cbb6de34c53d2f12fd9" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int snakegame.apple.shift</definition>
+        <argsstring></argsstring>
+        <name>shift</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/apple.java" line="11" column="1" bodyfile="src/snakegame/apple.java" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="classsnakegame_1_1apple_1a0c23d12964354726ac4240c13de3eb81" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>snakegame.apple.apple</definition>
+        <argsstring>()</argsstring>
+        <name>apple</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/apple.java" line="12" column="1" bodyfile="src/snakegame/apple.java" bodystart="12" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsnakegame_1_1apple_1a2a93c78385af6c64271ce163dd883712" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Point</type>
+        <definition>Point snakegame.apple.apple1</definition>
+        <argsstring>()</argsstring>
+        <name>apple1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/apple.java" line="23" column="1" bodyfile="src/snakegame/apple.java" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1apple_1af5cab740833aef8650ef374868585930" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void snakegame.apple.set</definition>
+        <argsstring>()</argsstring>
+        <name>set</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/apple.java" line="24" column="1" bodyfile="src/snakegame/apple.java" bodystart="24" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1apple_1a4868669a889a955b0811141726005a23" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void snakegame.apple.set</definition>
+        <argsstring>(boolean a)</argsstring>
+        <name>set</name>
+        <param>
+          <type>boolean</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/apple.java" line="32" column="1" bodyfile="src/snakegame/apple.java" bodystart="32" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1apple_1aa14da591e5ca8e5ce41da4ace3dfd8af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void snakegame.apple.set</definition>
+        <argsstring>(apple ap2)</argsstring>
+        <name>set</name>
+        <param>
+          <type><ref refid="classsnakegame_1_1apple" kindref="compound">apple</ref></type>
+          <declname>ap2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/apple.java" line="36" column="1" bodyfile="src/snakegame/apple.java" bodystart="36" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1apple_1a3a6294f277af9a64dea186eb41583b97" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void snakegame.apple.paint</definition>
+        <argsstring>(Graphics2D g2)</argsstring>
+        <name>paint</name>
+        <param>
+          <type>Graphics2D</type>
+          <declname>g2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/apple.java" line="43" column="1" bodyfile="src/snakegame/apple.java" bodystart="43" bodyend="50"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="0">
+        <label>snakegame.apple</label>
+        <link refid="classsnakegame_1_1apple"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>snakegame.Constants</label>
+        <link refid="classsnakegame_1_1_constants"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>snakegame.apple</label>
+        <link refid="classsnakegame_1_1apple"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>snakegame.Constants</label>
+        <link refid="classsnakegame_1_1_constants"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/snakegame/apple.java" line="6" column="1" bodyfile="src/snakegame/apple.java" bodystart="6" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classsnakegame_1_1apple_1a84c75529fb9ba13e1709160401cfe913" prot="private" virt="non-virtual"><scope>snakegame::apple</scope><name>ap</name></member>
+      <member refid="classsnakegame_1_1apple_1a0c23d12964354726ac4240c13de3eb81" prot="package" virt="non-virtual"><scope>snakegame::apple</scope><name>apple</name></member>
+      <member refid="classsnakegame_1_1apple_1a2a93c78385af6c64271ce163dd883712" prot="public" virt="non-virtual"><scope>snakegame::apple</scope><name>apple1</name></member>
+      <member refid="classsnakegame_1_1_constants_1a84c010eb1c979612c5b3627964f33385" prot="public" virt="non-virtual"><scope>snakegame::apple</scope><name>BORDER_LENGHT</name></member>
+      <member refid="classsnakegame_1_1_constants_1a253f00351ba8bbc4a7e7adf94ddd4a29" prot="public" virt="non-virtual"><scope>snakegame::apple</scope><name>BORDER_WIDTH</name></member>
+      <member refid="classsnakegame_1_1_constants_1ac9166aad2f05da4e80661a252c82f9f6" prot="public" virt="non-virtual"><scope>snakegame::apple</scope><name>DOWN</name></member>
+      <member refid="classsnakegame_1_1_constants_1af2ce3ce8082b3922ef73a7cd291095d7" prot="public" virt="non-virtual"><scope>snakegame::apple</scope><name>LEFT</name></member>
+      <member refid="classsnakegame_1_1apple_1a3a6294f277af9a64dea186eb41583b97" prot="public" virt="non-virtual"><scope>snakegame::apple</scope><name>paint</name></member>
+      <member refid="classsnakegame_1_1apple_1a3761b2d99e631facd8170ba6d2dc88be" prot="private" virt="non-virtual"><scope>snakegame::apple</scope><name>rand</name></member>
+      <member refid="classsnakegame_1_1_constants_1affe932cca510cf5d5f619af355a9e5e2" prot="public" virt="non-virtual"><scope>snakegame::apple</scope><name>RIGHT</name></member>
+      <member refid="classsnakegame_1_1apple_1af5cab740833aef8650ef374868585930" prot="public" virt="non-virtual"><scope>snakegame::apple</scope><name>set</name></member>
+      <member refid="classsnakegame_1_1apple_1a4868669a889a955b0811141726005a23" prot="public" virt="non-virtual"><scope>snakegame::apple</scope><name>set</name></member>
+      <member refid="classsnakegame_1_1apple_1aa14da591e5ca8e5ce41da4ace3dfd8af" prot="public" virt="non-virtual"><scope>snakegame::apple</scope><name>set</name></member>
+      <member refid="classsnakegame_1_1apple_1a360f40e72f103cbb6de34c53d2f12fd9" prot="private" virt="non-virtual"><scope>snakegame::apple</scope><name>shift</name></member>
+      <member refid="classsnakegame_1_1apple_1a7b5d4451329b06ce663dcb8a7177edc1" prot="private" virt="non-virtual"><scope>snakegame::apple</scope><name>step_size</name></member>
+      <member refid="classsnakegame_1_1_constants_1a47ff3bd3c0ecae5e9f2b878915a9dad2" prot="public" virt="non-virtual"><scope>snakegame::apple</scope><name>UP</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

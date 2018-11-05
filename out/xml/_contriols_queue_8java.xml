@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_contriols_queue_8java" kind="file" language="Java">
+    <compoundname>ContriolsQueue.java</compoundname>
+    <innerclass refid="classsnakegame_1_1server_1_1_contriols_queue" prot="public">snakegame::server::ContriolsQueue</innerclass>
+    <innernamespace refid="namespacesnakegame_1_1server">snakegame::server</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacesnakegame_1_1server" refkind="compound"><highlight class="keyword">package<sp/></highlight><highlight class="normal">snakegame.server;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.awt.event.KeyEvent;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.Queue;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="classsnakegame_1_1server_1_1_contriols_queue" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsnakegame_1_1server_1_1_contriols_queue" kindref="compound">ContriolsQueue</ref><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>Queue&lt;KeyEvent&gt;<sp/>events;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/snakegame/server/ContriolsQueue.java"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classsnakegame_1_1server_1_1_server_1_1_world_updater" kind="class" language="Java" prot="public">
+    <compoundname>snakegame::server::Server::WorldUpdater</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Runnable</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsnakegame_1_1server_1_1_server_1_1_world_updater_1ab5b9d807315109ef40781908856852dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void snakegame.server.Server.WorldUpdater.run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/server/Server.java" line="163" column="1" bodyfile="src/snakegame/server/Server.java" bodystart="163" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1server_1_1_server_1_1_world_updater_1ab7308f88031d3de36fe9625235b5cfc3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void snakegame.server.Server.WorldUpdater.processMessages</definition>
+        <argsstring>()</argsstring>
+        <name>processMessages</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/server/Server.java" line="185" column="1" bodyfile="src/snakegame/server/Server.java" bodystart="185" bodyend="191"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="84">
+        <label>snakegame.server.Server.WorldUpdater</label>
+        <link refid="classsnakegame_1_1server_1_1_server_1_1_world_updater"/>
+        <childnode refid="85" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>Runnable</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="86">
+        <label>snakegame.server.Server.WorldUpdater</label>
+        <link refid="classsnakegame_1_1server_1_1_server_1_1_world_updater"/>
+        <childnode refid="87" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="87">
+        <label>Runnable</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/snakegame/server/Server.java" line="161" column="1" bodyfile="src/snakegame/server/Server.java" bodystart="161" bodyend="192"/>
+    <listofallmembers>
+      <member refid="classsnakegame_1_1server_1_1_server_1_1_world_updater_1ab7308f88031d3de36fe9625235b5cfc3" prot="public" virt="non-virtual"><scope>snakegame::server::Server::WorldUpdater</scope><name>processMessages</name></member>
+      <member refid="classsnakegame_1_1server_1_1_server_1_1_world_updater_1ab5b9d807315109ef40781908856852dd" prot="public" virt="non-virtual"><scope>snakegame::server::Server::WorldUpdater</scope><name>run</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

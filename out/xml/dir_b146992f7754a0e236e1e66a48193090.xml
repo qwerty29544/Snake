@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_b146992f7754a0e236e1e66a48193090" kind="dir">
+    <compoundname>src/snakegame/structs</compoundname>
+    <innerfile refid="structs_2apple_8java">Apple.java</innerfile>
+    <innerfile refid="_apple_factory_8java">AppleFactory.java</innerfile>
+    <innerfile refid="_apple_point_8java">ApplePoint.java</innerfile>
+    <innerfile refid="_direction_8java">Direction.java</innerfile>
+    <innerfile refid="_point_8java">Point.java</innerfile>
+    <innerfile refid="_remainder_8java">Remainder.java</innerfile>
+    <innerfile refid="structs_2snake_8java">Snake.java</innerfile>
+    <innerfile refid="_snake_factory_8java">SnakeFactory.java</innerfile>
+    <innerfile refid="_snake_point_8java">SnakePoint.java</innerfile>
+    <innerfile refid="_world_8java">World.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/snakegame/structs/"/>
+  </compounddef>
+</doxygen>

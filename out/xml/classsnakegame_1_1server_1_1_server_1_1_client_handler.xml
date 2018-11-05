@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classsnakegame_1_1server_1_1_server_1_1_client_handler" kind="class" language="Java" prot="public">
+    <compoundname>snakegame::server::Server::ClientHandler</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Runnable</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsnakegame_1_1server_1_1_server_1_1_client_handler_1a9de963eea1b1f17bb12e9e3231a881a4" prot="private" static="no" mutable="no">
+        <type>DataInputStream</type>
+        <definition>DataInputStream snakegame.server.Server.ClientHandler.in</definition>
+        <argsstring></argsstring>
+        <name>in</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/server/Server.java" line="83" column="1" bodyfile="src/snakegame/server/Server.java" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsnakegame_1_1server_1_1_server_1_1_client_handler_1ae6eca1894b5dd2147512a7662c6e52aa" prot="private" static="no" mutable="no">
+        <type>DataOutputStream</type>
+        <definition>DataOutputStream snakegame.server.Server.ClientHandler.out</definition>
+        <argsstring></argsstring>
+        <name>out</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/server/Server.java" line="84" column="1" bodyfile="src/snakegame/server/Server.java" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsnakegame_1_1server_1_1_server_1_1_client_handler_1a5bd19be81039717a997a67926d43360f" prot="private" static="no" mutable="no">
+        <type>Socket</type>
+        <definition>Socket snakegame.server.Server.ClientHandler.socket</definition>
+        <argsstring></argsstring>
+        <name>socket</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/server/Server.java" line="85" column="1" bodyfile="src/snakegame/server/Server.java" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsnakegame_1_1server_1_1_server_1_1_client_handler_1ad00a7d1d8e8ee23d5495fbe27d734828" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>snakegame.server.Server.ClientHandler.ClientHandler</definition>
+        <argsstring>(Socket socket)</argsstring>
+        <name>ClientHandler</name>
+        <param>
+          <type>Socket</type>
+          <declname>socket</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/server/Server.java" line="88" column="1" bodyfile="src/snakegame/server/Server.java" bodystart="88" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1server_1_1_server_1_1_client_handler_1a5cb1108121c65a4e73e8c55e0f6d97e8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void snakegame.server.Server.ClientHandler.run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/server/Server.java" line="100" column="1" bodyfile="src/snakegame/server/Server.java" bodystart="100" bodyend="133"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="20">
+        <label>snakegame.server.Server.ClientHandler</label>
+        <link refid="classsnakegame_1_1server_1_1_server_1_1_client_handler"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>Runnable</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="22">
+        <label>snakegame.server.Server.ClientHandler</label>
+        <link refid="classsnakegame_1_1server_1_1_server_1_1_client_handler"/>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>Runnable</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/snakegame/server/Server.java" line="82" column="1" bodyfile="src/snakegame/server/Server.java" bodystart="82" bodyend="134"/>
+    <listofallmembers>
+      <member refid="classsnakegame_1_1server_1_1_server_1_1_client_handler_1ad00a7d1d8e8ee23d5495fbe27d734828" prot="public" virt="non-virtual"><scope>snakegame::server::Server::ClientHandler</scope><name>ClientHandler</name></member>
+      <member refid="classsnakegame_1_1server_1_1_server_1_1_client_handler_1a9de963eea1b1f17bb12e9e3231a881a4" prot="private" virt="non-virtual"><scope>snakegame::server::Server::ClientHandler</scope><name>in</name></member>
+      <member refid="classsnakegame_1_1server_1_1_server_1_1_client_handler_1ae6eca1894b5dd2147512a7662c6e52aa" prot="private" virt="non-virtual"><scope>snakegame::server::Server::ClientHandler</scope><name>out</name></member>
+      <member refid="classsnakegame_1_1server_1_1_server_1_1_client_handler_1a5cb1108121c65a4e73e8c55e0f6d97e8" prot="public" virt="non-virtual"><scope>snakegame::server::Server::ClientHandler</scope><name>run</name></member>
+      <member refid="classsnakegame_1_1server_1_1_server_1_1_client_handler_1a5bd19be81039717a997a67926d43360f" prot="private" virt="non-virtual"><scope>snakegame::server::Server::ClientHandler</scope><name>socket</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

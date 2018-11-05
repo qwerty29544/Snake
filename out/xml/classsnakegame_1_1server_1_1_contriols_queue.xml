@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classsnakegame_1_1server_1_1_contriols_queue" kind="class" language="Java" prot="public">
+    <compoundname>snakegame::server::ContriolsQueue</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsnakegame_1_1server_1_1_contriols_queue_1af5cd4e2cd848148239d0eff4016f04f1" prot="private" static="no" mutable="no">
+        <type>Queue&lt; KeyEvent &gt;</type>
+        <definition>Queue&lt;KeyEvent&gt; snakegame.server.ContriolsQueue.events</definition>
+        <argsstring></argsstring>
+        <name>events</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/server/ContriolsQueue.java" line="7" column="1" bodyfile="src/snakegame/server/ContriolsQueue.java" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/snakegame/server/ContriolsQueue.java" line="6" column="1" bodyfile="src/snakegame/server/ContriolsQueue.java" bodystart="6" bodyend="9"/>
+    <listofallmembers>
+      <member refid="classsnakegame_1_1server_1_1_contriols_queue_1af5cd4e2cd848148239d0eff4016f04f1" prot="private" virt="non-virtual"><scope>snakegame::server::ContriolsQueue</scope><name>events</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

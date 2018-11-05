@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classsnakegame_1_1server_1_1_server_1_1_client_updater" kind="class" language="Java" prot="public">
+    <compoundname>snakegame::server::Server::ClientUpdater</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsnakegame_1_1server_1_1_server_1_1_client_updater_1a368e828f94f94ec0e3b240c5b7382451" prot="private" static="no" mutable="no">
+        <type>DataOutputStream</type>
+        <definition>DataOutputStream snakegame.server.Server.ClientUpdater.out</definition>
+        <argsstring></argsstring>
+        <name>out</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/server/Server.java" line="138" column="1" bodyfile="src/snakegame/server/Server.java" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsnakegame_1_1server_1_1_server_1_1_client_updater_1a7cb2b186e3342d82f6e9b587ae5d22a4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>snakegame.server.Server.ClientUpdater.ClientUpdater</definition>
+        <argsstring>(Socket socket)</argsstring>
+        <name>ClientUpdater</name>
+        <param>
+          <type>Socket</type>
+          <declname>socket</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/server/Server.java" line="141" column="1" bodyfile="src/snakegame/server/Server.java" bodystart="141" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1server_1_1_server_1_1_client_updater_1a6a2031e0b0fdd55cf7d5c0eeb0b1e267" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void snakegame.server.Server.ClientUpdater.publish</definition>
+        <argsstring>()</argsstring>
+        <name>publish</name>
+        <exceptions> throws IOException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/server/Server.java" line="150" column="1" bodyfile="src/snakegame/server/Server.java" bodystart="150" bodyend="157"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/snakegame/server/Server.java" line="137" column="1" bodyfile="src/snakegame/server/Server.java" bodystart="137" bodyend="158"/>
+    <listofallmembers>
+      <member refid="classsnakegame_1_1server_1_1_server_1_1_client_updater_1a7cb2b186e3342d82f6e9b587ae5d22a4" prot="public" virt="non-virtual"><scope>snakegame::server::Server::ClientUpdater</scope><name>ClientUpdater</name></member>
+      <member refid="classsnakegame_1_1server_1_1_server_1_1_client_updater_1a368e828f94f94ec0e3b240c5b7382451" prot="private" virt="non-virtual"><scope>snakegame::server::Server::ClientUpdater</scope><name>out</name></member>
+      <member refid="classsnakegame_1_1server_1_1_server_1_1_client_updater_1a6a2031e0b0fdd55cf7d5c0eeb0b1e267" prot="public" virt="non-virtual"><scope>snakegame::server::Server::ClientUpdater</scope><name>publish</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

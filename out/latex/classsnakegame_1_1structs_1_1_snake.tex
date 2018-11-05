@@ -1,0 +1,206 @@
+\hypertarget{classsnakegame_1_1structs_1_1_snake}{}\section{snakegame.\+structs.\+Snake Class Reference}
+\label{classsnakegame_1_1structs_1_1_snake}\index{snakegame.\+structs.\+Snake@{snakegame.\+structs.\+Snake}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+U\+U\+ID \mbox{\hyperlink{classsnakegame_1_1structs_1_1_snake_ac17bff959740ffec977a37b6ed905a0c}{get\+Uuid}} ()
+\item 
+List$<$ \mbox{\hyperlink{classsnakegame_1_1structs_1_1_point}{Point}} $>$ \mbox{\hyperlink{classsnakegame_1_1structs_1_1_snake_a1201fceabdd51b2cbb3fdd69f151fec9}{get\+Points}} ()
+\item 
+\mbox{\hyperlink{classsnakegame_1_1structs_1_1_snake_ae76efb0ea42951d99b3f3e3134622120}{Snake}} (Linked\+List$<$ \mbox{\hyperlink{classsnakegame_1_1structs_1_1_point}{Point}} $>$ points, \mbox{\hyperlink{enumsnakegame_1_1structs_1_1_direction}{Direction}} direction)
+\item 
+\mbox{\hyperlink{classsnakegame_1_1structs_1_1_snake_afae60310456b2ff1474879d2c80d75b1}{Snake}} (U\+U\+ID uuid, Linked\+List$<$ \mbox{\hyperlink{classsnakegame_1_1structs_1_1_point}{Point}} $>$ points, \mbox{\hyperlink{enumsnakegame_1_1structs_1_1_direction}{Direction}} direction)
+\item 
+\mbox{\hyperlink{classsnakegame_1_1structs_1_1_snake_a4d2bf8212dfe91b17aed31f44203f37f}{Snake}} (\mbox{\hyperlink{classsnakegame_1_1structs_1_1_snake}{Snake}} \mbox{\hyperlink{classsnakegame_1_1snake}{snake}})
+\item 
+\mbox{\hyperlink{classsnakegame_1_1structs_1_1_snake}{Snake}} \mbox{\hyperlink{classsnakegame_1_1structs_1_1_snake_a0e8e4b28dd22705782f7a985e17b364d}{predict\+Move}} ()
+\item 
+\mbox{\hyperlink{enumsnakegame_1_1structs_1_1_direction}{Direction}} \mbox{\hyperlink{classsnakegame_1_1structs_1_1_snake_a596ece3775ed531cef2fc023f339052e}{get\+Direction}} ()
+\item 
+void \mbox{\hyperlink{classsnakegame_1_1structs_1_1_snake_abcd015387736c76d4c6770cb7d33f59c}{set\+Direction}} (\mbox{\hyperlink{enumsnakegame_1_1structs_1_1_direction}{Direction}} direction)
+\item 
+\mbox{\hyperlink{classsnakegame_1_1structs_1_1_point}{Point}} \mbox{\hyperlink{classsnakegame_1_1structs_1_1_snake_a75d7bc3f6202e0159e79b703fdd5232c}{get\+Head}} ()
+\item 
+boolean \mbox{\hyperlink{classsnakegame_1_1structs_1_1_snake_a3df7436c11ba7bda4154431739778b78}{contains}} (\mbox{\hyperlink{classsnakegame_1_1structs_1_1_point}{Point}} another\+Point)
+\item 
+boolean \mbox{\hyperlink{classsnakegame_1_1structs_1_1_snake_acefd74708c76a65a7e9f8e5182ae3af3}{ate\+Self}} ()
+\item 
+void \mbox{\hyperlink{classsnakegame_1_1structs_1_1_snake_a4e147dbd9e7442dce1b4f066946f8959}{move\+Head}} ()
+\item 
+void \mbox{\hyperlink{classsnakegame_1_1structs_1_1_snake_aefdd30421bce904e5585dbcbec258a98}{draw}} (Graphics2D g)
+\item 
+String \mbox{\hyperlink{classsnakegame_1_1structs_1_1_snake_a7ebadfc8fb3f4b24d0de3a6b3bde703e}{to\+String}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classsnakegame_1_1structs_1_1_snake}{Snake}} \mbox{\hyperlink{classsnakegame_1_1structs_1_1_snake_a5c7858e4b58db59e493b12c18462fb4b}{parse}} (String string)  throws Illegal\+Argument\+Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 7 of file Snake.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsnakegame_1_1structs_1_1_snake_ae76efb0ea42951d99b3f3e3134622120}\label{classsnakegame_1_1structs_1_1_snake_ae76efb0ea42951d99b3f3e3134622120}} 
+\index{snakegame\+::structs\+::\+Snake@{snakegame\+::structs\+::\+Snake}!Snake@{Snake}}
+\index{Snake@{Snake}!snakegame\+::structs\+::\+Snake@{snakegame\+::structs\+::\+Snake}}
+\subsubsection{\texorpdfstring{Snake()}{Snake()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily snakegame.\+structs.\+Snake.\+Snake (\begin{DoxyParamCaption}\item[{Linked\+List$<$ \mbox{\hyperlink{classsnakegame_1_1structs_1_1_point}{Point}} $>$}]{points,  }\item[{\mbox{\hyperlink{enumsnakegame_1_1structs_1_1_direction}{Direction}}}]{direction }\end{DoxyParamCaption})}
+
+
+
+Definition at line 23 of file Snake.\+java.
+
+\mbox{\Hypertarget{classsnakegame_1_1structs_1_1_snake_afae60310456b2ff1474879d2c80d75b1}\label{classsnakegame_1_1structs_1_1_snake_afae60310456b2ff1474879d2c80d75b1}} 
+\index{snakegame\+::structs\+::\+Snake@{snakegame\+::structs\+::\+Snake}!Snake@{Snake}}
+\index{Snake@{Snake}!snakegame\+::structs\+::\+Snake@{snakegame\+::structs\+::\+Snake}}
+\subsubsection{\texorpdfstring{Snake()}{Snake()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily snakegame.\+structs.\+Snake.\+Snake (\begin{DoxyParamCaption}\item[{U\+U\+ID}]{uuid,  }\item[{Linked\+List$<$ \mbox{\hyperlink{classsnakegame_1_1structs_1_1_point}{Point}} $>$}]{points,  }\item[{\mbox{\hyperlink{enumsnakegame_1_1structs_1_1_direction}{Direction}}}]{direction }\end{DoxyParamCaption})}
+
+
+
+Definition at line 30 of file Snake.\+java.
+
+\mbox{\Hypertarget{classsnakegame_1_1structs_1_1_snake_a4d2bf8212dfe91b17aed31f44203f37f}\label{classsnakegame_1_1structs_1_1_snake_a4d2bf8212dfe91b17aed31f44203f37f}} 
+\index{snakegame\+::structs\+::\+Snake@{snakegame\+::structs\+::\+Snake}!Snake@{Snake}}
+\index{Snake@{Snake}!snakegame\+::structs\+::\+Snake@{snakegame\+::structs\+::\+Snake}}
+\subsubsection{\texorpdfstring{Snake()}{Snake()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily snakegame.\+structs.\+Snake.\+Snake (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsnakegame_1_1structs_1_1_snake}{Snake}}}]{snake }\end{DoxyParamCaption})}
+
+
+
+Definition at line 37 of file Snake.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classsnakegame_1_1structs_1_1_snake_acefd74708c76a65a7e9f8e5182ae3af3}\label{classsnakegame_1_1structs_1_1_snake_acefd74708c76a65a7e9f8e5182ae3af3}} 
+\index{snakegame\+::structs\+::\+Snake@{snakegame\+::structs\+::\+Snake}!ate\+Self@{ate\+Self}}
+\index{ate\+Self@{ate\+Self}!snakegame\+::structs\+::\+Snake@{snakegame\+::structs\+::\+Snake}}
+\subsubsection{\texorpdfstring{ate\+Self()}{ateSelf()}}
+{\footnotesize\ttfamily boolean snakegame.\+structs.\+Snake.\+ate\+Self (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 76 of file Snake.\+java.
+
+\mbox{\Hypertarget{classsnakegame_1_1structs_1_1_snake_a3df7436c11ba7bda4154431739778b78}\label{classsnakegame_1_1structs_1_1_snake_a3df7436c11ba7bda4154431739778b78}} 
+\index{snakegame\+::structs\+::\+Snake@{snakegame\+::structs\+::\+Snake}!contains@{contains}}
+\index{contains@{contains}!snakegame\+::structs\+::\+Snake@{snakegame\+::structs\+::\+Snake}}
+\subsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily boolean snakegame.\+structs.\+Snake.\+contains (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsnakegame_1_1structs_1_1_point}{Point}}}]{another\+Point }\end{DoxyParamCaption})}
+
+
+
+Definition at line 66 of file Snake.\+java.
+
+\mbox{\Hypertarget{classsnakegame_1_1structs_1_1_snake_aefdd30421bce904e5585dbcbec258a98}\label{classsnakegame_1_1structs_1_1_snake_aefdd30421bce904e5585dbcbec258a98}} 
+\index{snakegame\+::structs\+::\+Snake@{snakegame\+::structs\+::\+Snake}!draw@{draw}}
+\index{draw@{draw}!snakegame\+::structs\+::\+Snake@{snakegame\+::structs\+::\+Snake}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void snakegame.\+structs.\+Snake.\+draw (\begin{DoxyParamCaption}\item[{Graphics2D}]{g }\end{DoxyParamCaption})}
+
+
+
+Definition at line 142 of file Snake.\+java.
+
+\mbox{\Hypertarget{classsnakegame_1_1structs_1_1_snake_a596ece3775ed531cef2fc023f339052e}\label{classsnakegame_1_1structs_1_1_snake_a596ece3775ed531cef2fc023f339052e}} 
+\index{snakegame\+::structs\+::\+Snake@{snakegame\+::structs\+::\+Snake}!get\+Direction@{get\+Direction}}
+\index{get\+Direction@{get\+Direction}!snakegame\+::structs\+::\+Snake@{snakegame\+::structs\+::\+Snake}}
+\subsubsection{\texorpdfstring{get\+Direction()}{getDirection()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{enumsnakegame_1_1structs_1_1_direction}{Direction}} snakegame.\+structs.\+Snake.\+get\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 51 of file Snake.\+java.
+
+\mbox{\Hypertarget{classsnakegame_1_1structs_1_1_snake_a75d7bc3f6202e0159e79b703fdd5232c}\label{classsnakegame_1_1structs_1_1_snake_a75d7bc3f6202e0159e79b703fdd5232c}} 
+\index{snakegame\+::structs\+::\+Snake@{snakegame\+::structs\+::\+Snake}!get\+Head@{get\+Head}}
+\index{get\+Head@{get\+Head}!snakegame\+::structs\+::\+Snake@{snakegame\+::structs\+::\+Snake}}
+\subsubsection{\texorpdfstring{get\+Head()}{getHead()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsnakegame_1_1structs_1_1_point}{Point}} snakegame.\+structs.\+Snake.\+get\+Head (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 61 of file Snake.\+java.
+
+\mbox{\Hypertarget{classsnakegame_1_1structs_1_1_snake_a1201fceabdd51b2cbb3fdd69f151fec9}\label{classsnakegame_1_1structs_1_1_snake_a1201fceabdd51b2cbb3fdd69f151fec9}} 
+\index{snakegame\+::structs\+::\+Snake@{snakegame\+::structs\+::\+Snake}!get\+Points@{get\+Points}}
+\index{get\+Points@{get\+Points}!snakegame\+::structs\+::\+Snake@{snakegame\+::structs\+::\+Snake}}
+\subsubsection{\texorpdfstring{get\+Points()}{getPoints()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classsnakegame_1_1structs_1_1_point}{Point}}$>$ snakegame.\+structs.\+Snake.\+get\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 14 of file Snake.\+java.
+
+\mbox{\Hypertarget{classsnakegame_1_1structs_1_1_snake_ac17bff959740ffec977a37b6ed905a0c}\label{classsnakegame_1_1structs_1_1_snake_ac17bff959740ffec977a37b6ed905a0c}} 
+\index{snakegame\+::structs\+::\+Snake@{snakegame\+::structs\+::\+Snake}!get\+Uuid@{get\+Uuid}}
+\index{get\+Uuid@{get\+Uuid}!snakegame\+::structs\+::\+Snake@{snakegame\+::structs\+::\+Snake}}
+\subsubsection{\texorpdfstring{get\+Uuid()}{getUuid()}}
+{\footnotesize\ttfamily U\+U\+ID snakegame.\+structs.\+Snake.\+get\+Uuid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 8 of file Snake.\+java.
+
+\mbox{\Hypertarget{classsnakegame_1_1structs_1_1_snake_a4e147dbd9e7442dce1b4f066946f8959}\label{classsnakegame_1_1structs_1_1_snake_a4e147dbd9e7442dce1b4f066946f8959}} 
+\index{snakegame\+::structs\+::\+Snake@{snakegame\+::structs\+::\+Snake}!move\+Head@{move\+Head}}
+\index{move\+Head@{move\+Head}!snakegame\+::structs\+::\+Snake@{snakegame\+::structs\+::\+Snake}}
+\subsubsection{\texorpdfstring{move\+Head()}{moveHead()}}
+{\footnotesize\ttfamily void snakegame.\+structs.\+Snake.\+move\+Head (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 95 of file Snake.\+java.
+
+\mbox{\Hypertarget{classsnakegame_1_1structs_1_1_snake_a5c7858e4b58db59e493b12c18462fb4b}\label{classsnakegame_1_1structs_1_1_snake_a5c7858e4b58db59e493b12c18462fb4b}} 
+\index{snakegame\+::structs\+::\+Snake@{snakegame\+::structs\+::\+Snake}!parse@{parse}}
+\index{parse@{parse}!snakegame\+::structs\+::\+Snake@{snakegame\+::structs\+::\+Snake}}
+\subsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classsnakegame_1_1structs_1_1_snake}{Snake}} snakegame.\+structs.\+Snake.\+parse (\begin{DoxyParamCaption}\item[{String}]{string }\end{DoxyParamCaption}) throws Illegal\+Argument\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 118 of file Snake.\+java.
+
+\mbox{\Hypertarget{classsnakegame_1_1structs_1_1_snake_a0e8e4b28dd22705782f7a985e17b364d}\label{classsnakegame_1_1structs_1_1_snake_a0e8e4b28dd22705782f7a985e17b364d}} 
+\index{snakegame\+::structs\+::\+Snake@{snakegame\+::structs\+::\+Snake}!predict\+Move@{predict\+Move}}
+\index{predict\+Move@{predict\+Move}!snakegame\+::structs\+::\+Snake@{snakegame\+::structs\+::\+Snake}}
+\subsubsection{\texorpdfstring{predict\+Move()}{predictMove()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsnakegame_1_1structs_1_1_snake}{Snake}} snakegame.\+structs.\+Snake.\+predict\+Move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 44 of file Snake.\+java.
+
+\mbox{\Hypertarget{classsnakegame_1_1structs_1_1_snake_abcd015387736c76d4c6770cb7d33f59c}\label{classsnakegame_1_1structs_1_1_snake_abcd015387736c76d4c6770cb7d33f59c}} 
+\index{snakegame\+::structs\+::\+Snake@{snakegame\+::structs\+::\+Snake}!set\+Direction@{set\+Direction}}
+\index{set\+Direction@{set\+Direction}!snakegame\+::structs\+::\+Snake@{snakegame\+::structs\+::\+Snake}}
+\subsubsection{\texorpdfstring{set\+Direction()}{setDirection()}}
+{\footnotesize\ttfamily void snakegame.\+structs.\+Snake.\+set\+Direction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enumsnakegame_1_1structs_1_1_direction}{Direction}}}]{direction }\end{DoxyParamCaption})}
+
+
+
+Definition at line 56 of file Snake.\+java.
+
+\mbox{\Hypertarget{classsnakegame_1_1structs_1_1_snake_a7ebadfc8fb3f4b24d0de3a6b3bde703e}\label{classsnakegame_1_1structs_1_1_snake_a7ebadfc8fb3f4b24d0de3a6b3bde703e}} 
+\index{snakegame\+::structs\+::\+Snake@{snakegame\+::structs\+::\+Snake}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!snakegame\+::structs\+::\+Snake@{snakegame\+::structs\+::\+Snake}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily String snakegame.\+structs.\+Snake.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 149 of file Snake.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/snakegame/structs/\mbox{\hyperlink{structs_2snake_8java}{Snake.\+java}}\end{DoxyCompactItemize}

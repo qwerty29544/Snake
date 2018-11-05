@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacesnakegame_1_1structs" kind="namespace" language="Java">
+    <compoundname>snakegame::structs</compoundname>
+    <innerclass refid="classsnakegame_1_1structs_1_1_apple" prot="public">snakegame::structs::Apple</innerclass>
+    <innerclass refid="classsnakegame_1_1structs_1_1_apple_factory" prot="public">snakegame::structs::AppleFactory</innerclass>
+    <innerclass refid="classsnakegame_1_1structs_1_1_apple_point" prot="public">snakegame::structs::ApplePoint</innerclass>
+    <innerclass refid="enumsnakegame_1_1structs_1_1_direction" prot="public">snakegame::structs::Direction</innerclass>
+    <innerclass refid="classsnakegame_1_1structs_1_1_point" prot="public">snakegame::structs::Point</innerclass>
+    <innerclass refid="classsnakegame_1_1structs_1_1_remainder" prot="public">snakegame::structs::Remainder</innerclass>
+    <innerclass refid="classsnakegame_1_1structs_1_1_snake" prot="public">snakegame::structs::Snake</innerclass>
+    <innerclass refid="classsnakegame_1_1structs_1_1_snake_factory" prot="public">snakegame::structs::SnakeFactory</innerclass>
+    <innerclass refid="classsnakegame_1_1structs_1_1_snake_point" prot="public">snakegame::structs::SnakePoint</innerclass>
+    <innerclass refid="classsnakegame_1_1structs_1_1_world" prot="public">snakegame::structs::World</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/snakegame/structs/Apple.java" line="1" column="1"/>
+  </compounddef>
+</doxygen>

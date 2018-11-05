@@ -1,0 +1,132 @@
+.TH "snakegame.structs.Snake" 3 "Mon Nov 5 2018" "Version 1.0" "SnakeGame" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+snakegame.structs.Snake
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "UUID \fBgetUuid\fP ()"
+.br
+.ti -1c
+.RI "List< \fBPoint\fP > \fBgetPoints\fP ()"
+.br
+.ti -1c
+.RI "\fBSnake\fP (LinkedList< \fBPoint\fP > points, \fBDirection\fP direction)"
+.br
+.ti -1c
+.RI "\fBSnake\fP (UUID uuid, LinkedList< \fBPoint\fP > points, \fBDirection\fP direction)"
+.br
+.ti -1c
+.RI "\fBSnake\fP (\fBSnake\fP \fBsnake\fP)"
+.br
+.ti -1c
+.RI "\fBSnake\fP \fBpredictMove\fP ()"
+.br
+.ti -1c
+.RI "\fBDirection\fP \fBgetDirection\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetDirection\fP (\fBDirection\fP direction)"
+.br
+.ti -1c
+.RI "\fBPoint\fP \fBgetHead\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBcontains\fP (\fBPoint\fP anotherPoint)"
+.br
+.ti -1c
+.RI "boolean \fBateSelf\fP ()"
+.br
+.ti -1c
+.RI "void \fBmoveHead\fP ()"
+.br
+.ti -1c
+.RI "void \fBdraw\fP (Graphics2D g)"
+.br
+.ti -1c
+.RI "String \fBtoString\fP ()"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBSnake\fP \fBparse\fP (String string)  throws IllegalArgumentException "
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 7 of file Snake\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "snakegame\&.structs\&.Snake\&.Snake (LinkedList< \fBPoint\fP > points, \fBDirection\fP direction)"
+
+.PP
+Definition at line 23 of file Snake\&.java\&.
+.SS "snakegame\&.structs\&.Snake\&.Snake (UUID uuid, LinkedList< \fBPoint\fP > points, \fBDirection\fP direction)"
+
+.PP
+Definition at line 30 of file Snake\&.java\&.
+.SS "snakegame\&.structs\&.Snake\&.Snake (\fBSnake\fP snake)"
+
+.PP
+Definition at line 37 of file Snake\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "boolean snakegame\&.structs\&.Snake\&.ateSelf ()"
+
+.PP
+Definition at line 76 of file Snake\&.java\&.
+.SS "boolean snakegame\&.structs\&.Snake\&.contains (\fBPoint\fP anotherPoint)"
+
+.PP
+Definition at line 66 of file Snake\&.java\&.
+.SS "void snakegame\&.structs\&.Snake\&.draw (Graphics2D g)"
+
+.PP
+Definition at line 142 of file Snake\&.java\&.
+.SS "\fBDirection\fP snakegame\&.structs\&.Snake\&.getDirection ()"
+
+.PP
+Definition at line 51 of file Snake\&.java\&.
+.SS "\fBPoint\fP snakegame\&.structs\&.Snake\&.getHead ()"
+
+.PP
+Definition at line 61 of file Snake\&.java\&.
+.SS "List<\fBPoint\fP> snakegame\&.structs\&.Snake\&.getPoints ()"
+
+.PP
+Definition at line 14 of file Snake\&.java\&.
+.SS "UUID snakegame\&.structs\&.Snake\&.getUuid ()"
+
+.PP
+Definition at line 8 of file Snake\&.java\&.
+.SS "void snakegame\&.structs\&.Snake\&.moveHead ()"
+
+.PP
+Definition at line 95 of file Snake\&.java\&.
+.SS "static \fBSnake\fP snakegame\&.structs\&.Snake\&.parse (String string) throws IllegalArgumentException\fC [static]\fP"
+
+.PP
+Definition at line 118 of file Snake\&.java\&.
+.SS "\fBSnake\fP snakegame\&.structs\&.Snake\&.predictMove ()"
+
+.PP
+Definition at line 44 of file Snake\&.java\&.
+.SS "void snakegame\&.structs\&.Snake\&.setDirection (\fBDirection\fP direction)"
+
+.PP
+Definition at line 56 of file Snake\&.java\&.
+.SS "String snakegame\&.structs\&.Snake\&.toString ()"
+
+.PP
+Definition at line 149 of file Snake\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for SnakeGame from the source code\&.

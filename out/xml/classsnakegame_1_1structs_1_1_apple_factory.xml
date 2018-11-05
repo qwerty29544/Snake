@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classsnakegame_1_1structs_1_1_apple_factory" kind="class" language="Java" prot="public">
+    <compoundname>snakegame::structs::AppleFactory</compoundname>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classsnakegame_1_1structs_1_1_apple_factory_1a913bfc064d8708a671af87f192642f6f" prot="package" static="no" mutable="no">
+        <type>List&lt; <ref refid="classsnakegame_1_1structs_1_1_apple_point" kindref="compound">ApplePoint</ref> &gt;</type>
+        <definition>List&lt;ApplePoint&gt; snakegame.structs.AppleFactory.points</definition>
+        <argsstring></argsstring>
+        <name>points</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/AppleFactory.java" line="10" column="1" bodyfile="src/snakegame/structs/AppleFactory.java" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsnakegame_1_1structs_1_1_apple_factory_1aa07fa8785ab5b8dead56c811e99ba944" prot="package" static="no" mutable="no">
+        <type>int</type>
+        <definition>int snakegame.structs.AppleFactory.maxX</definition>
+        <argsstring></argsstring>
+        <name>maxX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/AppleFactory.java" line="11" column="1" bodyfile="src/snakegame/structs/AppleFactory.java" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsnakegame_1_1structs_1_1_apple_factory_1a78f5a1cc2ad3a9c14bc4717326788874" prot="package" static="no" mutable="no">
+        <type>int</type>
+        <definition>int snakegame.structs.AppleFactory.maxY</definition>
+        <argsstring></argsstring>
+        <name>maxY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/AppleFactory.java" line="12" column="1" bodyfile="src/snakegame/structs/AppleFactory.java" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsnakegame_1_1structs_1_1_apple_factory_1ad0b77c64a933c5d2ca3a7f0e0d4d5d82" prot="package" static="no" mutable="no">
+        <type>int</type>
+        <definition>int snakegame.structs.AppleFactory.randomEncounters</definition>
+        <argsstring></argsstring>
+        <name>randomEncounters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/AppleFactory.java" line="13" column="1" bodyfile="src/snakegame/structs/AppleFactory.java" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-static-attrib">
+      <memberdef kind="variable" id="classsnakegame_1_1structs_1_1_apple_factory_1a7245a73ea53c8a96883ffe2e539965a3" prot="package" static="yes" mutable="no">
+        <type>Random</type>
+        <definition>Random snakegame.structs.AppleFactory.random</definition>
+        <argsstring></argsstring>
+        <name>random</name>
+        <initializer>= new Random()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/AppleFactory.java" line="15" column="1" bodyfile="src/snakegame/structs/AppleFactory.java" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_apple_factory_1ac58956184a77beb43d78d6f1a72b3254" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>snakegame.structs.AppleFactory.AppleFactory</definition>
+        <argsstring>(List&lt; ApplePoint &gt; points)</argsstring>
+        <name>AppleFactory</name>
+        <param>
+          <type>List&lt; <ref refid="classsnakegame_1_1structs_1_1_apple_point" kindref="compound">ApplePoint</ref> &gt;</type>
+          <declname>points</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/AppleFactory.java" line="17" column="1" bodyfile="src/snakegame/structs/AppleFactory.java" bodystart="17" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_apple_factory_1acc49c3b4cda4250fd4a25181b39cb36e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>snakegame.structs.AppleFactory.AppleFactory</definition>
+        <argsstring>()</argsstring>
+        <name>AppleFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/AppleFactory.java" line="25" column="1" bodyfile="src/snakegame/structs/AppleFactory.java" bodystart="25" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classsnakegame_1_1structs_1_1_apple_factory_1a53efb1530e63916af192eb4daa0009f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsnakegame_1_1structs_1_1_apple" kindref="compound">Apple</ref></type>
+        <definition>Apple snakegame.structs.AppleFactory.generateApple</definition>
+        <argsstring>()</argsstring>
+        <name>generateApple</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/snakegame/structs/AppleFactory.java" line="36" column="1" bodyfile="src/snakegame/structs/AppleFactory.java" bodystart="36" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="9">
+        <label>Random</label>
+      </node>
+      <node id="8">
+        <label>List&lt; snakegame.structs.ApplePoint &gt;</label>
+      </node>
+      <node id="7">
+        <label>snakegame.structs.AppleFactory</label>
+        <link refid="classsnakegame_1_1structs_1_1_apple_factory"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>points</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>random</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/snakegame/structs/AppleFactory.java" line="8" column="1" bodyfile="src/snakegame/structs/AppleFactory.java" bodystart="8" bodyend="41"/>
+    <listofallmembers>
+      <member refid="classsnakegame_1_1structs_1_1_apple_factory_1ac58956184a77beb43d78d6f1a72b3254" prot="public" virt="non-virtual"><scope>snakegame::structs::AppleFactory</scope><name>AppleFactory</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_apple_factory_1acc49c3b4cda4250fd4a25181b39cb36e" prot="public" virt="non-virtual"><scope>snakegame::structs::AppleFactory</scope><name>AppleFactory</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_apple_factory_1a53efb1530e63916af192eb4daa0009f6" prot="public" virt="non-virtual"><scope>snakegame::structs::AppleFactory</scope><name>generateApple</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_apple_factory_1aa07fa8785ab5b8dead56c811e99ba944" prot="package" virt="non-virtual"><scope>snakegame::structs::AppleFactory</scope><name>maxX</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_apple_factory_1a78f5a1cc2ad3a9c14bc4717326788874" prot="package" virt="non-virtual"><scope>snakegame::structs::AppleFactory</scope><name>maxY</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_apple_factory_1a913bfc064d8708a671af87f192642f6f" prot="package" virt="non-virtual"><scope>snakegame::structs::AppleFactory</scope><name>points</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_apple_factory_1a7245a73ea53c8a96883ffe2e539965a3" prot="package" virt="non-virtual"><scope>snakegame::structs::AppleFactory</scope><name>random</name></member>
+      <member refid="classsnakegame_1_1structs_1_1_apple_factory_1ad0b77c64a933c5d2ca3a7f0e0d4d5d82" prot="package" virt="non-virtual"><scope>snakegame::structs::AppleFactory</scope><name>randomEncounters</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
