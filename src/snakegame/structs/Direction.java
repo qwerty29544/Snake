@@ -1,6 +1,6 @@
 package snakegame.structs;
 
-import com.sun.xml.internal.ws.api.streaming.XMLStreamWriterFactory;
+
 
 import java.awt.event.KeyEvent;
 
